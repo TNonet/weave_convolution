@@ -4,7 +4,7 @@ from layers import *
 from fast_layers import *
 from layer_utils import *
 from fancy_conv import *
-
+from cython_weave import *
 
 class ThreeLayerFancyNet(object):
   """
@@ -111,22 +111,22 @@ class ThreeLayerFancyNet(object):
     pool_param = {'pool_height': 2, 'pool_width': 2, 'stride': 2}
 
     scores = None
-    ############################################################################
-    # TODO: Implement the forward pass for the three-layer convolutional net,  #
-    # computing the class scores for X and storing them in the scores          #
-    # variable.                                                                #
+    ############################################################################                                                            #
     ############################################################################
     # about 3 lines of code (use the helper functions in layer_utils.py)
     X_loc, cache_loc = conv_relu_forward(X, theta_loc, theta_loc_0, conv_param)
     X_per, cache_per = conv_relu_forward(X, theta_per, theta_per_0, conv_param)
 
     X_loc_large, cache_zero = zero_weave_forward(X_loc, weave_param)
-    X_per_weave, cache_weave = array_weave_forwards(X_per, weave_param)
+    X_per_weave, cache_weave = array_weave_fast_forward(X_per, weave_param)
 
     X_combine, cache_combine = array_sum_fowards(X_loc_large, X_per_weave)
+
     X_2, cache_large_conv = conv_relu_pool_forward(X_combine, theta_large, 
         theta_large_0, large_conv_param, pool_param)
+
     X_3, cache_affine_1 = affine_relu_forward(X_2, theta_affine_1, theta_affine_1_0)
+
     scores, cache_affine_2 = affine_forward(X_3, theta_affine_2, theta_affine_2_0)
     ############################################################################
     #                             END OF YOUR CODE                             #
@@ -181,8 +181,8 @@ class ThreeLayerFancyNet(object):
     grads['theta_loc_0'] = dtheta_loc_0
 
     #Peripherial Weave:
-    dx_per = array_weave_backwards(dx, cache_weave)
-    #sprint('weave backwards shape', dx_per.shape)
+    dx_per = array_weave_fast_backward(dx, cache_weave)
+    #print('weave backwards shape', dx_per.shape)
     dx_2, dtheta_per, dtheta_per_0 = conv_relu_backward(dx_per, cache_per)
     grads['theta_per'] = dtheta_per + self.reg*(theta_per)
     grads['theta_per_0'] = dtheta_per_0

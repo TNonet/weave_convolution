@@ -12,7 +12,7 @@ ctypedef fused DTYPE_t:
 @cython.boundscheck(False) 
 @cython.wraparound(False)
 @cython.cdivision(True)
-def cython_array_weave_backwards(np.ndarray[DTYPE_t, ndim=4] dx,
+def cython_array_weave_backward(np.ndarray[DTYPE_t, ndim=4] dx,
                                   int num_img, int num_filters,
                                   int height, int width,
                                   int num_zeros, int filter_size):
@@ -70,9 +70,9 @@ def cython_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
     cdef np.float64_t temp_val
     
     cdef int HH = height*(num_zeros + 1) - num_zeros
-    cdef int WW = width*(num_zeros + 1) - num_zeros]
+    cdef int WW = width*(num_zeros + 1) - num_zeros
 
-    cdef np.ndarray[DTYPE_t, ndim=4] dout = np.zeros([num_img,
+    cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,
                                                 num_filters,
                                                 HH,
                                                 WW])

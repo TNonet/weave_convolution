@@ -104,10 +104,10 @@ def array_weave_forwards(arr, weave_param):
                 for j_change in [-expand_dist, 0, expand_dist]:
                     if (min(big_i+i_change,big_j+j_change) >= 0 
                         and max(big_i+i_change,big_j+j_change) < height*(num_zeros + 1) - num_zeros):
-                        out[:,:,big_i+i_change,big_j+j_change] = temp_val
+                        if not i_change == 0 and not j_change == 0:
+                            out[:,:,big_i+i_change,big_j+j_change] = temp_val
 
-    out[:,:,::slice_jump,::slice_jump] = 0
-                     
+              
     return out, cache
 
 def array_weave_backwards(dx, cache):
@@ -134,6 +134,37 @@ def array_weave_backwards(dx, cache):
                         and max(big_i+i_change,big_j+j_change) < height*(num_zeros + 1) - num_zeros):
                     	if i_change != 0 and j_change != 0:
                         	dout[:,:,i,j] += dx[:,:,big_i+i_change,big_j+j_change]
+    return dout
+
+def array_weave_backwards_naive(dx, cache):
+
+    org_arr, weave_param = cache
+    num_zeros = weave_param['num_zeros']
+    filter_size = weave_param['filter_size']
+
+    expand_dist = 2*filter_size+2
+    slice_jump = num_zeros + 1
+
+    num_img, num_filters, height, width = org_arr.shape
+
+    dout = np.zeros([num_img,
+                    num_filters,
+                    height,
+                    width]) 
+
+    for img in range(num_img):
+        for layer in range(num_filters):
+            for i in range(height):
+                for j in range(width):
+                    big_i = filter_size * i 
+                    big_j = filter_size * j
+                    for i_change in [-expand_dist, 0, expand_dist]:
+                        for j_change in [-expand_dist, 0, expand_dist]:
+                            if (min(big_i+i_change,big_j+j_change) >= 0 
+                                and max(big_i+i_change,big_j+j_change) < height*(num_zeros + 1) - num_zeros):
+                                if i_change != 0 and j_change != 0:
+                                    dout[img,layer,i,j] += dx[img,layer,big_i+i_change,big_j+j_change]
+
     return dout
 
 def array_sum_fowards(arr1, arr2):
