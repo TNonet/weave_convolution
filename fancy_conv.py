@@ -52,7 +52,7 @@ def zero_weave_backwards(dx, cache):
 
 #def generate_weave_multiplier(arr, weave_param):
     
-def array_weave_forwards(arr, weave_param):
+def array_weave_forward(arr, weave_param):
     """
     input array size = (num_img, num_filters, height, width)
     output array size = (num_img, num_filters, 

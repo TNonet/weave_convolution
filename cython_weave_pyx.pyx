@@ -52,7 +52,7 @@ def cython_array_weave_backward(np.ndarray[DTYPE_t, ndim=4] dx,
 @cython.boundscheck(False) 
 @cython.wraparound(False)
 @cython.cdivision(True)
-def cython_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
+def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
                                 int num_zeros, int filter_size):
     """
     Cython funciton for preforming array_weave forwards that is much faster!
@@ -107,7 +107,6 @@ def cython_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
                         out[img,layer,temp_x,temp_y] = temp_val
                     temp_x = big_i + expand_dist 
                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
-                        pass
                         out[img,layer,temp_x,temp_y] = temp_val
                     #Second Column (Only 2 Points)
                     temp_x = big_i-expand_dist
@@ -129,6 +128,71 @@ def cython_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                         out[img,layer,temp_x,temp_y] = temp_val
 
+    return out
+
+
+@cython.boundscheck(False) 
+@cython.wraparound(False)
+@cython.cdivision(True)
+def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,
+                                int num_zeros, int filter_size):
+    """
+    Cython funciton for preforming array_weave forwards that is much faster!
+    """
+    cdef int height = arr.shape[0]
+    cdef int width = arr.shape[1] 
+    
+    cdef int expand_dist = 2*filter_size + 2
+    cdef int slice_jump = num_zeros + 1
+
+    cdef int i, j, big_i, big_j, i_change, j_change
+    
+    cdef np.float64_t temp_val
+    
+    cdef int HH = height*(num_zeros + 1) - num_zeros
+    cdef int WW = width*(num_zeros + 1) - num_zeros
+
+    cdef np.ndarray[DTYPE_t, ndim=2] out = np.zeros([HH, WW])
+
+    cdef int temp_x
+    cdef int temp_y
+
+    for i in range(height):
+        for j in range(width):
+            temp_val = arr[i,j]
+            big_i = filter_size * i 
+            big_j = filter_size * j
+            #######
+            #First Column
+            temp_x = big_i-expand_dist
+            temp_y = big_j-expand_dist
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
+            temp_x = big_i
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
+            temp_x = big_i + expand_dist 
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
+            #Second Column (Only 2 Points)
+            temp_x = big_i-expand_dist
+            temp_y = big_j
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
+            temp_x = big_i + expand_dist 
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
+            #Third Column
+            temp_x = big_i-expand_dist
+            temp_y = big_j+expand_dist
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
+            temp_x = big_i
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
+            temp_x = big_i + expand_dist 
+            if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                out[temp_x,temp_y] = temp_val
     return out
 
 
