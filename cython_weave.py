@@ -15,6 +15,8 @@ def zero_weave_fast_forward(X,weave_param):
     cache = (X, weave_param)
     if len(X.shape) <= 2:
         out = cython_2d_zero_weave_forward(X, weave_param['num_zeros'], weave_param['filter_size'])
+    if len(X.shape) == 3:
+        out = cython_3d_zero_weave_forward(X, weave_param['num_zeros'], weave_param['filter_size'])
     return out, cache
 
 def array_weave_fast_backward(dx, cache):

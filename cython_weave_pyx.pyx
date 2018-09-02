@@ -264,6 +264,35 @@ def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,
     return out
 
 
+@cython.boundscheck(False) 
+@cython.wraparound(False)
+@cython.cdivision(True)
+def cython_3d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,
+                                int num_zeros, int filter_size):
+    """
+    Cython funciton for preforming array_weave forwards that is much faster!
+    """
+    cdef int height = arr.shape[1]
+    cdef int width = arr.shape[2] 
+    cdef int num_layers = arr.shape[0]
+    
+    cdef int slice_jump = num_zeros + 1
+
+    cdef int i, j, big_i, big_j, layer
+    
+    cdef int HH = height*(num_zeros + 1) - num_zeros
+    cdef int WW = width*(num_zeros + 1) - num_zeros
+
+    cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_layers,HH, WW])
+
+    for layer in range(num_layers):
+        for i in range(height):
+            for j in range(width):
+                big_i = slice_jump * i 
+                big_j = slice_jump * j
+                out[layer,big_i, big_j] = arr[layer,i,j]
+    return out
+
 
 @cython.boundscheck(False) 
 @cython.wraparound(False)

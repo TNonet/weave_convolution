@@ -16,6 +16,98 @@ class ZeroWeave(keras.layers.Layer):
     Stil need to work on multy dimensions
     """
 
+    def __init__(self, max_batch_size = 20, num_zeros = 2, filter_size = 3):
+        super(ZeroWeave, self).__init__()
+        self.max_batch_size = max_batch_size
+        self.num_zeros = num_zeros
+        self.filter_size = filter_size
+        
+    def build(self, input_shape):
+        """
+        input_shape = (None, depth, height, width)
+        """
+
+        _, num_filters, height, width = input_shape
+        if height != width:
+            raise ValueError('Must operate on a square image')
+
+        self.tensor_indexor = create_part_I_zero_weave_matrix((num_filters,height,width),
+            {'num_zeros':self.num_zeros,'filter_size':self.filter_size})
+
+        self.tensor_indexor = tf.convert_to_tensor(self.tensor_indexor)
+
+        def fn(x):
+            return tf.gather_nd(x, self.tensor_indexor)
+
+        self.fn = fn
+
+        super(ZeroWeave, self).build(input_shape)
+        
+    def call(self, inputs):
+        """
+        Must expand input by a empty column to remove derivates
+        """
+        cat_inputs = tf.concat([inputs, tf.zeros_like(inputs)], axis = 3)
+
+        return tf.map_fn(self.fn, cat_inputs)
+    
+    def compute_output_shape(self, input_shape):
+        return (input_shape[0],
+                input_shape[1],
+                input_shape[2]*(self.num_zeros + 1) - self.num_zeros,
+                input_shape[3]*(self.num_zeros + 1) - self.num_zeros)
+
+class ArrayWeave(keras.layers.Layer):
+    """
+    Layer that takes input of peripherial convolution layer and 
+    returns a weave of the image to be merged with the local convolution layers
+    """
+
+    def __init__(self, max_batch_size = 20, filter_size = 3, num_zeros = 2):
+        super(ArrayWeave, self).__init__()
+        #Dimensions of Large output layer
+        self.filter_size = filter_size
+        self.num_zeros = num_zeros
+        self.max_batch_size = max_batch_size
+        
+    def build(self, input_shape):
+        """
+        input_shape = (None, depth, height, width)
+        """
+        _, num_filters, height, width = input_shape
+        if height != width:
+            raise ValueError('Must operate on a square image')
+
+        self.tensor_indexor = create_part_I_array_weave_matrix((num_filters,height,width),
+            {'num_zeros':self.num_zeros,'filter_size':self.filter_size})
+        self.tensor_indexor = tf.convert_to_tensor(self.tensor_indexor)
+
+        def fn(x):
+            return tf.gather_nd(x, self.tensor_indexor)
+
+        self.fn = fn
+
+        super(ArrayWeave, self).build(input_shape)
+        
+    def call(self, inputs):
+        """
+        Must expand input by a empty column to remove derivates
+        """
+        cat_inputs = tf.concat([inputs, tf.zeros_like(inputs)], axis = 3)
+
+        return tf.map_fn(self.fn, cat_inputs)
+    
+    def compute_output_shape(self, input_shape):
+        return (input_shape[0],
+                input_shape[1],
+                input_shape[2]*(self.num_zeros + 1) - self.num_zeros,
+                input_shape[3]*(self.num_zeros + 1) - self.num_zeros)
+
+class old_ZeroWeave(keras.layers.Layer):
+    """
+    Stil need to work on multy dimensions
+    """
+
     def __init__(self, num_img, num_zeros = 2, filter_size = 3):
         super(ZeroWeave, self).__init__()
         self.num_img = num_img
@@ -56,7 +148,7 @@ class ZeroWeave(keras.layers.Layer):
                 input_shape[2]*(self.num_zeros + 1) - self.num_zeros,
                 input_shape[3]*(self.num_zeros + 1) - self.num_zeros)
     
-class ArrayWeave(keras.layers.Layer):
+class old_ArrayWeave(keras.layers.Layer):
     """
     Layer that takes input of peripherial convolution layer and 
     returns a weave of the image to be merged with the local convolution layers
