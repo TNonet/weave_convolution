@@ -1,4 +1,7 @@
-import cPickle as pickle
+try:
+  import cPickle as pickle
+except:
+  import _pickle as pickle
 import numpy as np
 import os
 from scipy.misc import imread
@@ -6,7 +9,7 @@ from scipy.misc import imread
 def load_CIFAR_batch(filename):
   """ load single batch of cifar """
   with open(filename, 'rb') as f:
-    datadict = pickle.load(f)
+    datadict = pickle.load(f,encoding='latin1')
     X = datadict['data']
     Y = datadict['labels']
     X = X.reshape(10000, 3, 32, 32).transpose(0,2,3,1).astype("float")
@@ -37,6 +40,7 @@ def get_CIFAR10_data(num_training=49000, num_validation=1000, num_test=1000):
     """
     # Load the raw CIFAR-10 data (CHANGE THE PATH BELOW)
     cifar10_dir = '/Users/Tim/Documents/GitHub/cifar-10-batches-py'
+    cifar10_dir = '/Users/Takn/Documents/GitHub/cifar-10-batches-py'
     X_train, y_train, X_test, y_test = load_CIFAR10(cifar10_dir)
         
     # Subsample the data
@@ -109,7 +113,8 @@ def load_tiny_imagenet(path, dtype=np.float32):
   y_train = []
   for i, wnid in enumerate(wnids):
     if (i + 1) % 20 == 0:
-      print 'loading training data for synset %d / %d' % (i + 1, len(wnids))
+      pass
+      #print 'loading training data for synset %d / %d' % (i + 1, len(wnids))
     # To figure out the filenames we need to open the boxes file
     boxes_file = os.path.join(path, 'train', wnid, '%s_boxes.txt' % wnid)
     with open(boxes_file, 'r') as f:
