@@ -53,7 +53,8 @@ def cython_array_weave_backward(np.ndarray[DTYPE_t, ndim=4] dx,
 @cython.wraparound(False)
 @cython.cdivision(True)
 def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
-                                int num_zeros, int filter_size):
+                                int num_zeros, int filter_size,
+                                int include_center):
     """
     Cython funciton for preforming array_weave forwards that is much faster!
     """
@@ -88,15 +89,6 @@ def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
                     big_i = filter_size * i 
                     big_j = filter_size * j
                     #######
-#                     i_change, j_change = -expand_dist, -expand_dist
-#                     while i_change < expand_dist:
-#                         while j_change < expand_dist:
-#                             if (min(big_i+i_change,big_j+j_change) >= 0 
-#                                 and max(big_i+i_change,big_j+j_change) < HH):
-#                                     if i_change != 0 and j_change != 0:
-#                                         out[img,layer,big_i+i_change,big_j+j_change] = temp_val
-#                             j_change += expand_dist
-#                         i_change += expand_dist
                     #First Column
                     temp_x = big_i-expand_dist
                     temp_y = big_j-expand_dist
@@ -108,11 +100,15 @@ def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
                     temp_x = big_i + expand_dist 
                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                         out[img,layer,temp_x,temp_y] = temp_val
-                    #Second Column (Only 2 Points)
+                    #Second Column (Only 2 Points) Unless include_center == 1
                     temp_x = big_i-expand_dist
                     temp_y = big_j
                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                         out[img,layer,temp_x,temp_y] = temp_val
+                    if include_center == 1:
+                        temp_x = big_i
+                        if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                            out[img,layer,temp_x,temp_y] = temp_val
                     temp_x = big_i + expand_dist 
                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                         out[img,layer,temp_x,temp_y] = temp_val
@@ -135,7 +131,8 @@ def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,
 @cython.wraparound(False)
 @cython.cdivision(True)
 def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,
-                                int num_zeros, int filter_size):
+                                int num_zeros, int filter_size,
+                                int include_center):
     """
     Cython funciton for preforming array_weave forwards that is much faster!
     """
@@ -177,11 +174,15 @@ def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,
                 temp_x = big_i + expand_dist 
                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                     out[layer,temp_x,temp_y] = temp_val
-                #Second Column (Only 2 Points)
+                #Second Column (Only 2 Points) Unless Include Center is 1!
                 temp_x = big_i-expand_dist
                 temp_y = big_j
                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                     out[layer,temp_x,temp_y] = temp_val
+                if include_center == 1:
+                    temp_x = big_i
+                    if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                        out[layer,temp_x,temp_y] = temp_val
                 temp_x = big_i + expand_dist 
                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                     out[layer,temp_x,temp_y] = temp_val
@@ -203,7 +204,8 @@ def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,
 @cython.wraparound(False)
 @cython.cdivision(True)
 def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,
-                                int num_zeros, int filter_size):
+                                int num_zeros, int filter_size,
+                                int include_center):
     """
     Cython funciton for preforming array_weave forwards that is much faster!
     """
@@ -242,11 +244,15 @@ def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,
             temp_x = big_i + expand_dist 
             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                 out[temp_x,temp_y] = temp_val
-            #Second Column (Only 2 Points)
+            #Second Column (Only 2 Points) Unless include_center == 1!
             temp_x = big_i-expand_dist
             temp_y = big_j
             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                 out[temp_x,temp_y] = temp_val
+            if include_center == 1:
+                temp_x = big_i
+                if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+                    out[temp_x,temp_y] = temp_val
             temp_x = big_i + expand_dist 
             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
                 out[temp_x,temp_y] = temp_val

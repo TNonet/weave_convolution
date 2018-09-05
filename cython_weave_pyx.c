@@ -2320,6 +2320,7 @@ static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "stringsource";
 static const char __pyx_k_pyx_getbuffer[] = "__pyx_getbuffer";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
+static const char __pyx_k_include_center[] = "include_center";
 static const char __pyx_k_View_MemoryView[] = "View.MemoryView";
 static const char __pyx_k_allocate_buffer[] = "allocate_buffer";
 static const char __pyx_k_dtype_is_object[] = "dtype_is_object";
@@ -2450,6 +2451,7 @@ static PyObject *__pyx_n_s_i_change;
 static PyObject *__pyx_n_s_id;
 static PyObject *__pyx_n_s_img;
 static PyObject *__pyx_n_s_import;
+static PyObject *__pyx_n_s_include_center;
 static PyObject *__pyx_n_s_itemsize;
 static PyObject *__pyx_kp_s_itemsize_0_for_cython_array;
 static PyObject *__pyx_n_s_j;
@@ -2526,14 +2528,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_cython_array_weave_backward(CYTHON_
 static PyObject *__pyx_pf_16cython_weave_pyx_12cython_array_weave_backward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_dx, int __pyx_v_num_img, int __pyx_v_num_filters, int __pyx_v_height, int __pyx_v_width, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
 static PyObject *__pyx_pf_16cython_weave_pyx_14cython_array_weave_backward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_dx, int __pyx_v_num_img, int __pyx_v_num_filters, int __pyx_v_height, int __pyx_v_width, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
 static PyObject *__pyx_pf_16cython_weave_pyx_2cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
-static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
-static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
+static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center); /* proto */
+static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center); /* proto */
 static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
-static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
-static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
+static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center); /* proto */
+static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center); /* proto */
 static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
-static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
-static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size); /* proto */
+static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center); /* proto */
+static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center); /* proto */
 static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
 static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, CYTHON_UNUSED int __pyx_v_filter_size); /* proto */
 static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, CYTHON_UNUSED int __pyx_v_filter_size); /* proto */
@@ -2591,6 +2593,7 @@ static PyObject *__pyx_tp_new__memoryviewslice(PyTypeObject *t, PyObject *a, PyO
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_3;
+static PyObject *__pyx_int_4;
 static PyObject *__pyx_int_7;
 static PyObject *__pyx_int_184977713;
 static PyObject *__pyx_int_neg_1;
@@ -4609,8 +4612,8 @@ static PyObject *__pyx_pf_16cython_weave_pyx_14cython_array_weave_backward(CYTHO
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
 /* Python wrapper */
@@ -4823,9 +4826,9 @@ static PyObject *__pyx_pf_16cython_weave_pyx_2cython_4d_array_weave_forward(CYTH
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_INCREF(__pyx_int_3);
-    __Pyx_GIVEREF(__pyx_int_3);
-    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_int_3);
+    __Pyx_INCREF(__pyx_int_4);
+    __Pyx_GIVEREF(__pyx_int_4);
+    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_int_4);
     __Pyx_INCREF(__pyx_n_s_s);
     __Pyx_GIVEREF(__pyx_n_s_s);
     PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_n_s_s);
@@ -5336,16 +5339,19 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_19cython_4d_array_weave
   PyArrayObject *__pyx_v_arr = 0;
   int __pyx_v_num_zeros;
   int __pyx_v_filter_size;
+  int __pyx_v_include_center;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("cython_4d_array_weave_forward (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,0};
-    PyObject* values[3] = {0,0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,&__pyx_n_s_include_center,0};
+    PyObject* values[4] = {0,0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
         case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
         CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
@@ -5364,39 +5370,47 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_19cython_4d_array_weave
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 55, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, 1); __PYX_ERR(0, 55, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 55, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, 2); __PYX_ERR(0, 55, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  3:
+        if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_include_center)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, 3); __PYX_ERR(0, 55, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_4d_array_weave_forward") < 0)) __PYX_ERR(0, 55, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+      values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
     __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
     __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
+    __pyx_v_include_center = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_include_center == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 57, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 55, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 55, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_4d_array_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 55, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
+  __pyx_r = __pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size, __pyx_v_include_center);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5407,7 +5421,7 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_19cython_4d_array_weave
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size) {
+static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center) {
   int __pyx_v_num_img;
   int __pyx_v_num_filters;
   int __pyx_v_height;
@@ -5489,6 +5503,10 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
   Py_ssize_t __pyx_t_55;
   Py_ssize_t __pyx_t_56;
   Py_ssize_t __pyx_t_57;
+  Py_ssize_t __pyx_t_58;
+  Py_ssize_t __pyx_t_59;
+  Py_ssize_t __pyx_t_60;
+  Py_ssize_t __pyx_t_61;
   __Pyx_RefNannySetupContext("__pyx_fuse_0cython_4d_array_weave_forward", 0);
   __pyx_pybuffer_out.pybuffer.buf = NULL;
   __pyx_pybuffer_out.refcount = 0;
@@ -5504,7 +5522,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_arr.diminfo[2].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_arr.diminfo[2].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[2]; __pyx_pybuffernd_arr.diminfo[3].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[3]; __pyx_pybuffernd_arr.diminfo[3].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[3];
 
-  /* "cython_weave_pyx.pyx":60
+  /* "cython_weave_pyx.pyx":61
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int num_img = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -5513,7 +5531,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_num_img = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":61
+  /* "cython_weave_pyx.pyx":62
  *     """
  *     cdef int num_img = arr.shape[0]
  *     cdef int num_filters = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -5522,7 +5540,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_num_filters = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":62
+  /* "cython_weave_pyx.pyx":63
  *     cdef int num_img = arr.shape[0]
  *     cdef int num_filters = arr.shape[1]
  *     cdef int height = arr.shape[2]             # <<<<<<<<<<<<<<
@@ -5531,7 +5549,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[2]);
 
-  /* "cython_weave_pyx.pyx":63
+  /* "cython_weave_pyx.pyx":64
  *     cdef int num_filters = arr.shape[1]
  *     cdef int height = arr.shape[2]
  *     cdef int width = arr.shape[3]             # <<<<<<<<<<<<<<
@@ -5540,7 +5558,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[3]);
 
-  /* "cython_weave_pyx.pyx":65
+  /* "cython_weave_pyx.pyx":66
  *     cdef int width = arr.shape[3]
  * 
  *     cdef int expand_dist = 2*filter_size + 2             # <<<<<<<<<<<<<<
@@ -5549,7 +5567,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_expand_dist = ((2 * __pyx_v_filter_size) + 2);
 
-  /* "cython_weave_pyx.pyx":66
+  /* "cython_weave_pyx.pyx":67
  * 
  *     cdef int expand_dist = 2*filter_size + 2
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -5558,7 +5576,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":72
+  /* "cython_weave_pyx.pyx":73
  *     cdef np.float64_t temp_val
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -5567,7 +5585,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":73
+  /* "cython_weave_pyx.pyx":74
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -5576,59 +5594,59 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":75
+  /* "cython_weave_pyx.pyx":76
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,             # <<<<<<<<<<<<<<
  *                                                 num_filters,
  *                                                 HH,
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_img); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_img); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "cython_weave_pyx.pyx":76
+  /* "cython_weave_pyx.pyx":77
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,
  *                                                 num_filters,             # <<<<<<<<<<<<<<
  *                                                 HH,
  *                                                 WW])
  */
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "cython_weave_pyx.pyx":77
+  /* "cython_weave_pyx.pyx":78
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,
  *                                                 num_filters,
  *                                                 HH,             # <<<<<<<<<<<<<<
  *                                                 WW])
  * 
  */
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "cython_weave_pyx.pyx":78
+  /* "cython_weave_pyx.pyx":79
  *                                                 num_filters,
  *                                                 HH,
  *                                                 WW])             # <<<<<<<<<<<<<<
  * 
  *     cdef int temp_x
  */
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
 
-  /* "cython_weave_pyx.pyx":75
+  /* "cython_weave_pyx.pyx":76
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,             # <<<<<<<<<<<<<<
  *                                                 num_filters,
  *                                                 HH,
  */
-  __pyx_t_7 = PyList_New(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_2);
@@ -5653,14 +5671,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_7};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -5669,32 +5687,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_7};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_6); __pyx_t_6 = NULL;
       __Pyx_GIVEREF(__pyx_t_7);
       PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_t_7);
       __pyx_t_7 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 75, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 76, __pyx_L1_error)
   __pyx_t_8 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 4, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 75, __pyx_L1_error)
+      __PYX_ERR(0, 76, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_out.diminfo[2].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_out.diminfo[2].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[2]; __pyx_pybuffernd_out.diminfo[3].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[3]; __pyx_pybuffernd_out.diminfo[3].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[3];
     }
   }
@@ -5702,7 +5720,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":83
+  /* "cython_weave_pyx.pyx":84
  *     cdef int temp_y
  * 
  *     for img in range(num_img):             # <<<<<<<<<<<<<<
@@ -5713,7 +5731,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_img = __pyx_t_10;
 
-    /* "cython_weave_pyx.pyx":84
+    /* "cython_weave_pyx.pyx":85
  * 
  *     for img in range(num_img):
  *         for layer in range(num_filters):             # <<<<<<<<<<<<<<
@@ -5724,7 +5742,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_layer = __pyx_t_12;
 
-      /* "cython_weave_pyx.pyx":85
+      /* "cython_weave_pyx.pyx":86
  *     for img in range(num_img):
  *         for layer in range(num_filters):
  *             for i in range(height):             # <<<<<<<<<<<<<<
@@ -5735,7 +5753,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_i = __pyx_t_14;
 
-        /* "cython_weave_pyx.pyx":86
+        /* "cython_weave_pyx.pyx":87
  *         for layer in range(num_filters):
  *             for i in range(height):
  *                 for j in range(width):             # <<<<<<<<<<<<<<
@@ -5746,7 +5764,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
         for (__pyx_t_16 = 0; __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
           __pyx_v_j = __pyx_t_16;
 
-          /* "cython_weave_pyx.pyx":87
+          /* "cython_weave_pyx.pyx":88
  *             for i in range(height):
  *                 for j in range(width):
  *                     temp_val = arr[img,layer,i,j]             # <<<<<<<<<<<<<<
@@ -5759,7 +5777,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           __pyx_t_20 = __pyx_v_j;
           __pyx_v_temp_val = (*__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_arr.rcbuffer->pybuffer.buf, __pyx_t_17, __pyx_pybuffernd_arr.diminfo[0].strides, __pyx_t_18, __pyx_pybuffernd_arr.diminfo[1].strides, __pyx_t_19, __pyx_pybuffernd_arr.diminfo[2].strides, __pyx_t_20, __pyx_pybuffernd_arr.diminfo[3].strides));
 
-          /* "cython_weave_pyx.pyx":88
+          /* "cython_weave_pyx.pyx":89
  *                 for j in range(width):
  *                     temp_val = arr[img,layer,i,j]
  *                     big_i = filter_size * i             # <<<<<<<<<<<<<<
@@ -5768,17 +5786,17 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           __pyx_v_big_i = (__pyx_v_filter_size * __pyx_v_i);
 
-          /* "cython_weave_pyx.pyx":89
+          /* "cython_weave_pyx.pyx":90
  *                     temp_val = arr[img,layer,i,j]
  *                     big_i = filter_size * i
  *                     big_j = filter_size * j             # <<<<<<<<<<<<<<
  *                     #######
- * #                     i_change, j_change = -expand_dist, -expand_dist
+ *                     #First Column
  */
           __pyx_v_big_j = (__pyx_v_filter_size * __pyx_v_j);
 
-          /* "cython_weave_pyx.pyx":101
- * #                         i_change += expand_dist
+          /* "cython_weave_pyx.pyx":93
+ *                     #######
  *                     #First Column
  *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *                     temp_y = big_j-expand_dist
@@ -5786,7 +5804,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":102
+          /* "cython_weave_pyx.pyx":94
  *                     #First Column
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j-expand_dist             # <<<<<<<<<<<<<<
@@ -5795,7 +5813,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_y = (__pyx_v_big_j - __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":103
+          /* "cython_weave_pyx.pyx":95
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j-expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -5827,7 +5845,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           __pyx_L12_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":104
+            /* "cython_weave_pyx.pyx":96
  *                     temp_y = big_j-expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -5840,7 +5858,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
             __pyx_t_29 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_28, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_29, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":103
+            /* "cython_weave_pyx.pyx":95
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j-expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -5849,7 +5867,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           }
 
-          /* "cython_weave_pyx.pyx":105
+          /* "cython_weave_pyx.pyx":97
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i             # <<<<<<<<<<<<<<
@@ -5858,7 +5876,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_x = __pyx_v_big_i;
 
-          /* "cython_weave_pyx.pyx":106
+          /* "cython_weave_pyx.pyx":98
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -5890,7 +5908,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           __pyx_L15_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":107
+            /* "cython_weave_pyx.pyx":99
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -5903,7 +5921,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
             __pyx_t_33 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_32, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":106
+            /* "cython_weave_pyx.pyx":98
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -5912,7 +5930,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           }
 
-          /* "cython_weave_pyx.pyx":108
+          /* "cython_weave_pyx.pyx":100
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
@@ -5921,12 +5939,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":109
+          /* "cython_weave_pyx.pyx":101
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  */
           __pyx_t_24 = __pyx_v_temp_y;
           __pyx_t_22 = __pyx_v_temp_x;
@@ -5953,11 +5971,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           __pyx_L18_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":110
+            /* "cython_weave_pyx.pyx":102
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  *                     temp_x = big_i-expand_dist
  */
             __pyx_t_34 = __pyx_v_img;
@@ -5966,26 +5984,26 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
             __pyx_t_37 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_37, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":109
+            /* "cython_weave_pyx.pyx":101
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  */
           }
 
-          /* "cython_weave_pyx.pyx":112
+          /* "cython_weave_pyx.pyx":104
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
           __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":113
- *                     #Second Column (Only 2 Points)
+          /* "cython_weave_pyx.pyx":105
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j             # <<<<<<<<<<<<<<
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
@@ -5993,12 +6011,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_y = __pyx_v_big_j;
 
-          /* "cython_weave_pyx.pyx":114
+          /* "cython_weave_pyx.pyx":106
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
+ *                     if include_center == 1:
  */
           __pyx_t_22 = __pyx_v_temp_y;
           __pyx_t_23 = __pyx_v_temp_x;
@@ -6025,12 +6043,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           __pyx_L21_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":115
+            /* "cython_weave_pyx.pyx":107
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     if include_center == 1:
+ *                         temp_x = big_i
  */
             __pyx_t_38 = __pyx_v_img;
             __pyx_t_39 = __pyx_v_layer;
@@ -6038,102 +6056,112 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
             __pyx_t_41 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_38, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_39, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_40, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_41, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":114
+            /* "cython_weave_pyx.pyx":106
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
+ *                     if include_center == 1:
  */
           }
 
-          /* "cython_weave_pyx.pyx":116
+          /* "cython_weave_pyx.pyx":108
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     if include_center == 1:             # <<<<<<<<<<<<<<
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          __pyx_t_21 = ((__pyx_v_include_center == 1) != 0);
+          if (__pyx_t_21) {
+
+            /* "cython_weave_pyx.pyx":109
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     if include_center == 1:
+ *                         temp_x = big_i             # <<<<<<<<<<<<<<
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ */
+            __pyx_v_temp_x = __pyx_v_big_i;
+
+            /* "cython_weave_pyx.pyx":110
+ *                     if include_center == 1:
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ */
+            __pyx_t_23 = __pyx_v_temp_y;
+            __pyx_t_24 = __pyx_v_temp_x;
+            if (((__pyx_t_23 < __pyx_t_24) != 0)) {
+              __pyx_t_22 = __pyx_t_23;
+            } else {
+              __pyx_t_22 = __pyx_t_24;
+            }
+            __pyx_t_25 = ((__pyx_t_22 >= 0) != 0);
+            if (__pyx_t_25) {
+            } else {
+              __pyx_t_21 = __pyx_t_25;
+              goto __pyx_L25_bool_binop_done;
+            }
+            __pyx_t_22 = __pyx_v_temp_y;
+            __pyx_t_23 = __pyx_v_temp_x;
+            if (((__pyx_t_22 > __pyx_t_23) != 0)) {
+              __pyx_t_24 = __pyx_t_22;
+            } else {
+              __pyx_t_24 = __pyx_t_23;
+            }
+            __pyx_t_25 = ((__pyx_t_24 < __pyx_v_HH) != 0);
+            __pyx_t_21 = __pyx_t_25;
+            __pyx_L25_bool_binop_done:;
+            if (__pyx_t_21) {
+
+              /* "cython_weave_pyx.pyx":111
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                             out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+              __pyx_t_42 = __pyx_v_img;
+              __pyx_t_43 = __pyx_v_layer;
+              __pyx_t_44 = __pyx_v_temp_x;
+              __pyx_t_45 = __pyx_v_temp_y;
+              *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_42, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_43, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_44, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
+
+              /* "cython_weave_pyx.pyx":110
+ *                     if include_center == 1:
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ */
+            }
+
+            /* "cython_weave_pyx.pyx":108
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     if include_center == 1:             # <<<<<<<<<<<<<<
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":112
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                             out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
  */
           __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":117
- *                         out[img,layer,temp_x,temp_y] = temp_val
+          /* "cython_weave_pyx.pyx":113
+ *                             out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     #Third Column
- */
-          __pyx_t_23 = __pyx_v_temp_y;
-          __pyx_t_24 = __pyx_v_temp_x;
-          if (((__pyx_t_23 < __pyx_t_24) != 0)) {
-            __pyx_t_22 = __pyx_t_23;
-          } else {
-            __pyx_t_22 = __pyx_t_24;
-          }
-          __pyx_t_25 = ((__pyx_t_22 >= 0) != 0);
-          if (__pyx_t_25) {
-          } else {
-            __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L24_bool_binop_done;
-          }
-          __pyx_t_22 = __pyx_v_temp_y;
-          __pyx_t_23 = __pyx_v_temp_x;
-          if (((__pyx_t_22 > __pyx_t_23) != 0)) {
-            __pyx_t_24 = __pyx_t_22;
-          } else {
-            __pyx_t_24 = __pyx_t_23;
-          }
-          __pyx_t_25 = ((__pyx_t_24 < __pyx_v_HH) != 0);
-          __pyx_t_21 = __pyx_t_25;
-          __pyx_L24_bool_binop_done:;
-          if (__pyx_t_21) {
-
-            /* "cython_weave_pyx.pyx":118
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     #Third Column
- *                     temp_x = big_i-expand_dist
- */
-            __pyx_t_42 = __pyx_v_img;
-            __pyx_t_43 = __pyx_v_layer;
-            __pyx_t_44 = __pyx_v_temp_x;
-            __pyx_t_45 = __pyx_v_temp_y;
-            *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_42, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_43, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_44, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
-
-            /* "cython_weave_pyx.pyx":117
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Third Column
- */
-          }
-
-          /* "cython_weave_pyx.pyx":120
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Third Column
- *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
- *                     temp_y = big_j+expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- */
-          __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
-
-          /* "cython_weave_pyx.pyx":121
- *                     #Third Column
- *                     temp_x = big_i-expand_dist
- *                     temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- */
-          __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
-
-          /* "cython_weave_pyx.pyx":122
- *                     temp_x = big_i-expand_dist
- *                     temp_y = big_j+expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i
  */
           __pyx_t_24 = __pyx_v_temp_y;
           __pyx_t_22 = __pyx_v_temp_x;
@@ -6146,7 +6174,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           if (__pyx_t_25) {
           } else {
             __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L27_bool_binop_done;
+            goto __pyx_L28_bool_binop_done;
           }
           __pyx_t_23 = __pyx_v_temp_y;
           __pyx_t_24 = __pyx_v_temp_x;
@@ -6157,15 +6185,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           }
           __pyx_t_25 = ((__pyx_t_22 < __pyx_v_HH) != 0);
           __pyx_t_21 = __pyx_t_25;
-          __pyx_L27_bool_binop_done:;
+          __pyx_L28_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":123
- *                     temp_y = big_j+expand_dist
+            /* "cython_weave_pyx.pyx":114
+ *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     temp_x = big_i
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     #Third Column
+ *                     temp_x = big_i-expand_dist
  */
             __pyx_t_46 = __pyx_v_img;
             __pyx_t_47 = __pyx_v_layer;
@@ -6173,30 +6201,39 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
             __pyx_t_49 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_46, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_47, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_48, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_49, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":122
+            /* "cython_weave_pyx.pyx":113
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     #Third Column
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":116
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     #Third Column
+ *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
+ *                     temp_y = big_j+expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
+
+          /* "cython_weave_pyx.pyx":117
+ *                     #Third Column
+ *                     temp_x = big_i-expand_dist
+ *                     temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
+
+          /* "cython_weave_pyx.pyx":118
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j+expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
- */
-          }
-
-          /* "cython_weave_pyx.pyx":124
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i             # <<<<<<<<<<<<<<
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- */
-          __pyx_v_temp_x = __pyx_v_big_i;
-
-          /* "cython_weave_pyx.pyx":125
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
  */
           __pyx_t_22 = __pyx_v_temp_y;
           __pyx_t_23 = __pyx_v_temp_x;
@@ -6209,7 +6246,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           if (__pyx_t_25) {
           } else {
             __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L30_bool_binop_done;
+            goto __pyx_L31_bool_binop_done;
           }
           __pyx_t_24 = __pyx_v_temp_y;
           __pyx_t_22 = __pyx_v_temp_x;
@@ -6220,14 +6257,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           }
           __pyx_t_25 = ((__pyx_t_23 < __pyx_v_HH) != 0);
           __pyx_t_21 = __pyx_t_25;
-          __pyx_L30_bool_binop_done:;
+          __pyx_L31_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":126
- *                     temp_x = big_i
+            /* "cython_weave_pyx.pyx":119
+ *                     temp_y = big_j+expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     temp_x = big_i + expand_dist
+ *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
             __pyx_t_50 = __pyx_v_img;
@@ -6236,30 +6273,30 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
             __pyx_t_53 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_50, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_51, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_52, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_53, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":125
+            /* "cython_weave_pyx.pyx":118
+ *                     temp_x = big_i-expand_dist
+ *                     temp_y = big_j+expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":120
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_x = __pyx_v_big_i;
+
+          /* "cython_weave_pyx.pyx":121
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
- */
-          }
-
-          /* "cython_weave_pyx.pyx":127
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- */
-          __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
-
-          /* "cython_weave_pyx.pyx":128
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- * 
  */
           __pyx_t_23 = __pyx_v_temp_y;
           __pyx_t_24 = __pyx_v_temp_x;
@@ -6272,7 +6309,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           if (__pyx_t_25) {
           } else {
             __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L33_bool_binop_done;
+            goto __pyx_L34_bool_binop_done;
           }
           __pyx_t_22 = __pyx_v_temp_y;
           __pyx_t_23 = __pyx_v_temp_x;
@@ -6283,15 +6320,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
           }
           __pyx_t_25 = ((__pyx_t_24 < __pyx_v_HH) != 0);
           __pyx_t_21 = __pyx_t_25;
-          __pyx_L33_bool_binop_done:;
+          __pyx_L34_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":129
- *                     temp_x = big_i + expand_dist
+            /* "cython_weave_pyx.pyx":122
+ *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- * 
- *     return out
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
             __pyx_t_54 = __pyx_v_img;
             __pyx_t_55 = __pyx_v_layer;
@@ -6299,7 +6336,70 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
             __pyx_t_57 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_54, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_55, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_56, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_57, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":128
+            /* "cython_weave_pyx.pyx":121
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":123
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
+
+          /* "cython_weave_pyx.pyx":124
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ * 
+ */
+          __pyx_t_24 = __pyx_v_temp_y;
+          __pyx_t_22 = __pyx_v_temp_x;
+          if (((__pyx_t_24 < __pyx_t_22) != 0)) {
+            __pyx_t_23 = __pyx_t_24;
+          } else {
+            __pyx_t_23 = __pyx_t_22;
+          }
+          __pyx_t_25 = ((__pyx_t_23 >= 0) != 0);
+          if (__pyx_t_25) {
+          } else {
+            __pyx_t_21 = __pyx_t_25;
+            goto __pyx_L37_bool_binop_done;
+          }
+          __pyx_t_23 = __pyx_v_temp_y;
+          __pyx_t_24 = __pyx_v_temp_x;
+          if (((__pyx_t_23 > __pyx_t_24) != 0)) {
+            __pyx_t_22 = __pyx_t_23;
+          } else {
+            __pyx_t_22 = __pyx_t_24;
+          }
+          __pyx_t_25 = ((__pyx_t_22 < __pyx_v_HH) != 0);
+          __pyx_t_21 = __pyx_t_25;
+          __pyx_L37_bool_binop_done:;
+          if (__pyx_t_21) {
+
+            /* "cython_weave_pyx.pyx":125
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ * 
+ *     return out
+ */
+            __pyx_t_58 = __pyx_v_img;
+            __pyx_t_59 = __pyx_v_layer;
+            __pyx_t_60 = __pyx_v_temp_x;
+            __pyx_t_61 = __pyx_v_temp_y;
+            *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_58, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_59, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_60, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_61, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
+
+            /* "cython_weave_pyx.pyx":124
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -6312,7 +6412,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
     }
   }
 
-  /* "cython_weave_pyx.pyx":131
+  /* "cython_weave_pyx.pyx":127
  *                         out[img,layer,temp_x,temp_y] = temp_val
  * 
  *     return out             # <<<<<<<<<<<<<<
@@ -6328,8 +6428,8 @@ static PyObject *__pyx_pf_16cython_weave_pyx_18cython_4d_array_weave_forward(CYT
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
   /* function exit code */
@@ -6368,16 +6468,19 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_21cython_4d_array_weave
   PyArrayObject *__pyx_v_arr = 0;
   int __pyx_v_num_zeros;
   int __pyx_v_filter_size;
+  int __pyx_v_include_center;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("cython_4d_array_weave_forward (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,0};
-    PyObject* values[3] = {0,0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,&__pyx_n_s_include_center,0};
+    PyObject* values[4] = {0,0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
         case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
         CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
@@ -6396,39 +6499,47 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_21cython_4d_array_weave
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 55, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, 1); __PYX_ERR(0, 55, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 55, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, 2); __PYX_ERR(0, 55, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  3:
+        if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_include_center)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, 3); __PYX_ERR(0, 55, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_4d_array_weave_forward") < 0)) __PYX_ERR(0, 55, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+      values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
     __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
     __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
+    __pyx_v_include_center = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_include_center == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 57, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 55, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_4d_array_weave_forward", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 55, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_4d_array_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 55, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
+  __pyx_r = __pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size, __pyx_v_include_center);
 
   /* function exit code */
   goto __pyx_L0;
@@ -6439,7 +6550,7 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_21cython_4d_array_weave
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size) {
+static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center) {
   int __pyx_v_num_img;
   int __pyx_v_num_filters;
   int __pyx_v_height;
@@ -6521,6 +6632,10 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
   Py_ssize_t __pyx_t_55;
   Py_ssize_t __pyx_t_56;
   Py_ssize_t __pyx_t_57;
+  Py_ssize_t __pyx_t_58;
+  Py_ssize_t __pyx_t_59;
+  Py_ssize_t __pyx_t_60;
+  Py_ssize_t __pyx_t_61;
   __Pyx_RefNannySetupContext("__pyx_fuse_1cython_4d_array_weave_forward", 0);
   __pyx_pybuffer_out.pybuffer.buf = NULL;
   __pyx_pybuffer_out.refcount = 0;
@@ -6536,7 +6651,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_arr.diminfo[2].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_arr.diminfo[2].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[2]; __pyx_pybuffernd_arr.diminfo[3].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[3]; __pyx_pybuffernd_arr.diminfo[3].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[3];
 
-  /* "cython_weave_pyx.pyx":60
+  /* "cython_weave_pyx.pyx":61
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int num_img = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -6545,7 +6660,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_num_img = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":61
+  /* "cython_weave_pyx.pyx":62
  *     """
  *     cdef int num_img = arr.shape[0]
  *     cdef int num_filters = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -6554,7 +6669,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_num_filters = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":62
+  /* "cython_weave_pyx.pyx":63
  *     cdef int num_img = arr.shape[0]
  *     cdef int num_filters = arr.shape[1]
  *     cdef int height = arr.shape[2]             # <<<<<<<<<<<<<<
@@ -6563,7 +6678,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[2]);
 
-  /* "cython_weave_pyx.pyx":63
+  /* "cython_weave_pyx.pyx":64
  *     cdef int num_filters = arr.shape[1]
  *     cdef int height = arr.shape[2]
  *     cdef int width = arr.shape[3]             # <<<<<<<<<<<<<<
@@ -6572,7 +6687,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[3]);
 
-  /* "cython_weave_pyx.pyx":65
+  /* "cython_weave_pyx.pyx":66
  *     cdef int width = arr.shape[3]
  * 
  *     cdef int expand_dist = 2*filter_size + 2             # <<<<<<<<<<<<<<
@@ -6581,7 +6696,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_expand_dist = ((2 * __pyx_v_filter_size) + 2);
 
-  /* "cython_weave_pyx.pyx":66
+  /* "cython_weave_pyx.pyx":67
  * 
  *     cdef int expand_dist = 2*filter_size + 2
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -6590,7 +6705,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":72
+  /* "cython_weave_pyx.pyx":73
  *     cdef np.float64_t temp_val
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -6599,7 +6714,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":73
+  /* "cython_weave_pyx.pyx":74
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -6608,59 +6723,59 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":75
+  /* "cython_weave_pyx.pyx":76
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,             # <<<<<<<<<<<<<<
  *                                                 num_filters,
  *                                                 HH,
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_img); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_img); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "cython_weave_pyx.pyx":76
+  /* "cython_weave_pyx.pyx":77
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,
  *                                                 num_filters,             # <<<<<<<<<<<<<<
  *                                                 HH,
  *                                                 WW])
  */
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "cython_weave_pyx.pyx":77
+  /* "cython_weave_pyx.pyx":78
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,
  *                                                 num_filters,
  *                                                 HH,             # <<<<<<<<<<<<<<
  *                                                 WW])
  * 
  */
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "cython_weave_pyx.pyx":78
+  /* "cython_weave_pyx.pyx":79
  *                                                 num_filters,
  *                                                 HH,
  *                                                 WW])             # <<<<<<<<<<<<<<
  * 
  *     cdef int temp_x
  */
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
 
-  /* "cython_weave_pyx.pyx":75
+  /* "cython_weave_pyx.pyx":76
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=4] out = np.zeros([num_img,             # <<<<<<<<<<<<<<
  *                                                 num_filters,
  *                                                 HH,
  */
-  __pyx_t_7 = PyList_New(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_2);
@@ -6685,14 +6800,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_7};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -6701,32 +6816,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_7};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_6); __pyx_t_6 = NULL;
       __Pyx_GIVEREF(__pyx_t_7);
       PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_t_7);
       __pyx_t_7 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 75, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 76, __pyx_L1_error)
   __pyx_t_8 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 4, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 75, __pyx_L1_error)
+      __PYX_ERR(0, 76, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_out.diminfo[2].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_out.diminfo[2].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[2]; __pyx_pybuffernd_out.diminfo[3].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[3]; __pyx_pybuffernd_out.diminfo[3].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[3];
     }
   }
@@ -6734,7 +6849,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":83
+  /* "cython_weave_pyx.pyx":84
  *     cdef int temp_y
  * 
  *     for img in range(num_img):             # <<<<<<<<<<<<<<
@@ -6745,7 +6860,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_img = __pyx_t_10;
 
-    /* "cython_weave_pyx.pyx":84
+    /* "cython_weave_pyx.pyx":85
  * 
  *     for img in range(num_img):
  *         for layer in range(num_filters):             # <<<<<<<<<<<<<<
@@ -6756,7 +6871,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_layer = __pyx_t_12;
 
-      /* "cython_weave_pyx.pyx":85
+      /* "cython_weave_pyx.pyx":86
  *     for img in range(num_img):
  *         for layer in range(num_filters):
  *             for i in range(height):             # <<<<<<<<<<<<<<
@@ -6767,7 +6882,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
       for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_i = __pyx_t_14;
 
-        /* "cython_weave_pyx.pyx":86
+        /* "cython_weave_pyx.pyx":87
  *         for layer in range(num_filters):
  *             for i in range(height):
  *                 for j in range(width):             # <<<<<<<<<<<<<<
@@ -6778,7 +6893,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
         for (__pyx_t_16 = 0; __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
           __pyx_v_j = __pyx_t_16;
 
-          /* "cython_weave_pyx.pyx":87
+          /* "cython_weave_pyx.pyx":88
  *             for i in range(height):
  *                 for j in range(width):
  *                     temp_val = arr[img,layer,i,j]             # <<<<<<<<<<<<<<
@@ -6791,7 +6906,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           __pyx_t_20 = __pyx_v_j;
           __pyx_v_temp_val = (*__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_arr.rcbuffer->pybuffer.buf, __pyx_t_17, __pyx_pybuffernd_arr.diminfo[0].strides, __pyx_t_18, __pyx_pybuffernd_arr.diminfo[1].strides, __pyx_t_19, __pyx_pybuffernd_arr.diminfo[2].strides, __pyx_t_20, __pyx_pybuffernd_arr.diminfo[3].strides));
 
-          /* "cython_weave_pyx.pyx":88
+          /* "cython_weave_pyx.pyx":89
  *                 for j in range(width):
  *                     temp_val = arr[img,layer,i,j]
  *                     big_i = filter_size * i             # <<<<<<<<<<<<<<
@@ -6800,17 +6915,17 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           __pyx_v_big_i = (__pyx_v_filter_size * __pyx_v_i);
 
-          /* "cython_weave_pyx.pyx":89
+          /* "cython_weave_pyx.pyx":90
  *                     temp_val = arr[img,layer,i,j]
  *                     big_i = filter_size * i
  *                     big_j = filter_size * j             # <<<<<<<<<<<<<<
  *                     #######
- * #                     i_change, j_change = -expand_dist, -expand_dist
+ *                     #First Column
  */
           __pyx_v_big_j = (__pyx_v_filter_size * __pyx_v_j);
 
-          /* "cython_weave_pyx.pyx":101
- * #                         i_change += expand_dist
+          /* "cython_weave_pyx.pyx":93
+ *                     #######
  *                     #First Column
  *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *                     temp_y = big_j-expand_dist
@@ -6818,7 +6933,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":102
+          /* "cython_weave_pyx.pyx":94
  *                     #First Column
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j-expand_dist             # <<<<<<<<<<<<<<
@@ -6827,7 +6942,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_y = (__pyx_v_big_j - __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":103
+          /* "cython_weave_pyx.pyx":95
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j-expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -6859,7 +6974,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           __pyx_L12_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":104
+            /* "cython_weave_pyx.pyx":96
  *                     temp_y = big_j-expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -6872,7 +6987,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
             __pyx_t_29 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_28, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_29, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":103
+            /* "cython_weave_pyx.pyx":95
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j-expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -6881,7 +6996,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           }
 
-          /* "cython_weave_pyx.pyx":105
+          /* "cython_weave_pyx.pyx":97
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i             # <<<<<<<<<<<<<<
@@ -6890,7 +7005,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_x = __pyx_v_big_i;
 
-          /* "cython_weave_pyx.pyx":106
+          /* "cython_weave_pyx.pyx":98
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -6922,7 +7037,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           __pyx_L15_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":107
+            /* "cython_weave_pyx.pyx":99
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -6935,7 +7050,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
             __pyx_t_33 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_32, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":106
+            /* "cython_weave_pyx.pyx":98
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -6944,7 +7059,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           }
 
-          /* "cython_weave_pyx.pyx":108
+          /* "cython_weave_pyx.pyx":100
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
@@ -6953,12 +7068,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":109
+          /* "cython_weave_pyx.pyx":101
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  */
           __pyx_t_24 = __pyx_v_temp_y;
           __pyx_t_22 = __pyx_v_temp_x;
@@ -6985,11 +7100,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           __pyx_L18_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":110
+            /* "cython_weave_pyx.pyx":102
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  *                     temp_x = big_i-expand_dist
  */
             __pyx_t_34 = __pyx_v_img;
@@ -6998,26 +7113,26 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
             __pyx_t_37 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_37, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":109
+            /* "cython_weave_pyx.pyx":101
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  */
           }
 
-          /* "cython_weave_pyx.pyx":112
+          /* "cython_weave_pyx.pyx":104
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Second Column (Only 2 Points)
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
           __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":113
- *                     #Second Column (Only 2 Points)
+          /* "cython_weave_pyx.pyx":105
+ *                     #Second Column (Only 2 Points) Unless include_center == 1
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j             # <<<<<<<<<<<<<<
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
@@ -7025,12 +7140,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  */
           __pyx_v_temp_y = __pyx_v_big_j;
 
-          /* "cython_weave_pyx.pyx":114
+          /* "cython_weave_pyx.pyx":106
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
+ *                     if include_center == 1:
  */
           __pyx_t_22 = __pyx_v_temp_y;
           __pyx_t_23 = __pyx_v_temp_x;
@@ -7057,12 +7172,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           __pyx_L21_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":115
+            /* "cython_weave_pyx.pyx":107
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     if include_center == 1:
+ *                         temp_x = big_i
  */
             __pyx_t_38 = __pyx_v_img;
             __pyx_t_39 = __pyx_v_layer;
@@ -7070,102 +7185,112 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
             __pyx_t_41 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_38, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_39, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_40, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_41, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":114
+            /* "cython_weave_pyx.pyx":106
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
+ *                     if include_center == 1:
  */
           }
 
-          /* "cython_weave_pyx.pyx":116
+          /* "cython_weave_pyx.pyx":108
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     if include_center == 1:             # <<<<<<<<<<<<<<
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          __pyx_t_21 = ((__pyx_v_include_center == 1) != 0);
+          if (__pyx_t_21) {
+
+            /* "cython_weave_pyx.pyx":109
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     if include_center == 1:
+ *                         temp_x = big_i             # <<<<<<<<<<<<<<
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ */
+            __pyx_v_temp_x = __pyx_v_big_i;
+
+            /* "cython_weave_pyx.pyx":110
+ *                     if include_center == 1:
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ */
+            __pyx_t_23 = __pyx_v_temp_y;
+            __pyx_t_24 = __pyx_v_temp_x;
+            if (((__pyx_t_23 < __pyx_t_24) != 0)) {
+              __pyx_t_22 = __pyx_t_23;
+            } else {
+              __pyx_t_22 = __pyx_t_24;
+            }
+            __pyx_t_25 = ((__pyx_t_22 >= 0) != 0);
+            if (__pyx_t_25) {
+            } else {
+              __pyx_t_21 = __pyx_t_25;
+              goto __pyx_L25_bool_binop_done;
+            }
+            __pyx_t_22 = __pyx_v_temp_y;
+            __pyx_t_23 = __pyx_v_temp_x;
+            if (((__pyx_t_22 > __pyx_t_23) != 0)) {
+              __pyx_t_24 = __pyx_t_22;
+            } else {
+              __pyx_t_24 = __pyx_t_23;
+            }
+            __pyx_t_25 = ((__pyx_t_24 < __pyx_v_HH) != 0);
+            __pyx_t_21 = __pyx_t_25;
+            __pyx_L25_bool_binop_done:;
+            if (__pyx_t_21) {
+
+              /* "cython_weave_pyx.pyx":111
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                             out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+              __pyx_t_42 = __pyx_v_img;
+              __pyx_t_43 = __pyx_v_layer;
+              __pyx_t_44 = __pyx_v_temp_x;
+              __pyx_t_45 = __pyx_v_temp_y;
+              *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_42, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_43, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_44, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
+
+              /* "cython_weave_pyx.pyx":110
+ *                     if include_center == 1:
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ */
+            }
+
+            /* "cython_weave_pyx.pyx":108
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     if include_center == 1:             # <<<<<<<<<<<<<<
+ *                         temp_x = big_i
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":112
+ *                         if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                             out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val
  */
           __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-          /* "cython_weave_pyx.pyx":117
- *                         out[img,layer,temp_x,temp_y] = temp_val
+          /* "cython_weave_pyx.pyx":113
+ *                             out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     #Third Column
- */
-          __pyx_t_23 = __pyx_v_temp_y;
-          __pyx_t_24 = __pyx_v_temp_x;
-          if (((__pyx_t_23 < __pyx_t_24) != 0)) {
-            __pyx_t_22 = __pyx_t_23;
-          } else {
-            __pyx_t_22 = __pyx_t_24;
-          }
-          __pyx_t_25 = ((__pyx_t_22 >= 0) != 0);
-          if (__pyx_t_25) {
-          } else {
-            __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L24_bool_binop_done;
-          }
-          __pyx_t_22 = __pyx_v_temp_y;
-          __pyx_t_23 = __pyx_v_temp_x;
-          if (((__pyx_t_22 > __pyx_t_23) != 0)) {
-            __pyx_t_24 = __pyx_t_22;
-          } else {
-            __pyx_t_24 = __pyx_t_23;
-          }
-          __pyx_t_25 = ((__pyx_t_24 < __pyx_v_HH) != 0);
-          __pyx_t_21 = __pyx_t_25;
-          __pyx_L24_bool_binop_done:;
-          if (__pyx_t_21) {
-
-            /* "cython_weave_pyx.pyx":118
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     #Third Column
- *                     temp_x = big_i-expand_dist
- */
-            __pyx_t_42 = __pyx_v_img;
-            __pyx_t_43 = __pyx_v_layer;
-            __pyx_t_44 = __pyx_v_temp_x;
-            __pyx_t_45 = __pyx_v_temp_y;
-            *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_42, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_43, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_44, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
-
-            /* "cython_weave_pyx.pyx":117
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Third Column
- */
-          }
-
-          /* "cython_weave_pyx.pyx":120
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     #Third Column
- *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
- *                     temp_y = big_j+expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- */
-          __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
-
-          /* "cython_weave_pyx.pyx":121
- *                     #Third Column
- *                     temp_x = big_i-expand_dist
- *                     temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- */
-          __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
-
-          /* "cython_weave_pyx.pyx":122
- *                     temp_x = big_i-expand_dist
- *                     temp_y = big_j+expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i
  */
           __pyx_t_24 = __pyx_v_temp_y;
           __pyx_t_22 = __pyx_v_temp_x;
@@ -7178,7 +7303,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           if (__pyx_t_25) {
           } else {
             __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L27_bool_binop_done;
+            goto __pyx_L28_bool_binop_done;
           }
           __pyx_t_23 = __pyx_v_temp_y;
           __pyx_t_24 = __pyx_v_temp_x;
@@ -7189,15 +7314,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           }
           __pyx_t_25 = ((__pyx_t_22 < __pyx_v_HH) != 0);
           __pyx_t_21 = __pyx_t_25;
-          __pyx_L27_bool_binop_done:;
+          __pyx_L28_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":123
- *                     temp_y = big_j+expand_dist
+            /* "cython_weave_pyx.pyx":114
+ *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     temp_x = big_i
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     #Third Column
+ *                     temp_x = big_i-expand_dist
  */
             __pyx_t_46 = __pyx_v_img;
             __pyx_t_47 = __pyx_v_layer;
@@ -7205,30 +7330,39 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
             __pyx_t_49 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_46, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_47, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_48, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_49, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":122
+            /* "cython_weave_pyx.pyx":113
+ *                             out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     #Third Column
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":116
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     #Third Column
+ *                     temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
+ *                     temp_y = big_j+expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
+
+          /* "cython_weave_pyx.pyx":117
+ *                     #Third Column
+ *                     temp_x = big_i-expand_dist
+ *                     temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
+
+          /* "cython_weave_pyx.pyx":118
  *                     temp_x = big_i-expand_dist
  *                     temp_y = big_j+expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
- */
-          }
-
-          /* "cython_weave_pyx.pyx":124
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i             # <<<<<<<<<<<<<<
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- */
-          __pyx_v_temp_x = __pyx_v_big_i;
-
-          /* "cython_weave_pyx.pyx":125
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
  */
           __pyx_t_22 = __pyx_v_temp_y;
           __pyx_t_23 = __pyx_v_temp_x;
@@ -7241,7 +7375,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           if (__pyx_t_25) {
           } else {
             __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L30_bool_binop_done;
+            goto __pyx_L31_bool_binop_done;
           }
           __pyx_t_24 = __pyx_v_temp_y;
           __pyx_t_22 = __pyx_v_temp_x;
@@ -7252,14 +7386,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           }
           __pyx_t_25 = ((__pyx_t_23 < __pyx_v_HH) != 0);
           __pyx_t_21 = __pyx_t_25;
-          __pyx_L30_bool_binop_done:;
+          __pyx_L31_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":126
- *                     temp_x = big_i
+            /* "cython_weave_pyx.pyx":119
+ *                     temp_y = big_j+expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                     temp_x = big_i + expand_dist
+ *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
             __pyx_t_50 = __pyx_v_img;
@@ -7268,30 +7402,30 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
             __pyx_t_53 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_50, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_51, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_52, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_53, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":125
+            /* "cython_weave_pyx.pyx":118
+ *                     temp_x = big_i-expand_dist
+ *                     temp_y = big_j+expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":120
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_x = __pyx_v_big_i;
+
+          /* "cython_weave_pyx.pyx":121
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
- */
-          }
-
-          /* "cython_weave_pyx.pyx":127
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                         out[img,layer,temp_x,temp_y] = temp_val
- */
-          __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
-
-          /* "cython_weave_pyx.pyx":128
- *                         out[img,layer,temp_x,temp_y] = temp_val
- *                     temp_x = big_i + expand_dist
- *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                         out[img,layer,temp_x,temp_y] = temp_val
- * 
  */
           __pyx_t_23 = __pyx_v_temp_y;
           __pyx_t_24 = __pyx_v_temp_x;
@@ -7304,7 +7438,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           if (__pyx_t_25) {
           } else {
             __pyx_t_21 = __pyx_t_25;
-            goto __pyx_L33_bool_binop_done;
+            goto __pyx_L34_bool_binop_done;
           }
           __pyx_t_22 = __pyx_v_temp_y;
           __pyx_t_23 = __pyx_v_temp_x;
@@ -7315,15 +7449,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
           }
           __pyx_t_25 = ((__pyx_t_24 < __pyx_v_HH) != 0);
           __pyx_t_21 = __pyx_t_25;
-          __pyx_L33_bool_binop_done:;
+          __pyx_L34_bool_binop_done:;
           if (__pyx_t_21) {
 
-            /* "cython_weave_pyx.pyx":129
- *                     temp_x = big_i + expand_dist
+            /* "cython_weave_pyx.pyx":122
+ *                     temp_x = big_i
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- * 
- *     return out
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
             __pyx_t_54 = __pyx_v_img;
             __pyx_t_55 = __pyx_v_layer;
@@ -7331,7 +7465,70 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
             __pyx_t_57 = __pyx_v_temp_y;
             *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_54, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_55, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_56, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_57, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
 
-            /* "cython_weave_pyx.pyx":128
+            /* "cython_weave_pyx.pyx":121
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":123
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
+
+          /* "cython_weave_pyx.pyx":124
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[img,layer,temp_x,temp_y] = temp_val
+ * 
+ */
+          __pyx_t_24 = __pyx_v_temp_y;
+          __pyx_t_22 = __pyx_v_temp_x;
+          if (((__pyx_t_24 < __pyx_t_22) != 0)) {
+            __pyx_t_23 = __pyx_t_24;
+          } else {
+            __pyx_t_23 = __pyx_t_22;
+          }
+          __pyx_t_25 = ((__pyx_t_23 >= 0) != 0);
+          if (__pyx_t_25) {
+          } else {
+            __pyx_t_21 = __pyx_t_25;
+            goto __pyx_L37_bool_binop_done;
+          }
+          __pyx_t_23 = __pyx_v_temp_y;
+          __pyx_t_24 = __pyx_v_temp_x;
+          if (((__pyx_t_23 > __pyx_t_24) != 0)) {
+            __pyx_t_22 = __pyx_t_23;
+          } else {
+            __pyx_t_22 = __pyx_t_24;
+          }
+          __pyx_t_25 = ((__pyx_t_22 < __pyx_v_HH) != 0);
+          __pyx_t_21 = __pyx_t_25;
+          __pyx_L37_bool_binop_done:;
+          if (__pyx_t_21) {
+
+            /* "cython_weave_pyx.pyx":125
+ *                     temp_x = big_i + expand_dist
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[img,layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ * 
+ *     return out
+ */
+            __pyx_t_58 = __pyx_v_img;
+            __pyx_t_59 = __pyx_v_layer;
+            __pyx_t_60 = __pyx_v_temp_x;
+            __pyx_t_61 = __pyx_v_temp_y;
+            *__Pyx_BufPtrStrided4d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_58, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_59, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_60, __pyx_pybuffernd_out.diminfo[2].strides, __pyx_t_61, __pyx_pybuffernd_out.diminfo[3].strides) = __pyx_v_temp_val;
+
+            /* "cython_weave_pyx.pyx":124
  *                         out[img,layer,temp_x,temp_y] = temp_val
  *                     temp_x = big_i + expand_dist
  *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -7344,7 +7541,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
     }
   }
 
-  /* "cython_weave_pyx.pyx":131
+  /* "cython_weave_pyx.pyx":127
  *                         out[img,layer,temp_x,temp_y] = temp_val
  * 
  *     return out             # <<<<<<<<<<<<<<
@@ -7360,8 +7557,8 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
   /* function exit code */
@@ -7393,12 +7590,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_20cython_4d_array_weave_forward(CYT
   return __pyx_r;
 }
 
-/* "cython_weave_pyx.pyx":137
+/* "cython_weave_pyx.pyx":133
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
 /* Python wrapper */
@@ -7440,23 +7637,23 @@ static PyObject *__pyx_pw_16cython_weave_pyx_5cython_3d_array_weave_forward(PyOb
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_args)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 133, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_kwargs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 133, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_defaults)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 133, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 137, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 133, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -7473,7 +7670,7 @@ static PyObject *__pyx_pw_16cython_weave_pyx_5cython_3d_array_weave_forward(PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 137, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 133, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7530,7 +7727,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
   int __pyx_t_19;
   __Pyx_RefNannySetupContext("cython_3d_array_weave_forward", 0);
   __Pyx_INCREF(__pyx_v_kwargs);
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(Py_None);
@@ -7544,7 +7741,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
     __pyx_t_2 = __pyx_t_4;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
   __pyx_t_3 = ((!__pyx_t_4) != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
@@ -7552,7 +7749,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
     __Pyx_INCREF(Py_None);
     __Pyx_DECREF_SET(__pyx_v_kwargs, Py_None);
   }
-  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ndarray = ((PyTypeObject*)__pyx_t_1);
   __pyx_t_1 = 0;
@@ -7560,14 +7757,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
   __pyx_v_arg_is_pythran_compatible = 0;
   if (unlikely(__pyx_v_args == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 137, __pyx_L1_error)
+    __PYX_ERR(0, 133, __pyx_L1_error)
   }
-  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
   __pyx_t_2 = ((0 < __pyx_t_5) != 0);
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 137, __pyx_L1_error)
+      __PYX_ERR(0, 133, __pyx_L1_error)
     }
     __pyx_t_1 = PyTuple_GET_ITEM(((PyObject*)__pyx_v_args), 0);
     __Pyx_INCREF(__pyx_t_1);
@@ -7584,18 +7781,18 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
   }
   if (unlikely(__pyx_v_kwargs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 137, __pyx_L1_error)
+    __PYX_ERR(0, 133, __pyx_L1_error)
   }
-  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
   __pyx_t_3 = (__pyx_t_4 != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_kwargs == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 137, __pyx_L1_error)
+      __PYX_ERR(0, 133, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_v_arg = __pyx_t_1;
     __pyx_t_1 = 0;
@@ -7604,36 +7801,36 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
   /*else*/ {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-      __PYX_ERR(0, 137, __pyx_L1_error)
+      __PYX_ERR(0, 133, __pyx_L1_error)
     }
-    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
-    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_INCREF(__pyx_int_3);
-    __Pyx_GIVEREF(__pyx_int_3);
-    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_int_3);
+    __Pyx_INCREF(__pyx_int_4);
+    __Pyx_GIVEREF(__pyx_int_4);
+    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_int_4);
     __Pyx_INCREF(__pyx_n_s_s);
     __Pyx_GIVEREF(__pyx_n_s_s);
     PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_n_s_s);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 137, __pyx_L1_error)
+    __PYX_ERR(0, 133, __pyx_L1_error)
   }
   __pyx_L6:;
   while (1) {
@@ -7643,7 +7840,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
       __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg, __pyx_v_ndarray); 
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_dtype = __pyx_t_1;
         __pyx_t_1 = 0;
@@ -7653,14 +7850,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
       __pyx_t_2 = __pyx_memoryview_check(__pyx_v_arg); 
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_arg_base = __pyx_t_1;
         __pyx_t_1 = 0;
         __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg_base, __pyx_v_ndarray); 
         __pyx_t_2 = (__pyx_t_3 != 0);
         if (__pyx_t_2) {
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_dtype = __pyx_t_1;
           __pyx_t_1 = 0;
@@ -7682,21 +7879,21 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
       __pyx_t_2 = (__pyx_v_dtype != Py_None);
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_itemsize = __pyx_t_5;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_kind = __pyx_t_7;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_byteorder = __pyx_t_1;
         __pyx_t_1 = 0;
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -7709,7 +7906,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
         if (__pyx_t_3) {
           __pyx_v_arg_is_pythran_compatible = 0;
         }
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -7725,31 +7922,31 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
         __pyx_v_dtype_signed = (__pyx_v_kind == 'i');
         __pyx_t_3 = (__pyx_v_arg_is_pythran_compatible != 0);
         if (__pyx_t_3) {
-          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_cur_stride = __pyx_t_1;
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_6);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6);
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_1);
@@ -7757,16 +7954,16 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
           PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_6);
           __pyx_t_1 = 0;
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
             __pyx_t_9 = __pyx_t_6; __Pyx_INCREF(__pyx_t_9); __pyx_t_5 = 0;
             __pyx_t_10 = NULL;
           } else {
-            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_9);
-            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 133, __pyx_L1_error)
           }
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           for (;;) {
@@ -7774,17 +7971,17 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
               if (likely(PyList_CheckExact(__pyx_t_9))) {
                 if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               } else {
                 if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               }
@@ -7794,7 +7991,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 137, __pyx_L1_error)
+                  else __PYX_ERR(0, 133, __pyx_L1_error)
                 }
                 break;
               }
@@ -7810,7 +8007,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
               if (unlikely(size != 2)) {
                 if (size > 2) __Pyx_RaiseTooManyValuesError(2);
                 else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-                __PYX_ERR(0, 137, __pyx_L1_error)
+                __PYX_ERR(0, 133, __pyx_L1_error)
               }
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
               if (likely(PyTuple_CheckExact(sequence))) {
@@ -7823,15 +8020,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
               __Pyx_INCREF(__pyx_t_1);
               __Pyx_INCREF(__pyx_t_11);
               #else
-              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L1_error)
+              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 133, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_11);
               #endif
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             } else {
               Py_ssize_t index = -1;
-              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 137, __pyx_L1_error)
+              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 133, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
               __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -7839,7 +8036,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
               __Pyx_GOTREF(__pyx_t_1);
               index = 1; __pyx_t_11 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_11)) goto __pyx_L24_unpacking_failed;
               __Pyx_GOTREF(__pyx_t_11);
-              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
               __pyx_t_13 = NULL;
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               goto __pyx_L25_unpacking_done;
@@ -7847,43 +8044,43 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               __pyx_t_13 = NULL;
               if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-              __PYX_ERR(0, 137, __pyx_L1_error)
+              __PYX_ERR(0, 133, __pyx_L1_error)
               __pyx_L25_unpacking_done:;
             }
             __Pyx_XDECREF_SET(__pyx_v_dim, __pyx_t_1);
             __pyx_t_1 = 0;
             __Pyx_XDECREF_SET(__pyx_v_stride, __pyx_t_11);
             __pyx_t_11 = 0;
-            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
-            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             if (__pyx_t_3) {
               __pyx_v_arg_is_pythran_compatible = 0;
               goto __pyx_L23_break;
             }
-            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_DECREF_SET(__pyx_v_cur_stride, __pyx_t_6);
             __pyx_t_6 = 0;
           }
           /*else*/ {
-            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
             if (__pyx_t_2) {
             } else {
               __pyx_t_3 = __pyx_t_2;
               goto __pyx_L28_bool_binop_done;
             }
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
-            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             __pyx_t_3 = __pyx_t_2;
             __pyx_L28_bool_binop_done:;
@@ -7903,15 +8100,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L31_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 3) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L31_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           __pyx_t_2 = (((sizeof(__pyx_t_5numpy_float64_t)) == __pyx_v_itemsize) != 0);
@@ -7920,15 +8117,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L34_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 3) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L34_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           break;
@@ -7955,7 +8152,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
@@ -7977,27 +8174,27 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
         PyErr_Clear(); 
       }
     }
-    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
     goto __pyx_L10_break;
   }
   __pyx_L10_break:;
-  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_v_candidates = ((PyObject*)__pyx_t_9);
   __pyx_t_9 = 0;
   __pyx_t_5 = 0;
   if (unlikely(__pyx_v_signatures == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 137, __pyx_L1_error)
+    __PYX_ERR(0, 133, __pyx_L1_error)
   }
-  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_9);
   __pyx_t_9 = __pyx_t_6;
@@ -8005,25 +8202,25 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
   while (1) {
     __pyx_t_16 = __Pyx_dict_iter_next(__pyx_t_9, __pyx_t_15, &__pyx_t_5, &__pyx_t_6, NULL, NULL, __pyx_t_8);
     if (unlikely(__pyx_t_16 == 0)) break;
-    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_sig, __pyx_t_6);
     __pyx_t_6 = 0;
     __pyx_v_match_found = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_XDECREF_SET(__pyx_v_src_sig, __pyx_t_11);
     __pyx_t_11 = 0;
-    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
     for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
       __pyx_v_i = __pyx_t_18;
       __pyx_t_11 = PyList_GET_ITEM(__pyx_v_dest_sig, __pyx_v_i);
@@ -8033,11 +8230,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_dst_type != Py_None);
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         if (__pyx_t_2) {
           __pyx_v_match_found = 1;
@@ -8053,35 +8250,35 @@ static PyObject *__pyx_pf_16cython_weave_pyx_4cython_3d_array_weave_forward(CYTH
     __pyx_L47_break:;
     __pyx_t_2 = (__pyx_v_match_found != 0);
     if (__pyx_t_2) {
-      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
     }
   }
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_2 = (__pyx_v_candidates != Py_None) && (PyList_GET_SIZE(__pyx_v_candidates) != 0);
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 137, __pyx_L1_error)
+    __PYX_ERR(0, 133, __pyx_L1_error)
   }
-  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
   __pyx_t_3 = ((__pyx_t_15 > 1) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 137, __pyx_L1_error)
+    __PYX_ERR(0, 133, __pyx_L1_error)
   }
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_signatures == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 137, __pyx_L1_error)
+      __PYX_ERR(0, 133, __pyx_L1_error)
     }
-    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_r = __pyx_t_9;
     __pyx_t_9 = 0;
@@ -8124,16 +8321,19 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_25cython_3d_array_weave
   PyArrayObject *__pyx_v_arr = 0;
   int __pyx_v_num_zeros;
   int __pyx_v_filter_size;
+  int __pyx_v_include_center;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("cython_3d_array_weave_forward (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,0};
-    PyObject* values[3] = {0,0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,&__pyx_n_s_include_center,0};
+    PyObject* values[4] = {0,0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
         case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
         CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
@@ -8152,39 +8352,47 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_25cython_3d_array_weave
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, 1); __PYX_ERR(0, 133, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, 2); __PYX_ERR(0, 133, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  3:
+        if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_include_center)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, 3); __PYX_ERR(0, 133, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_array_weave_forward") < 0)) __PYX_ERR(0, 137, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_array_weave_forward") < 0)) __PYX_ERR(0, 133, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+      values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 138, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 138, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 134, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 134, __pyx_L3_error)
+    __pyx_v_include_center = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_include_center == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 135, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 137, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 133, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_3d_array_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 137, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_r = __pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size, __pyx_v_include_center);
 
   /* function exit code */
   goto __pyx_L0;
@@ -8195,7 +8403,7 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_25cython_3d_array_weave
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size) {
+static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center) {
   int __pyx_v_num_filters;
   int __pyx_v_height;
   int __pyx_v_width;
@@ -8263,6 +8471,9 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
   Py_ssize_t __pyx_t_43;
   Py_ssize_t __pyx_t_44;
   Py_ssize_t __pyx_t_45;
+  Py_ssize_t __pyx_t_46;
+  Py_ssize_t __pyx_t_47;
+  Py_ssize_t __pyx_t_48;
   __Pyx_RefNannySetupContext("__pyx_fuse_0cython_3d_array_weave_forward", 0);
   __pyx_pybuffer_out.pybuffer.buf = NULL;
   __pyx_pybuffer_out.refcount = 0;
@@ -8274,11 +8485,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 133, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_arr.diminfo[2].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_arr.diminfo[2].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_weave_pyx.pyx":142
+  /* "cython_weave_pyx.pyx":139
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int num_filters = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -8287,7 +8498,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
   __pyx_v_num_filters = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":143
+  /* "cython_weave_pyx.pyx":140
  *     """
  *     cdef int num_filters = arr.shape[0]
  *     cdef int height = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -8296,7 +8507,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":144
+  /* "cython_weave_pyx.pyx":141
  *     cdef int num_filters = arr.shape[0]
  *     cdef int height = arr.shape[1]
  *     cdef int width = arr.shape[2]             # <<<<<<<<<<<<<<
@@ -8305,7 +8516,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[2]);
 
-  /* "cython_weave_pyx.pyx":146
+  /* "cython_weave_pyx.pyx":143
  *     cdef int width = arr.shape[2]
  * 
  *     cdef int expand_dist = 2*filter_size + 2             # <<<<<<<<<<<<<<
@@ -8314,7 +8525,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
   __pyx_v_expand_dist = ((2 * __pyx_v_filter_size) + 2);
 
-  /* "cython_weave_pyx.pyx":147
+  /* "cython_weave_pyx.pyx":144
  * 
  *     cdef int expand_dist = 2*filter_size + 2
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -8323,7 +8534,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":153
+  /* "cython_weave_pyx.pyx":150
  *     cdef np.float64_t temp_val
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -8332,7 +8543,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":154
+  /* "cython_weave_pyx.pyx":151
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -8341,49 +8552,49 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":156
+  /* "cython_weave_pyx.pyx":153
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,             # <<<<<<<<<<<<<<
  *                                                 HH,
  *                                                 WW])
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "cython_weave_pyx.pyx":157
+  /* "cython_weave_pyx.pyx":154
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,
  *                                                 HH,             # <<<<<<<<<<<<<<
  *                                                 WW])
  * 
  */
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "cython_weave_pyx.pyx":158
+  /* "cython_weave_pyx.pyx":155
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,
  *                                                 HH,
  *                                                 WW])             # <<<<<<<<<<<<<<
  * 
  *     cdef int temp_x
  */
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "cython_weave_pyx.pyx":156
+  /* "cython_weave_pyx.pyx":153
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,             # <<<<<<<<<<<<<<
  *                                                 HH,
  *                                                 WW])
  */
-  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
@@ -8405,14 +8616,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -8421,32 +8632,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_6);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_6);
       __pyx_t_6 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 153, __pyx_L1_error)
   __pyx_t_7 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 156, __pyx_L1_error)
+      __PYX_ERR(0, 153, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_out.diminfo[2].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_out.diminfo[2].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[2];
     }
   }
@@ -8454,7 +8665,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":163
+  /* "cython_weave_pyx.pyx":160
  *     cdef int temp_y
  * 
  *     for layer in range(num_filters):             # <<<<<<<<<<<<<<
@@ -8465,7 +8676,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_layer = __pyx_t_9;
 
-    /* "cython_weave_pyx.pyx":164
+    /* "cython_weave_pyx.pyx":161
  * 
  *     for layer in range(num_filters):
  *         for i in range(height):             # <<<<<<<<<<<<<<
@@ -8476,7 +8687,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "cython_weave_pyx.pyx":165
+      /* "cython_weave_pyx.pyx":162
  *     for layer in range(num_filters):
  *         for i in range(height):
  *             for j in range(width):             # <<<<<<<<<<<<<<
@@ -8487,7 +8698,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
       for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
         __pyx_v_j = __pyx_t_13;
 
-        /* "cython_weave_pyx.pyx":166
+        /* "cython_weave_pyx.pyx":163
  *         for i in range(height):
  *             for j in range(width):
  *                 temp_val = arr[layer,i,j]             # <<<<<<<<<<<<<<
@@ -8499,7 +8710,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         __pyx_t_16 = __pyx_v_j;
         __pyx_v_temp_val = (*__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_arr.rcbuffer->pybuffer.buf, __pyx_t_14, __pyx_pybuffernd_arr.diminfo[0].strides, __pyx_t_15, __pyx_pybuffernd_arr.diminfo[1].strides, __pyx_t_16, __pyx_pybuffernd_arr.diminfo[2].strides));
 
-        /* "cython_weave_pyx.pyx":167
+        /* "cython_weave_pyx.pyx":164
  *             for j in range(width):
  *                 temp_val = arr[layer,i,j]
  *                 big_i = filter_size * i             # <<<<<<<<<<<<<<
@@ -8508,7 +8719,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         __pyx_v_big_i = (__pyx_v_filter_size * __pyx_v_i);
 
-        /* "cython_weave_pyx.pyx":168
+        /* "cython_weave_pyx.pyx":165
  *                 temp_val = arr[layer,i,j]
  *                 big_i = filter_size * i
  *                 big_j = filter_size * j             # <<<<<<<<<<<<<<
@@ -8517,7 +8728,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         __pyx_v_big_j = (__pyx_v_filter_size * __pyx_v_j);
 
-        /* "cython_weave_pyx.pyx":170
+        /* "cython_weave_pyx.pyx":167
  *                 big_j = filter_size * j
  *                 #First Column
  *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
@@ -8526,7 +8737,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":171
+        /* "cython_weave_pyx.pyx":168
  *                 #First Column
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j-expand_dist             # <<<<<<<<<<<<<<
@@ -8535,7 +8746,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_y = (__pyx_v_big_j - __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":172
+        /* "cython_weave_pyx.pyx":169
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j-expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -8567,7 +8778,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         __pyx_L10_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":173
+          /* "cython_weave_pyx.pyx":170
  *                 temp_y = big_j-expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -8579,7 +8790,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
           __pyx_t_24 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_22, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_23, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_24, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":172
+          /* "cython_weave_pyx.pyx":169
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j-expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -8588,7 +8799,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         }
 
-        /* "cython_weave_pyx.pyx":174
+        /* "cython_weave_pyx.pyx":171
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i             # <<<<<<<<<<<<<<
@@ -8597,7 +8808,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_x = __pyx_v_big_i;
 
-        /* "cython_weave_pyx.pyx":175
+        /* "cython_weave_pyx.pyx":172
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -8629,7 +8840,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         __pyx_L13_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":176
+          /* "cython_weave_pyx.pyx":173
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -8641,7 +8852,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
           __pyx_t_27 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_25, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_26, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":175
+          /* "cython_weave_pyx.pyx":172
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -8650,7 +8861,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         }
 
-        /* "cython_weave_pyx.pyx":177
+        /* "cython_weave_pyx.pyx":174
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
@@ -8659,12 +8870,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":178
+        /* "cython_weave_pyx.pyx":175
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  */
         __pyx_t_20 = __pyx_v_temp_y;
         __pyx_t_18 = __pyx_v_temp_x;
@@ -8691,11 +8902,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         __pyx_L16_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":179
+          /* "cython_weave_pyx.pyx":176
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  *                 temp_x = big_i-expand_dist
  */
           __pyx_t_28 = __pyx_v_layer;
@@ -8703,26 +8914,26 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
           __pyx_t_30 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_29, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_30, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":178
+          /* "cython_weave_pyx.pyx":175
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  */
         }
 
-        /* "cython_weave_pyx.pyx":181
+        /* "cython_weave_pyx.pyx":178
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
         __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":182
- *                 #Second Column (Only 2 Points)
+        /* "cython_weave_pyx.pyx":179
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j             # <<<<<<<<<<<<<<
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
@@ -8730,12 +8941,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_y = __pyx_v_big_j;
 
-        /* "cython_weave_pyx.pyx":183
+        /* "cython_weave_pyx.pyx":180
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
+ *                 if include_center == 1:
  */
         __pyx_t_18 = __pyx_v_temp_y;
         __pyx_t_19 = __pyx_v_temp_x;
@@ -8762,113 +8973,123 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         __pyx_L19_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":184
+          /* "cython_weave_pyx.pyx":181
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 if include_center == 1:
+ *                     temp_x = big_i
  */
           __pyx_t_31 = __pyx_v_layer;
           __pyx_t_32 = __pyx_v_temp_x;
           __pyx_t_33 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":183
+          /* "cython_weave_pyx.pyx":180
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
+ *                 if include_center == 1:
  */
         }
 
-        /* "cython_weave_pyx.pyx":185
+        /* "cython_weave_pyx.pyx":182
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
+ *                 if include_center == 1:             # <<<<<<<<<<<<<<
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        __pyx_t_17 = ((__pyx_v_include_center == 1) != 0);
+        if (__pyx_t_17) {
+
+          /* "cython_weave_pyx.pyx":183
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 if include_center == 1:
+ *                     temp_x = big_i             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_x = __pyx_v_big_i;
+
+          /* "cython_weave_pyx.pyx":184
+ *                 if include_center == 1:
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ */
+          __pyx_t_19 = __pyx_v_temp_y;
+          __pyx_t_20 = __pyx_v_temp_x;
+          if (((__pyx_t_19 < __pyx_t_20) != 0)) {
+            __pyx_t_18 = __pyx_t_19;
+          } else {
+            __pyx_t_18 = __pyx_t_20;
+          }
+          __pyx_t_21 = ((__pyx_t_18 >= 0) != 0);
+          if (__pyx_t_21) {
+          } else {
+            __pyx_t_17 = __pyx_t_21;
+            goto __pyx_L23_bool_binop_done;
+          }
+          __pyx_t_18 = __pyx_v_temp_y;
+          __pyx_t_19 = __pyx_v_temp_x;
+          if (((__pyx_t_18 > __pyx_t_19) != 0)) {
+            __pyx_t_20 = __pyx_t_18;
+          } else {
+            __pyx_t_20 = __pyx_t_19;
+          }
+          __pyx_t_21 = ((__pyx_t_20 < __pyx_v_HH) != 0);
+          __pyx_t_17 = __pyx_t_21;
+          __pyx_L23_bool_binop_done:;
+          if (__pyx_t_17) {
+
+            /* "cython_weave_pyx.pyx":185
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+            __pyx_t_34 = __pyx_v_layer;
+            __pyx_t_35 = __pyx_v_temp_x;
+            __pyx_t_36 = __pyx_v_temp_y;
+            *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
+
+            /* "cython_weave_pyx.pyx":184
+ *                 if include_center == 1:
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":182
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 if include_center == 1:             # <<<<<<<<<<<<<<
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":186
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
  */
         __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":186
- *                     out[layer,temp_x,temp_y] = temp_val
+        /* "cython_weave_pyx.pyx":187
+ *                         out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 #Third Column
- */
-        __pyx_t_19 = __pyx_v_temp_y;
-        __pyx_t_20 = __pyx_v_temp_x;
-        if (((__pyx_t_19 < __pyx_t_20) != 0)) {
-          __pyx_t_18 = __pyx_t_19;
-        } else {
-          __pyx_t_18 = __pyx_t_20;
-        }
-        __pyx_t_21 = ((__pyx_t_18 >= 0) != 0);
-        if (__pyx_t_21) {
-        } else {
-          __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L22_bool_binop_done;
-        }
-        __pyx_t_18 = __pyx_v_temp_y;
-        __pyx_t_19 = __pyx_v_temp_x;
-        if (((__pyx_t_18 > __pyx_t_19) != 0)) {
-          __pyx_t_20 = __pyx_t_18;
-        } else {
-          __pyx_t_20 = __pyx_t_19;
-        }
-        __pyx_t_21 = ((__pyx_t_20 < __pyx_v_HH) != 0);
-        __pyx_t_17 = __pyx_t_21;
-        __pyx_L22_bool_binop_done:;
-        if (__pyx_t_17) {
-
-          /* "cython_weave_pyx.pyx":187
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 #Third Column
- *                 temp_x = big_i-expand_dist
- */
-          __pyx_t_34 = __pyx_v_layer;
-          __pyx_t_35 = __pyx_v_temp_x;
-          __pyx_t_36 = __pyx_v_temp_y;
-          *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
-
-          /* "cython_weave_pyx.pyx":186
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Third Column
- */
-        }
-
-        /* "cython_weave_pyx.pyx":189
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Third Column
- *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
- *                 temp_y = big_j+expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- */
-        __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
-
-        /* "cython_weave_pyx.pyx":190
- *                 #Third Column
- *                 temp_x = big_i-expand_dist
- *                 temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- */
-        __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
-
-        /* "cython_weave_pyx.pyx":191
- *                 temp_x = big_i-expand_dist
- *                 temp_y = big_j+expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i
  */
         __pyx_t_20 = __pyx_v_temp_y;
         __pyx_t_18 = __pyx_v_temp_x;
@@ -8881,7 +9102,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         if (__pyx_t_21) {
         } else {
           __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L25_bool_binop_done;
+          goto __pyx_L26_bool_binop_done;
         }
         __pyx_t_19 = __pyx_v_temp_y;
         __pyx_t_20 = __pyx_v_temp_x;
@@ -8892,45 +9113,54 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         }
         __pyx_t_21 = ((__pyx_t_18 < __pyx_v_HH) != 0);
         __pyx_t_17 = __pyx_t_21;
-        __pyx_L25_bool_binop_done:;
+        __pyx_L26_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":192
- *                 temp_y = big_j+expand_dist
+          /* "cython_weave_pyx.pyx":188
+ *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 temp_x = big_i
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 #Third Column
+ *                 temp_x = big_i-expand_dist
  */
           __pyx_t_37 = __pyx_v_layer;
           __pyx_t_38 = __pyx_v_temp_x;
           __pyx_t_39 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_37, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_38, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_39, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":191
+          /* "cython_weave_pyx.pyx":187
+ *                         out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 #Third Column
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":190
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 #Third Column
+ *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
+ *                 temp_y = big_j+expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
+
+        /* "cython_weave_pyx.pyx":191
+ *                 #Third Column
+ *                 temp_x = big_i-expand_dist
+ *                 temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
+
+        /* "cython_weave_pyx.pyx":192
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j+expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
- */
-        }
-
-        /* "cython_weave_pyx.pyx":193
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i             # <<<<<<<<<<<<<<
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- */
-        __pyx_v_temp_x = __pyx_v_big_i;
-
-        /* "cython_weave_pyx.pyx":194
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
  */
         __pyx_t_18 = __pyx_v_temp_y;
         __pyx_t_19 = __pyx_v_temp_x;
@@ -8943,7 +9173,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         if (__pyx_t_21) {
         } else {
           __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L28_bool_binop_done;
+          goto __pyx_L29_bool_binop_done;
         }
         __pyx_t_20 = __pyx_v_temp_y;
         __pyx_t_18 = __pyx_v_temp_x;
@@ -8954,14 +9184,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         }
         __pyx_t_21 = ((__pyx_t_19 < __pyx_v_HH) != 0);
         __pyx_t_17 = __pyx_t_21;
-        __pyx_L28_bool_binop_done:;
+        __pyx_L29_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":195
- *                 temp_x = big_i
+          /* "cython_weave_pyx.pyx":193
+ *                 temp_y = big_j+expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 temp_x = big_i + expand_dist
+ *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
           __pyx_t_40 = __pyx_v_layer;
@@ -8969,30 +9199,30 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
           __pyx_t_42 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_41, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_42, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":194
+          /* "cython_weave_pyx.pyx":192
+ *                 temp_x = big_i-expand_dist
+ *                 temp_y = big_j+expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":194
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_x = __pyx_v_big_i;
+
+        /* "cython_weave_pyx.pyx":195
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
- */
-        }
-
-        /* "cython_weave_pyx.pyx":196
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- */
-        __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
-
-        /* "cython_weave_pyx.pyx":197
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- * 
  */
         __pyx_t_19 = __pyx_v_temp_y;
         __pyx_t_20 = __pyx_v_temp_x;
@@ -9005,7 +9235,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         if (__pyx_t_21) {
         } else {
           __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L31_bool_binop_done;
+          goto __pyx_L32_bool_binop_done;
         }
         __pyx_t_18 = __pyx_v_temp_y;
         __pyx_t_19 = __pyx_v_temp_x;
@@ -9016,22 +9246,84 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
         }
         __pyx_t_21 = ((__pyx_t_20 < __pyx_v_HH) != 0);
         __pyx_t_17 = __pyx_t_21;
-        __pyx_L31_bool_binop_done:;
+        __pyx_L32_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":198
- *                 temp_x = big_i + expand_dist
+          /* "cython_weave_pyx.pyx":196
+ *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- * 
- *     return out
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
           __pyx_t_43 = __pyx_v_layer;
           __pyx_t_44 = __pyx_v_temp_x;
           __pyx_t_45 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_43, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_44, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":197
+          /* "cython_weave_pyx.pyx":195
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":197
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
+
+        /* "cython_weave_pyx.pyx":198
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ * 
+ */
+        __pyx_t_20 = __pyx_v_temp_y;
+        __pyx_t_18 = __pyx_v_temp_x;
+        if (((__pyx_t_20 < __pyx_t_18) != 0)) {
+          __pyx_t_19 = __pyx_t_20;
+        } else {
+          __pyx_t_19 = __pyx_t_18;
+        }
+        __pyx_t_21 = ((__pyx_t_19 >= 0) != 0);
+        if (__pyx_t_21) {
+        } else {
+          __pyx_t_17 = __pyx_t_21;
+          goto __pyx_L35_bool_binop_done;
+        }
+        __pyx_t_19 = __pyx_v_temp_y;
+        __pyx_t_20 = __pyx_v_temp_x;
+        if (((__pyx_t_19 > __pyx_t_20) != 0)) {
+          __pyx_t_18 = __pyx_t_19;
+        } else {
+          __pyx_t_18 = __pyx_t_20;
+        }
+        __pyx_t_21 = ((__pyx_t_18 < __pyx_v_HH) != 0);
+        __pyx_t_17 = __pyx_t_21;
+        __pyx_L35_bool_binop_done:;
+        if (__pyx_t_17) {
+
+          /* "cython_weave_pyx.pyx":199
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ * 
+ *     return out
+ */
+          __pyx_t_46 = __pyx_v_layer;
+          __pyx_t_47 = __pyx_v_temp_x;
+          __pyx_t_48 = __pyx_v_temp_y;
+          *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_46, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_47, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_48, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
+
+          /* "cython_weave_pyx.pyx":198
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -9043,7 +9335,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
     }
   }
 
-  /* "cython_weave_pyx.pyx":200
+  /* "cython_weave_pyx.pyx":201
  *                     out[layer,temp_x,temp_y] = temp_val
  * 
  *     return out             # <<<<<<<<<<<<<<
@@ -9055,12 +9347,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_24cython_3d_array_weave_forward(CYT
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":137
+  /* "cython_weave_pyx.pyx":133
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
   /* function exit code */
@@ -9098,16 +9390,19 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_27cython_3d_array_weave
   PyArrayObject *__pyx_v_arr = 0;
   int __pyx_v_num_zeros;
   int __pyx_v_filter_size;
+  int __pyx_v_include_center;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("cython_3d_array_weave_forward (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,0};
-    PyObject* values[3] = {0,0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,&__pyx_n_s_include_center,0};
+    PyObject* values[4] = {0,0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
         case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
         CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
@@ -9126,39 +9421,47 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_27cython_3d_array_weave
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, 1); __PYX_ERR(0, 133, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, 2); __PYX_ERR(0, 133, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  3:
+        if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_include_center)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, 3); __PYX_ERR(0, 133, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_array_weave_forward") < 0)) __PYX_ERR(0, 137, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_array_weave_forward") < 0)) __PYX_ERR(0, 133, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+      values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 138, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 138, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 134, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 134, __pyx_L3_error)
+    __pyx_v_include_center = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_include_center == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 135, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 137, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_3d_array_weave_forward", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 133, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_3d_array_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 137, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_r = __pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size, __pyx_v_include_center);
 
   /* function exit code */
   goto __pyx_L0;
@@ -9169,7 +9472,7 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_27cython_3d_array_weave
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size) {
+static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center) {
   int __pyx_v_num_filters;
   int __pyx_v_height;
   int __pyx_v_width;
@@ -9237,6 +9540,9 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
   Py_ssize_t __pyx_t_43;
   Py_ssize_t __pyx_t_44;
   Py_ssize_t __pyx_t_45;
+  Py_ssize_t __pyx_t_46;
+  Py_ssize_t __pyx_t_47;
+  Py_ssize_t __pyx_t_48;
   __Pyx_RefNannySetupContext("__pyx_fuse_1cython_3d_array_weave_forward", 0);
   __pyx_pybuffer_out.pybuffer.buf = NULL;
   __pyx_pybuffer_out.refcount = 0;
@@ -9248,11 +9554,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 133, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_arr.diminfo[2].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_arr.diminfo[2].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_weave_pyx.pyx":142
+  /* "cython_weave_pyx.pyx":139
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int num_filters = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -9261,7 +9567,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
   __pyx_v_num_filters = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":143
+  /* "cython_weave_pyx.pyx":140
  *     """
  *     cdef int num_filters = arr.shape[0]
  *     cdef int height = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -9270,7 +9576,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":144
+  /* "cython_weave_pyx.pyx":141
  *     cdef int num_filters = arr.shape[0]
  *     cdef int height = arr.shape[1]
  *     cdef int width = arr.shape[2]             # <<<<<<<<<<<<<<
@@ -9279,7 +9585,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[2]);
 
-  /* "cython_weave_pyx.pyx":146
+  /* "cython_weave_pyx.pyx":143
  *     cdef int width = arr.shape[2]
  * 
  *     cdef int expand_dist = 2*filter_size + 2             # <<<<<<<<<<<<<<
@@ -9288,7 +9594,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
   __pyx_v_expand_dist = ((2 * __pyx_v_filter_size) + 2);
 
-  /* "cython_weave_pyx.pyx":147
+  /* "cython_weave_pyx.pyx":144
  * 
  *     cdef int expand_dist = 2*filter_size + 2
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -9297,7 +9603,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":153
+  /* "cython_weave_pyx.pyx":150
  *     cdef np.float64_t temp_val
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -9306,7 +9612,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":154
+  /* "cython_weave_pyx.pyx":151
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -9315,49 +9621,49 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":156
+  /* "cython_weave_pyx.pyx":153
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,             # <<<<<<<<<<<<<<
  *                                                 HH,
  *                                                 WW])
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_filters); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "cython_weave_pyx.pyx":157
+  /* "cython_weave_pyx.pyx":154
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,
  *                                                 HH,             # <<<<<<<<<<<<<<
  *                                                 WW])
  * 
  */
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "cython_weave_pyx.pyx":158
+  /* "cython_weave_pyx.pyx":155
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,
  *                                                 HH,
  *                                                 WW])             # <<<<<<<<<<<<<<
  * 
  *     cdef int temp_x
  */
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "cython_weave_pyx.pyx":156
+  /* "cython_weave_pyx.pyx":153
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_filters,             # <<<<<<<<<<<<<<
  *                                                 HH,
  *                                                 WW])
  */
-  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
@@ -9379,14 +9685,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -9395,32 +9701,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_6);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_6);
       __pyx_t_6 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 153, __pyx_L1_error)
   __pyx_t_7 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 156, __pyx_L1_error)
+      __PYX_ERR(0, 153, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_out.diminfo[2].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_out.diminfo[2].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[2];
     }
   }
@@ -9428,7 +9734,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":163
+  /* "cython_weave_pyx.pyx":160
  *     cdef int temp_y
  * 
  *     for layer in range(num_filters):             # <<<<<<<<<<<<<<
@@ -9439,7 +9745,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_layer = __pyx_t_9;
 
-    /* "cython_weave_pyx.pyx":164
+    /* "cython_weave_pyx.pyx":161
  * 
  *     for layer in range(num_filters):
  *         for i in range(height):             # <<<<<<<<<<<<<<
@@ -9450,7 +9756,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "cython_weave_pyx.pyx":165
+      /* "cython_weave_pyx.pyx":162
  *     for layer in range(num_filters):
  *         for i in range(height):
  *             for j in range(width):             # <<<<<<<<<<<<<<
@@ -9461,7 +9767,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
       for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
         __pyx_v_j = __pyx_t_13;
 
-        /* "cython_weave_pyx.pyx":166
+        /* "cython_weave_pyx.pyx":163
  *         for i in range(height):
  *             for j in range(width):
  *                 temp_val = arr[layer,i,j]             # <<<<<<<<<<<<<<
@@ -9473,7 +9779,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         __pyx_t_16 = __pyx_v_j;
         __pyx_v_temp_val = (*__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_arr.rcbuffer->pybuffer.buf, __pyx_t_14, __pyx_pybuffernd_arr.diminfo[0].strides, __pyx_t_15, __pyx_pybuffernd_arr.diminfo[1].strides, __pyx_t_16, __pyx_pybuffernd_arr.diminfo[2].strides));
 
-        /* "cython_weave_pyx.pyx":167
+        /* "cython_weave_pyx.pyx":164
  *             for j in range(width):
  *                 temp_val = arr[layer,i,j]
  *                 big_i = filter_size * i             # <<<<<<<<<<<<<<
@@ -9482,7 +9788,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         __pyx_v_big_i = (__pyx_v_filter_size * __pyx_v_i);
 
-        /* "cython_weave_pyx.pyx":168
+        /* "cython_weave_pyx.pyx":165
  *                 temp_val = arr[layer,i,j]
  *                 big_i = filter_size * i
  *                 big_j = filter_size * j             # <<<<<<<<<<<<<<
@@ -9491,7 +9797,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         __pyx_v_big_j = (__pyx_v_filter_size * __pyx_v_j);
 
-        /* "cython_weave_pyx.pyx":170
+        /* "cython_weave_pyx.pyx":167
  *                 big_j = filter_size * j
  *                 #First Column
  *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
@@ -9500,7 +9806,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":171
+        /* "cython_weave_pyx.pyx":168
  *                 #First Column
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j-expand_dist             # <<<<<<<<<<<<<<
@@ -9509,7 +9815,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_y = (__pyx_v_big_j - __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":172
+        /* "cython_weave_pyx.pyx":169
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j-expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -9541,7 +9847,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         __pyx_L10_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":173
+          /* "cython_weave_pyx.pyx":170
  *                 temp_y = big_j-expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -9553,7 +9859,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
           __pyx_t_24 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_22, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_23, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_24, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":172
+          /* "cython_weave_pyx.pyx":169
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j-expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -9562,7 +9868,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         }
 
-        /* "cython_weave_pyx.pyx":174
+        /* "cython_weave_pyx.pyx":171
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i             # <<<<<<<<<<<<<<
@@ -9571,7 +9877,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_x = __pyx_v_big_i;
 
-        /* "cython_weave_pyx.pyx":175
+        /* "cython_weave_pyx.pyx":172
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -9603,7 +9909,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         __pyx_L13_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":176
+          /* "cython_weave_pyx.pyx":173
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -9615,7 +9921,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
           __pyx_t_27 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_25, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_26, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":175
+          /* "cython_weave_pyx.pyx":172
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -9624,7 +9930,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         }
 
-        /* "cython_weave_pyx.pyx":177
+        /* "cython_weave_pyx.pyx":174
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
@@ -9633,12 +9939,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":178
+        /* "cython_weave_pyx.pyx":175
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  */
         __pyx_t_20 = __pyx_v_temp_y;
         __pyx_t_18 = __pyx_v_temp_x;
@@ -9665,11 +9971,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         __pyx_L16_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":179
+          /* "cython_weave_pyx.pyx":176
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  *                 temp_x = big_i-expand_dist
  */
           __pyx_t_28 = __pyx_v_layer;
@@ -9677,26 +9983,26 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
           __pyx_t_30 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_29, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_30, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":178
+          /* "cython_weave_pyx.pyx":175
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  */
         }
 
-        /* "cython_weave_pyx.pyx":181
+        /* "cython_weave_pyx.pyx":178
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Second Column (Only 2 Points)
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
         __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":182
- *                 #Second Column (Only 2 Points)
+        /* "cython_weave_pyx.pyx":179
+ *                 #Second Column (Only 2 Points) Unless Include Center is 1!
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j             # <<<<<<<<<<<<<<
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
@@ -9704,12 +10010,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
  */
         __pyx_v_temp_y = __pyx_v_big_j;
 
-        /* "cython_weave_pyx.pyx":183
+        /* "cython_weave_pyx.pyx":180
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
+ *                 if include_center == 1:
  */
         __pyx_t_18 = __pyx_v_temp_y;
         __pyx_t_19 = __pyx_v_temp_x;
@@ -9736,113 +10042,123 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         __pyx_L19_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":184
+          /* "cython_weave_pyx.pyx":181
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 if include_center == 1:
+ *                     temp_x = big_i
  */
           __pyx_t_31 = __pyx_v_layer;
           __pyx_t_32 = __pyx_v_temp_x;
           __pyx_t_33 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":183
+          /* "cython_weave_pyx.pyx":180
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
+ *                 if include_center == 1:
  */
         }
 
-        /* "cython_weave_pyx.pyx":185
+        /* "cython_weave_pyx.pyx":182
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
+ *                 if include_center == 1:             # <<<<<<<<<<<<<<
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        __pyx_t_17 = ((__pyx_v_include_center == 1) != 0);
+        if (__pyx_t_17) {
+
+          /* "cython_weave_pyx.pyx":183
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 if include_center == 1:
+ *                     temp_x = big_i             # <<<<<<<<<<<<<<
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[layer,temp_x,temp_y] = temp_val
+ */
+          __pyx_v_temp_x = __pyx_v_big_i;
+
+          /* "cython_weave_pyx.pyx":184
+ *                 if include_center == 1:
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ */
+          __pyx_t_19 = __pyx_v_temp_y;
+          __pyx_t_20 = __pyx_v_temp_x;
+          if (((__pyx_t_19 < __pyx_t_20) != 0)) {
+            __pyx_t_18 = __pyx_t_19;
+          } else {
+            __pyx_t_18 = __pyx_t_20;
+          }
+          __pyx_t_21 = ((__pyx_t_18 >= 0) != 0);
+          if (__pyx_t_21) {
+          } else {
+            __pyx_t_17 = __pyx_t_21;
+            goto __pyx_L23_bool_binop_done;
+          }
+          __pyx_t_18 = __pyx_v_temp_y;
+          __pyx_t_19 = __pyx_v_temp_x;
+          if (((__pyx_t_18 > __pyx_t_19) != 0)) {
+            __pyx_t_20 = __pyx_t_18;
+          } else {
+            __pyx_t_20 = __pyx_t_19;
+          }
+          __pyx_t_21 = ((__pyx_t_20 < __pyx_v_HH) != 0);
+          __pyx_t_17 = __pyx_t_21;
+          __pyx_L23_bool_binop_done:;
+          if (__pyx_t_17) {
+
+            /* "cython_weave_pyx.pyx":185
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+            __pyx_t_34 = __pyx_v_layer;
+            __pyx_t_35 = __pyx_v_temp_x;
+            __pyx_t_36 = __pyx_v_temp_y;
+            *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
+
+            /* "cython_weave_pyx.pyx":184
+ *                 if include_center == 1:
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                         out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ */
+          }
+
+          /* "cython_weave_pyx.pyx":182
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 if include_center == 1:             # <<<<<<<<<<<<<<
+ *                     temp_x = big_i
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":186
+ *                     if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                         out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val
  */
         __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-        /* "cython_weave_pyx.pyx":186
- *                     out[layer,temp_x,temp_y] = temp_val
+        /* "cython_weave_pyx.pyx":187
+ *                         out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 #Third Column
- */
-        __pyx_t_19 = __pyx_v_temp_y;
-        __pyx_t_20 = __pyx_v_temp_x;
-        if (((__pyx_t_19 < __pyx_t_20) != 0)) {
-          __pyx_t_18 = __pyx_t_19;
-        } else {
-          __pyx_t_18 = __pyx_t_20;
-        }
-        __pyx_t_21 = ((__pyx_t_18 >= 0) != 0);
-        if (__pyx_t_21) {
-        } else {
-          __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L22_bool_binop_done;
-        }
-        __pyx_t_18 = __pyx_v_temp_y;
-        __pyx_t_19 = __pyx_v_temp_x;
-        if (((__pyx_t_18 > __pyx_t_19) != 0)) {
-          __pyx_t_20 = __pyx_t_18;
-        } else {
-          __pyx_t_20 = __pyx_t_19;
-        }
-        __pyx_t_21 = ((__pyx_t_20 < __pyx_v_HH) != 0);
-        __pyx_t_17 = __pyx_t_21;
-        __pyx_L22_bool_binop_done:;
-        if (__pyx_t_17) {
-
-          /* "cython_weave_pyx.pyx":187
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 #Third Column
- *                 temp_x = big_i-expand_dist
- */
-          __pyx_t_34 = __pyx_v_layer;
-          __pyx_t_35 = __pyx_v_temp_x;
-          __pyx_t_36 = __pyx_v_temp_y;
-          *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_36, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
-
-          /* "cython_weave_pyx.pyx":186
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Third Column
- */
-        }
-
-        /* "cython_weave_pyx.pyx":189
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 #Third Column
- *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
- *                 temp_y = big_j+expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- */
-        __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
-
-        /* "cython_weave_pyx.pyx":190
- *                 #Third Column
- *                 temp_x = big_i-expand_dist
- *                 temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- */
-        __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
-
-        /* "cython_weave_pyx.pyx":191
- *                 temp_x = big_i-expand_dist
- *                 temp_y = big_j+expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i
  */
         __pyx_t_20 = __pyx_v_temp_y;
         __pyx_t_18 = __pyx_v_temp_x;
@@ -9855,7 +10171,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         if (__pyx_t_21) {
         } else {
           __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L25_bool_binop_done;
+          goto __pyx_L26_bool_binop_done;
         }
         __pyx_t_19 = __pyx_v_temp_y;
         __pyx_t_20 = __pyx_v_temp_x;
@@ -9866,45 +10182,54 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         }
         __pyx_t_21 = ((__pyx_t_18 < __pyx_v_HH) != 0);
         __pyx_t_17 = __pyx_t_21;
-        __pyx_L25_bool_binop_done:;
+        __pyx_L26_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":192
- *                 temp_y = big_j+expand_dist
+          /* "cython_weave_pyx.pyx":188
+ *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 temp_x = big_i
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 #Third Column
+ *                 temp_x = big_i-expand_dist
  */
           __pyx_t_37 = __pyx_v_layer;
           __pyx_t_38 = __pyx_v_temp_x;
           __pyx_t_39 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_37, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_38, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_39, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":191
+          /* "cython_weave_pyx.pyx":187
+ *                         out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 #Third Column
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":190
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 #Third Column
+ *                 temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
+ *                 temp_y = big_j+expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
+
+        /* "cython_weave_pyx.pyx":191
+ *                 #Third Column
+ *                 temp_x = big_i-expand_dist
+ *                 temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
+
+        /* "cython_weave_pyx.pyx":192
  *                 temp_x = big_i-expand_dist
  *                 temp_y = big_j+expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
- */
-        }
-
-        /* "cython_weave_pyx.pyx":193
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i             # <<<<<<<<<<<<<<
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- */
-        __pyx_v_temp_x = __pyx_v_big_i;
-
-        /* "cython_weave_pyx.pyx":194
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
  */
         __pyx_t_18 = __pyx_v_temp_y;
         __pyx_t_19 = __pyx_v_temp_x;
@@ -9917,7 +10242,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         if (__pyx_t_21) {
         } else {
           __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L28_bool_binop_done;
+          goto __pyx_L29_bool_binop_done;
         }
         __pyx_t_20 = __pyx_v_temp_y;
         __pyx_t_18 = __pyx_v_temp_x;
@@ -9928,14 +10253,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         }
         __pyx_t_21 = ((__pyx_t_19 < __pyx_v_HH) != 0);
         __pyx_t_17 = __pyx_t_21;
-        __pyx_L28_bool_binop_done:;
+        __pyx_L29_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":195
- *                 temp_x = big_i
+          /* "cython_weave_pyx.pyx":193
+ *                 temp_y = big_j+expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *                 temp_x = big_i + expand_dist
+ *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
           __pyx_t_40 = __pyx_v_layer;
@@ -9943,30 +10268,30 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
           __pyx_t_42 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_41, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_42, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":194
+          /* "cython_weave_pyx.pyx":192
+ *                 temp_x = big_i-expand_dist
+ *                 temp_y = big_j+expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":194
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_x = __pyx_v_big_i;
+
+        /* "cython_weave_pyx.pyx":195
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
- */
-        }
-
-        /* "cython_weave_pyx.pyx":196
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                     out[layer,temp_x,temp_y] = temp_val
- */
-        __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
-
-        /* "cython_weave_pyx.pyx":197
- *                     out[layer,temp_x,temp_y] = temp_val
- *                 temp_x = big_i + expand_dist
- *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                     out[layer,temp_x,temp_y] = temp_val
- * 
  */
         __pyx_t_19 = __pyx_v_temp_y;
         __pyx_t_20 = __pyx_v_temp_x;
@@ -9979,7 +10304,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         if (__pyx_t_21) {
         } else {
           __pyx_t_17 = __pyx_t_21;
-          goto __pyx_L31_bool_binop_done;
+          goto __pyx_L32_bool_binop_done;
         }
         __pyx_t_18 = __pyx_v_temp_y;
         __pyx_t_19 = __pyx_v_temp_x;
@@ -9990,22 +10315,84 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
         }
         __pyx_t_21 = ((__pyx_t_20 < __pyx_v_HH) != 0);
         __pyx_t_17 = __pyx_t_21;
-        __pyx_L31_bool_binop_done:;
+        __pyx_L32_bool_binop_done:;
         if (__pyx_t_17) {
 
-          /* "cython_weave_pyx.pyx":198
- *                 temp_x = big_i + expand_dist
+          /* "cython_weave_pyx.pyx":196
+ *                 temp_x = big_i
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- * 
- *     return out
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
           __pyx_t_43 = __pyx_v_layer;
           __pyx_t_44 = __pyx_v_temp_x;
           __pyx_t_45 = __pyx_v_temp_y;
           *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_43, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_44, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_45, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
 
-          /* "cython_weave_pyx.pyx":197
+          /* "cython_weave_pyx.pyx":195
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":197
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
+
+        /* "cython_weave_pyx.pyx":198
+ *                     out[layer,temp_x,temp_y] = temp_val
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[layer,temp_x,temp_y] = temp_val
+ * 
+ */
+        __pyx_t_20 = __pyx_v_temp_y;
+        __pyx_t_18 = __pyx_v_temp_x;
+        if (((__pyx_t_20 < __pyx_t_18) != 0)) {
+          __pyx_t_19 = __pyx_t_20;
+        } else {
+          __pyx_t_19 = __pyx_t_18;
+        }
+        __pyx_t_21 = ((__pyx_t_19 >= 0) != 0);
+        if (__pyx_t_21) {
+        } else {
+          __pyx_t_17 = __pyx_t_21;
+          goto __pyx_L35_bool_binop_done;
+        }
+        __pyx_t_19 = __pyx_v_temp_y;
+        __pyx_t_20 = __pyx_v_temp_x;
+        if (((__pyx_t_19 > __pyx_t_20) != 0)) {
+          __pyx_t_18 = __pyx_t_19;
+        } else {
+          __pyx_t_18 = __pyx_t_20;
+        }
+        __pyx_t_21 = ((__pyx_t_18 < __pyx_v_HH) != 0);
+        __pyx_t_17 = __pyx_t_21;
+        __pyx_L35_bool_binop_done:;
+        if (__pyx_t_17) {
+
+          /* "cython_weave_pyx.pyx":199
+ *                 temp_x = big_i + expand_dist
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[layer,temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ * 
+ *     return out
+ */
+          __pyx_t_46 = __pyx_v_layer;
+          __pyx_t_47 = __pyx_v_temp_x;
+          __pyx_t_48 = __pyx_v_temp_y;
+          *__Pyx_BufPtrStrided3d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_46, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_47, __pyx_pybuffernd_out.diminfo[1].strides, __pyx_t_48, __pyx_pybuffernd_out.diminfo[2].strides) = __pyx_v_temp_val;
+
+          /* "cython_weave_pyx.pyx":198
  *                     out[layer,temp_x,temp_y] = temp_val
  *                 temp_x = big_i + expand_dist
  *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -10017,7 +10404,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
     }
   }
 
-  /* "cython_weave_pyx.pyx":200
+  /* "cython_weave_pyx.pyx":201
  *                     out[layer,temp_x,temp_y] = temp_val
  * 
  *     return out             # <<<<<<<<<<<<<<
@@ -10029,12 +10416,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":137
+  /* "cython_weave_pyx.pyx":133
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
   /* function exit code */
@@ -10065,12 +10452,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_26cython_3d_array_weave_forward(CYT
   return __pyx_r;
 }
 
-/* "cython_weave_pyx.pyx":205
+/* "cython_weave_pyx.pyx":206
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
 /* Python wrapper */
@@ -10112,23 +10499,23 @@ static PyObject *__pyx_pw_16cython_weave_pyx_7cython_2d_array_weave_forward(PyOb
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_args)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 205, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 206, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_kwargs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 205, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 206, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_defaults)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 205, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 206, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 205, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 206, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -10145,7 +10532,7 @@ static PyObject *__pyx_pw_16cython_weave_pyx_7cython_2d_array_weave_forward(PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 205, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 206, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -10202,7 +10589,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
   int __pyx_t_19;
   __Pyx_RefNannySetupContext("cython_2d_array_weave_forward", 0);
   __Pyx_INCREF(__pyx_v_kwargs);
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(Py_None);
@@ -10216,7 +10603,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
     __pyx_t_2 = __pyx_t_4;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
   __pyx_t_3 = ((!__pyx_t_4) != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
@@ -10224,7 +10611,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
     __Pyx_INCREF(Py_None);
     __Pyx_DECREF_SET(__pyx_v_kwargs, Py_None);
   }
-  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ndarray = ((PyTypeObject*)__pyx_t_1);
   __pyx_t_1 = 0;
@@ -10232,14 +10619,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
   __pyx_v_arg_is_pythran_compatible = 0;
   if (unlikely(__pyx_v_args == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 205, __pyx_L1_error)
+    __PYX_ERR(0, 206, __pyx_L1_error)
   }
-  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 206, __pyx_L1_error)
   __pyx_t_2 = ((0 < __pyx_t_5) != 0);
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 205, __pyx_L1_error)
+      __PYX_ERR(0, 206, __pyx_L1_error)
     }
     __pyx_t_1 = PyTuple_GET_ITEM(((PyObject*)__pyx_v_args), 0);
     __Pyx_INCREF(__pyx_t_1);
@@ -10256,18 +10643,18 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
   }
   if (unlikely(__pyx_v_kwargs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 205, __pyx_L1_error)
+    __PYX_ERR(0, 206, __pyx_L1_error)
   }
-  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
   __pyx_t_3 = (__pyx_t_4 != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_kwargs == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 205, __pyx_L1_error)
+      __PYX_ERR(0, 206, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_v_arg = __pyx_t_1;
     __pyx_t_1 = 0;
@@ -10276,36 +10663,36 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
   /*else*/ {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-      __PYX_ERR(0, 205, __pyx_L1_error)
+      __PYX_ERR(0, 206, __pyx_L1_error)
     }
-    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 205, __pyx_L1_error)
-    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 206, __pyx_L1_error)
+    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_INCREF(__pyx_int_3);
-    __Pyx_GIVEREF(__pyx_int_3);
-    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_int_3);
+    __Pyx_INCREF(__pyx_int_4);
+    __Pyx_GIVEREF(__pyx_int_4);
+    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_int_4);
     __Pyx_INCREF(__pyx_n_s_s);
     __Pyx_GIVEREF(__pyx_n_s_s);
     PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_n_s_s);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 205, __pyx_L1_error)
+    __PYX_ERR(0, 206, __pyx_L1_error)
   }
   __pyx_L6:;
   while (1) {
@@ -10315,7 +10702,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
       __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg, __pyx_v_ndarray); 
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_dtype = __pyx_t_1;
         __pyx_t_1 = 0;
@@ -10325,14 +10712,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
       __pyx_t_2 = __pyx_memoryview_check(__pyx_v_arg); 
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_arg_base = __pyx_t_1;
         __pyx_t_1 = 0;
         __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg_base, __pyx_v_ndarray); 
         __pyx_t_2 = (__pyx_t_3 != 0);
         if (__pyx_t_2) {
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_dtype = __pyx_t_1;
           __pyx_t_1 = 0;
@@ -10354,21 +10741,21 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
       __pyx_t_2 = (__pyx_v_dtype != Py_None);
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_itemsize = __pyx_t_5;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_kind = __pyx_t_7;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_byteorder = __pyx_t_1;
         __pyx_t_1 = 0;
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -10381,7 +10768,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
         if (__pyx_t_3) {
           __pyx_v_arg_is_pythran_compatible = 0;
         }
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -10397,31 +10784,31 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
         __pyx_v_dtype_signed = (__pyx_v_kind == 'i');
         __pyx_t_3 = (__pyx_v_arg_is_pythran_compatible != 0);
         if (__pyx_t_3) {
-          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_cur_stride = __pyx_t_1;
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_6);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6);
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_1);
@@ -10429,16 +10816,16 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
           PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_6);
           __pyx_t_1 = 0;
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
             __pyx_t_9 = __pyx_t_6; __Pyx_INCREF(__pyx_t_9); __pyx_t_5 = 0;
             __pyx_t_10 = NULL;
           } else {
-            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_9);
-            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 206, __pyx_L1_error)
           }
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           for (;;) {
@@ -10446,17 +10833,17 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
               if (likely(PyList_CheckExact(__pyx_t_9))) {
                 if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               } else {
                 if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               }
@@ -10466,7 +10853,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 205, __pyx_L1_error)
+                  else __PYX_ERR(0, 206, __pyx_L1_error)
                 }
                 break;
               }
@@ -10482,7 +10869,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
               if (unlikely(size != 2)) {
                 if (size > 2) __Pyx_RaiseTooManyValuesError(2);
                 else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-                __PYX_ERR(0, 205, __pyx_L1_error)
+                __PYX_ERR(0, 206, __pyx_L1_error)
               }
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
               if (likely(PyTuple_CheckExact(sequence))) {
@@ -10495,15 +10882,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
               __Pyx_INCREF(__pyx_t_1);
               __Pyx_INCREF(__pyx_t_11);
               #else
-              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 205, __pyx_L1_error)
+              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_11);
               #endif
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             } else {
               Py_ssize_t index = -1;
-              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 205, __pyx_L1_error)
+              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 206, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
               __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -10511,7 +10898,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
               __Pyx_GOTREF(__pyx_t_1);
               index = 1; __pyx_t_11 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_11)) goto __pyx_L24_unpacking_failed;
               __Pyx_GOTREF(__pyx_t_11);
-              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 205, __pyx_L1_error)
+              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 206, __pyx_L1_error)
               __pyx_t_13 = NULL;
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               goto __pyx_L25_unpacking_done;
@@ -10519,43 +10906,43 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               __pyx_t_13 = NULL;
               if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-              __PYX_ERR(0, 205, __pyx_L1_error)
+              __PYX_ERR(0, 206, __pyx_L1_error)
               __pyx_L25_unpacking_done:;
             }
             __Pyx_XDECREF_SET(__pyx_v_dim, __pyx_t_1);
             __pyx_t_1 = 0;
             __Pyx_XDECREF_SET(__pyx_v_stride, __pyx_t_11);
             __pyx_t_11 = 0;
-            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
-            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
+            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             if (__pyx_t_3) {
               __pyx_v_arg_is_pythran_compatible = 0;
               goto __pyx_L23_break;
             }
-            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_DECREF_SET(__pyx_v_cur_stride, __pyx_t_6);
             __pyx_t_6 = 0;
           }
           /*else*/ {
-            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
             if (__pyx_t_2) {
             } else {
               __pyx_t_3 = __pyx_t_2;
               goto __pyx_L28_bool_binop_done;
             }
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
-            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             __pyx_t_3 = __pyx_t_2;
             __pyx_L28_bool_binop_done:;
@@ -10575,15 +10962,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L31_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 2) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L31_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           __pyx_t_2 = (((sizeof(__pyx_t_5numpy_float64_t)) == __pyx_v_itemsize) != 0);
@@ -10592,15 +10979,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L34_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 2) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L34_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           break;
@@ -10627,7 +11014,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
@@ -10649,27 +11036,27 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
         PyErr_Clear(); 
       }
     }
-    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
     goto __pyx_L10_break;
   }
   __pyx_L10_break:;
-  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_v_candidates = ((PyObject*)__pyx_t_9);
   __pyx_t_9 = 0;
   __pyx_t_5 = 0;
   if (unlikely(__pyx_v_signatures == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 205, __pyx_L1_error)
+    __PYX_ERR(0, 206, __pyx_L1_error)
   }
-  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_9);
   __pyx_t_9 = __pyx_t_6;
@@ -10677,25 +11064,25 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
   while (1) {
     __pyx_t_16 = __Pyx_dict_iter_next(__pyx_t_9, __pyx_t_15, &__pyx_t_5, &__pyx_t_6, NULL, NULL, __pyx_t_8);
     if (unlikely(__pyx_t_16 == 0)) break;
-    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 205, __pyx_L1_error)
+    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_sig, __pyx_t_6);
     __pyx_t_6 = 0;
     __pyx_v_match_found = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_XDECREF_SET(__pyx_v_src_sig, __pyx_t_11);
     __pyx_t_11 = 0;
-    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 206, __pyx_L1_error)
     for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
       __pyx_v_i = __pyx_t_18;
       __pyx_t_11 = PyList_GET_ITEM(__pyx_v_dest_sig, __pyx_v_i);
@@ -10705,11 +11092,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_dst_type != Py_None);
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         if (__pyx_t_2) {
           __pyx_v_match_found = 1;
@@ -10725,35 +11112,35 @@ static PyObject *__pyx_pf_16cython_weave_pyx_6cython_2d_array_weave_forward(CYTH
     __pyx_L47_break:;
     __pyx_t_2 = (__pyx_v_match_found != 0);
     if (__pyx_t_2) {
-      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 205, __pyx_L1_error)
+      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 206, __pyx_L1_error)
     }
   }
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_2 = (__pyx_v_candidates != Py_None) && (PyList_GET_SIZE(__pyx_v_candidates) != 0);
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 205, __pyx_L1_error)
+    __PYX_ERR(0, 206, __pyx_L1_error)
   }
-  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 206, __pyx_L1_error)
   __pyx_t_3 = ((__pyx_t_15 > 1) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 205, __pyx_L1_error)
+    __PYX_ERR(0, 206, __pyx_L1_error)
   }
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_signatures == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 205, __pyx_L1_error)
+      __PYX_ERR(0, 206, __pyx_L1_error)
     }
-    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_r = __pyx_t_9;
     __pyx_t_9 = 0;
@@ -10796,16 +11183,19 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_31cython_2d_array_weave
   PyArrayObject *__pyx_v_arr = 0;
   int __pyx_v_num_zeros;
   int __pyx_v_filter_size;
+  int __pyx_v_include_center;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("cython_2d_array_weave_forward (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,0};
-    PyObject* values[3] = {0,0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,&__pyx_n_s_include_center,0};
+    PyObject* values[4] = {0,0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
         case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
         CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
@@ -10824,39 +11214,47 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_31cython_2d_array_weave
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 205, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, 1); __PYX_ERR(0, 206, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 205, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, 2); __PYX_ERR(0, 206, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  3:
+        if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_include_center)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, 3); __PYX_ERR(0, 206, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_array_weave_forward") < 0)) __PYX_ERR(0, 205, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_array_weave_forward") < 0)) __PYX_ERR(0, 206, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+      values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+    __pyx_v_include_center = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_include_center == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 208, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 205, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 206, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_2d_array_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 205, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_r = __pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size, __pyx_v_include_center);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10867,7 +11265,7 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_31cython_2d_array_weave
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size) {
+static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center) {
   int __pyx_v_height;
   int __pyx_v_width;
   int __pyx_v_expand_dist;
@@ -10921,6 +11319,8 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
   Py_ssize_t __pyx_t_31;
   Py_ssize_t __pyx_t_32;
   Py_ssize_t __pyx_t_33;
+  Py_ssize_t __pyx_t_34;
+  Py_ssize_t __pyx_t_35;
   __Pyx_RefNannySetupContext("__pyx_fuse_0cython_2d_array_weave_forward", 0);
   __pyx_pybuffer_out.pybuffer.buf = NULL;
   __pyx_pybuffer_out.refcount = 0;
@@ -10932,11 +11332,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 205, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 206, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1];
 
-  /* "cython_weave_pyx.pyx":210
+  /* "cython_weave_pyx.pyx":212
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int height = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -10945,7 +11345,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":211
+  /* "cython_weave_pyx.pyx":213
  *     """
  *     cdef int height = arr.shape[0]
  *     cdef int width = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -10954,7 +11354,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":213
+  /* "cython_weave_pyx.pyx":215
  *     cdef int width = arr.shape[1]
  * 
  *     cdef int expand_dist = 2*filter_size + 2             # <<<<<<<<<<<<<<
@@ -10963,7 +11363,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
   __pyx_v_expand_dist = ((2 * __pyx_v_filter_size) + 2);
 
-  /* "cython_weave_pyx.pyx":214
+  /* "cython_weave_pyx.pyx":216
  * 
  *     cdef int expand_dist = 2*filter_size + 2
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -10972,7 +11372,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":220
+  /* "cython_weave_pyx.pyx":222
  *     cdef np.float64_t temp_val
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -10981,7 +11381,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":221
+  /* "cython_weave_pyx.pyx":223
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -10990,23 +11390,23 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":223
+  /* "cython_weave_pyx.pyx":225
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=2] out = np.zeros([HH, WW])             # <<<<<<<<<<<<<<
  * 
  *     cdef int temp_x
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -11025,14 +11425,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11041,32 +11441,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_2, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 223, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 225, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 223, __pyx_L1_error)
+      __PYX_ERR(0, 225, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -11074,7 +11474,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":228
+  /* "cython_weave_pyx.pyx":230
  *     cdef int temp_y
  * 
  *     for i in range(height):             # <<<<<<<<<<<<<<
@@ -11085,7 +11485,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "cython_weave_pyx.pyx":229
+    /* "cython_weave_pyx.pyx":231
  * 
  *     for i in range(height):
  *         for j in range(width):             # <<<<<<<<<<<<<<
@@ -11096,7 +11496,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_v_j = __pyx_t_10;
 
-      /* "cython_weave_pyx.pyx":230
+      /* "cython_weave_pyx.pyx":232
  *     for i in range(height):
  *         for j in range(width):
  *             temp_val = arr[i,j]             # <<<<<<<<<<<<<<
@@ -11107,7 +11507,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       __pyx_t_12 = __pyx_v_j;
       __pyx_v_temp_val = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_arr.rcbuffer->pybuffer.buf, __pyx_t_11, __pyx_pybuffernd_arr.diminfo[0].strides, __pyx_t_12, __pyx_pybuffernd_arr.diminfo[1].strides));
 
-      /* "cython_weave_pyx.pyx":231
+      /* "cython_weave_pyx.pyx":233
  *         for j in range(width):
  *             temp_val = arr[i,j]
  *             big_i = filter_size * i             # <<<<<<<<<<<<<<
@@ -11116,7 +11516,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       __pyx_v_big_i = (__pyx_v_filter_size * __pyx_v_i);
 
-      /* "cython_weave_pyx.pyx":232
+      /* "cython_weave_pyx.pyx":234
  *             temp_val = arr[i,j]
  *             big_i = filter_size * i
  *             big_j = filter_size * j             # <<<<<<<<<<<<<<
@@ -11125,7 +11525,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       __pyx_v_big_j = (__pyx_v_filter_size * __pyx_v_j);
 
-      /* "cython_weave_pyx.pyx":235
+      /* "cython_weave_pyx.pyx":237
  *             #######
  *             #First Column
  *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
@@ -11134,7 +11534,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":236
+      /* "cython_weave_pyx.pyx":238
  *             #First Column
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j-expand_dist             # <<<<<<<<<<<<<<
@@ -11143,7 +11543,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_y = (__pyx_v_big_j - __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":237
+      /* "cython_weave_pyx.pyx":239
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j-expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -11175,7 +11575,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       __pyx_L8_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":238
+        /* "cython_weave_pyx.pyx":240
  *             temp_y = big_j-expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -11186,7 +11586,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
         __pyx_t_19 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_18, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_19, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":237
+        /* "cython_weave_pyx.pyx":239
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j-expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -11195,7 +11595,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       }
 
-      /* "cython_weave_pyx.pyx":239
+      /* "cython_weave_pyx.pyx":241
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i             # <<<<<<<<<<<<<<
@@ -11204,7 +11604,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_x = __pyx_v_big_i;
 
-      /* "cython_weave_pyx.pyx":240
+      /* "cython_weave_pyx.pyx":242
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -11236,7 +11636,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       __pyx_L11_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":241
+        /* "cython_weave_pyx.pyx":243
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -11247,7 +11647,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
         __pyx_t_21 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_20, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_21, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":240
+        /* "cython_weave_pyx.pyx":242
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -11256,7 +11656,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       }
 
-      /* "cython_weave_pyx.pyx":242
+      /* "cython_weave_pyx.pyx":244
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
@@ -11265,12 +11665,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":243
+      /* "cython_weave_pyx.pyx":245
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  */
       __pyx_t_16 = __pyx_v_temp_y;
       __pyx_t_14 = __pyx_v_temp_x;
@@ -11297,37 +11697,37 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       __pyx_L14_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":244
+        /* "cython_weave_pyx.pyx":246
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  *             temp_x = big_i-expand_dist
  */
         __pyx_t_22 = __pyx_v_temp_x;
         __pyx_t_23 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_22, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_23, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":243
+        /* "cython_weave_pyx.pyx":245
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  */
       }
 
-      /* "cython_weave_pyx.pyx":246
+      /* "cython_weave_pyx.pyx":248
  *                 out[temp_x,temp_y] = temp_val
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
       __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":247
- *             #Second Column (Only 2 Points)
+      /* "cython_weave_pyx.pyx":249
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j             # <<<<<<<<<<<<<<
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
@@ -11335,12 +11735,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_y = __pyx_v_big_j;
 
-      /* "cython_weave_pyx.pyx":248
+      /* "cython_weave_pyx.pyx":250
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
+ *             if include_center == 1:
  */
       __pyx_t_14 = __pyx_v_temp_y;
       __pyx_t_15 = __pyx_v_temp_x;
@@ -11367,111 +11767,121 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       __pyx_L17_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":249
+        /* "cython_weave_pyx.pyx":251
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *             if include_center == 1:
+ *                 temp_x = big_i
  */
         __pyx_t_24 = __pyx_v_temp_x;
         __pyx_t_25 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_25, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":248
+        /* "cython_weave_pyx.pyx":250
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
+ *             if include_center == 1:
  */
       }
 
-      /* "cython_weave_pyx.pyx":250
+      /* "cython_weave_pyx.pyx":252
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
+ *             if include_center == 1:             # <<<<<<<<<<<<<<
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+      __pyx_t_13 = ((__pyx_v_include_center == 1) != 0);
+      if (__pyx_t_13) {
+
+        /* "cython_weave_pyx.pyx":253
+ *                 out[temp_x,temp_y] = temp_val
+ *             if include_center == 1:
+ *                 temp_x = big_i             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_x = __pyx_v_big_i;
+
+        /* "cython_weave_pyx.pyx":254
+ *             if include_center == 1:
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ */
+        __pyx_t_15 = __pyx_v_temp_y;
+        __pyx_t_16 = __pyx_v_temp_x;
+        if (((__pyx_t_15 < __pyx_t_16) != 0)) {
+          __pyx_t_14 = __pyx_t_15;
+        } else {
+          __pyx_t_14 = __pyx_t_16;
+        }
+        __pyx_t_17 = ((__pyx_t_14 >= 0) != 0);
+        if (__pyx_t_17) {
+        } else {
+          __pyx_t_13 = __pyx_t_17;
+          goto __pyx_L21_bool_binop_done;
+        }
+        __pyx_t_14 = __pyx_v_temp_y;
+        __pyx_t_15 = __pyx_v_temp_x;
+        if (((__pyx_t_14 > __pyx_t_15) != 0)) {
+          __pyx_t_16 = __pyx_t_14;
+        } else {
+          __pyx_t_16 = __pyx_t_15;
+        }
+        __pyx_t_17 = ((__pyx_t_16 < __pyx_v_HH) != 0);
+        __pyx_t_13 = __pyx_t_17;
+        __pyx_L21_bool_binop_done:;
+        if (__pyx_t_13) {
+
+          /* "cython_weave_pyx.pyx":255
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          __pyx_t_26 = __pyx_v_temp_x;
+          __pyx_t_27 = __pyx_v_temp_y;
+          *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
+
+          /* "cython_weave_pyx.pyx":254
+ *             if include_center == 1:
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":252
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ *             if include_center == 1:             # <<<<<<<<<<<<<<
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":256
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  */
       __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":251
- *                 out[temp_x,temp_y] = temp_val
+      /* "cython_weave_pyx.pyx":257
+ *                     out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
  *             #Third Column
- */
-      __pyx_t_15 = __pyx_v_temp_y;
-      __pyx_t_16 = __pyx_v_temp_x;
-      if (((__pyx_t_15 < __pyx_t_16) != 0)) {
-        __pyx_t_14 = __pyx_t_15;
-      } else {
-        __pyx_t_14 = __pyx_t_16;
-      }
-      __pyx_t_17 = ((__pyx_t_14 >= 0) != 0);
-      if (__pyx_t_17) {
-      } else {
-        __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L20_bool_binop_done;
-      }
-      __pyx_t_14 = __pyx_v_temp_y;
-      __pyx_t_15 = __pyx_v_temp_x;
-      if (((__pyx_t_14 > __pyx_t_15) != 0)) {
-        __pyx_t_16 = __pyx_t_14;
-      } else {
-        __pyx_t_16 = __pyx_t_15;
-      }
-      __pyx_t_17 = ((__pyx_t_16 < __pyx_v_HH) != 0);
-      __pyx_t_13 = __pyx_t_17;
-      __pyx_L20_bool_binop_done:;
-      if (__pyx_t_13) {
-
-        /* "cython_weave_pyx.pyx":252
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             #Third Column
- *             temp_x = big_i-expand_dist
- */
-        __pyx_t_26 = __pyx_v_temp_x;
-        __pyx_t_27 = __pyx_v_temp_y;
-        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
-
-        /* "cython_weave_pyx.pyx":251
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *             #Third Column
- */
-      }
-
-      /* "cython_weave_pyx.pyx":254
- *                 out[temp_x,temp_y] = temp_val
- *             #Third Column
- *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
- *             temp_y = big_j+expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- */
-      __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
-
-      /* "cython_weave_pyx.pyx":255
- *             #Third Column
- *             temp_x = big_i-expand_dist
- *             temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- */
-      __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
-
-      /* "cython_weave_pyx.pyx":256
- *             temp_x = big_i-expand_dist
- *             temp_y = big_j+expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i
  */
       __pyx_t_16 = __pyx_v_temp_y;
       __pyx_t_14 = __pyx_v_temp_x;
@@ -11484,7 +11894,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       if (__pyx_t_17) {
       } else {
         __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L23_bool_binop_done;
+        goto __pyx_L24_bool_binop_done;
       }
       __pyx_t_15 = __pyx_v_temp_y;
       __pyx_t_16 = __pyx_v_temp_x;
@@ -11495,44 +11905,53 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       }
       __pyx_t_17 = ((__pyx_t_14 < __pyx_v_HH) != 0);
       __pyx_t_13 = __pyx_t_17;
-      __pyx_L23_bool_binop_done:;
+      __pyx_L24_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":257
- *             temp_y = big_j+expand_dist
+        /* "cython_weave_pyx.pyx":258
+ *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             temp_x = big_i
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *             #Third Column
+ *             temp_x = big_i-expand_dist
  */
         __pyx_t_28 = __pyx_v_temp_x;
         __pyx_t_29 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_29, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":256
+        /* "cython_weave_pyx.pyx":257
+ *                     out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *             #Third Column
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":260
+ *                 out[temp_x,temp_y] = temp_val
+ *             #Third Column
+ *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
+ *             temp_y = big_j+expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+      __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
+
+      /* "cython_weave_pyx.pyx":261
+ *             #Third Column
+ *             temp_x = big_i-expand_dist
+ *             temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ */
+      __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
+
+      /* "cython_weave_pyx.pyx":262
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j+expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
- */
-      }
-
-      /* "cython_weave_pyx.pyx":258
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i             # <<<<<<<<<<<<<<
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- */
-      __pyx_v_temp_x = __pyx_v_big_i;
-
-      /* "cython_weave_pyx.pyx":259
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
  */
       __pyx_t_14 = __pyx_v_temp_y;
       __pyx_t_15 = __pyx_v_temp_x;
@@ -11545,7 +11964,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       if (__pyx_t_17) {
       } else {
         __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L26_bool_binop_done;
+        goto __pyx_L27_bool_binop_done;
       }
       __pyx_t_16 = __pyx_v_temp_y;
       __pyx_t_14 = __pyx_v_temp_x;
@@ -11556,44 +11975,44 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       }
       __pyx_t_17 = ((__pyx_t_15 < __pyx_v_HH) != 0);
       __pyx_t_13 = __pyx_t_17;
-      __pyx_L26_bool_binop_done:;
+      __pyx_L27_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":260
- *             temp_x = big_i
+        /* "cython_weave_pyx.pyx":263
+ *             temp_y = big_j+expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             temp_x = big_i + expand_dist
+ *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
         __pyx_t_30 = __pyx_v_temp_x;
         __pyx_t_31 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":259
+        /* "cython_weave_pyx.pyx":262
+ *             temp_x = big_i-expand_dist
+ *             temp_y = big_j+expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":264
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i             # <<<<<<<<<<<<<<
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ */
+      __pyx_v_temp_x = __pyx_v_big_i;
+
+      /* "cython_weave_pyx.pyx":265
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
- */
-      }
-
-      /* "cython_weave_pyx.pyx":261
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- */
-      __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
-
-      /* "cython_weave_pyx.pyx":262
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *     return out
  */
       __pyx_t_15 = __pyx_v_temp_y;
       __pyx_t_16 = __pyx_v_temp_x;
@@ -11606,7 +12025,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       if (__pyx_t_17) {
       } else {
         __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L29_bool_binop_done;
+        goto __pyx_L30_bool_binop_done;
       }
       __pyx_t_14 = __pyx_v_temp_y;
       __pyx_t_15 = __pyx_v_temp_x;
@@ -11617,21 +12036,82 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
       }
       __pyx_t_17 = ((__pyx_t_16 < __pyx_v_HH) != 0);
       __pyx_t_13 = __pyx_t_17;
-      __pyx_L29_bool_binop_done:;
+      __pyx_L30_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":263
+        /* "cython_weave_pyx.pyx":266
+ *             temp_x = big_i
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        __pyx_t_32 = __pyx_v_temp_x;
+        __pyx_t_33 = __pyx_v_temp_y;
+        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_32, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
+
+        /* "cython_weave_pyx.pyx":265
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":267
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ */
+      __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
+
+      /* "cython_weave_pyx.pyx":268
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *     return out
+ */
+      __pyx_t_16 = __pyx_v_temp_y;
+      __pyx_t_14 = __pyx_v_temp_x;
+      if (((__pyx_t_16 < __pyx_t_14) != 0)) {
+        __pyx_t_15 = __pyx_t_16;
+      } else {
+        __pyx_t_15 = __pyx_t_14;
+      }
+      __pyx_t_17 = ((__pyx_t_15 >= 0) != 0);
+      if (__pyx_t_17) {
+      } else {
+        __pyx_t_13 = __pyx_t_17;
+        goto __pyx_L33_bool_binop_done;
+      }
+      __pyx_t_15 = __pyx_v_temp_y;
+      __pyx_t_16 = __pyx_v_temp_x;
+      if (((__pyx_t_15 > __pyx_t_16) != 0)) {
+        __pyx_t_14 = __pyx_t_15;
+      } else {
+        __pyx_t_14 = __pyx_t_16;
+      }
+      __pyx_t_17 = ((__pyx_t_14 < __pyx_v_HH) != 0);
+      __pyx_t_13 = __pyx_t_17;
+      __pyx_L33_bool_binop_done:;
+      if (__pyx_t_13) {
+
+        /* "cython_weave_pyx.pyx":269
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
  *     return out
  * 
  */
-        __pyx_t_32 = __pyx_v_temp_x;
-        __pyx_t_33 = __pyx_v_temp_y;
-        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_32, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
+        __pyx_t_34 = __pyx_v_temp_x;
+        __pyx_t_35 = __pyx_v_temp_y;
+        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float32_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":262
+        /* "cython_weave_pyx.pyx":268
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -11642,7 +12122,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
     }
   }
 
-  /* "cython_weave_pyx.pyx":264
+  /* "cython_weave_pyx.pyx":270
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  *     return out             # <<<<<<<<<<<<<<
@@ -11654,12 +12134,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_30cython_2d_array_weave_forward(CYT
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":205
+  /* "cython_weave_pyx.pyx":206
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
   /* function exit code */
@@ -11696,16 +12176,19 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_33cython_2d_array_weave
   PyArrayObject *__pyx_v_arr = 0;
   int __pyx_v_num_zeros;
   int __pyx_v_filter_size;
+  int __pyx_v_include_center;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("cython_2d_array_weave_forward (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,0};
-    PyObject* values[3] = {0,0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_arr,&__pyx_n_s_num_zeros,&__pyx_n_s_filter_size,&__pyx_n_s_include_center,0};
+    PyObject* values[4] = {0,0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
         case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
         CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
@@ -11724,39 +12207,47 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_33cython_2d_array_weave
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 205, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, 1); __PYX_ERR(0, 206, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 205, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, 2); __PYX_ERR(0, 206, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  3:
+        if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_include_center)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, 3); __PYX_ERR(0, 206, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_array_weave_forward") < 0)) __PYX_ERR(0, 205, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_array_weave_forward") < 0)) __PYX_ERR(0, 206, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+      values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+    __pyx_v_include_center = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_include_center == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 208, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 205, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_2d_array_weave_forward", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 206, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_2d_array_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 205, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_r = __pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size, __pyx_v_include_center);
 
   /* function exit code */
   goto __pyx_L0;
@@ -11767,7 +12258,7 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_33cython_2d_array_weave
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size) {
+static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_arr, int __pyx_v_num_zeros, int __pyx_v_filter_size, int __pyx_v_include_center) {
   int __pyx_v_height;
   int __pyx_v_width;
   int __pyx_v_expand_dist;
@@ -11821,6 +12312,8 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
   Py_ssize_t __pyx_t_31;
   Py_ssize_t __pyx_t_32;
   Py_ssize_t __pyx_t_33;
+  Py_ssize_t __pyx_t_34;
+  Py_ssize_t __pyx_t_35;
   __Pyx_RefNannySetupContext("__pyx_fuse_1cython_2d_array_weave_forward", 0);
   __pyx_pybuffer_out.pybuffer.buf = NULL;
   __pyx_pybuffer_out.refcount = 0;
@@ -11832,11 +12325,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 205, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 206, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1];
 
-  /* "cython_weave_pyx.pyx":210
+  /* "cython_weave_pyx.pyx":212
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int height = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -11845,7 +12338,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":211
+  /* "cython_weave_pyx.pyx":213
  *     """
  *     cdef int height = arr.shape[0]
  *     cdef int width = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -11854,7 +12347,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":213
+  /* "cython_weave_pyx.pyx":215
  *     cdef int width = arr.shape[1]
  * 
  *     cdef int expand_dist = 2*filter_size + 2             # <<<<<<<<<<<<<<
@@ -11863,7 +12356,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
   __pyx_v_expand_dist = ((2 * __pyx_v_filter_size) + 2);
 
-  /* "cython_weave_pyx.pyx":214
+  /* "cython_weave_pyx.pyx":216
  * 
  *     cdef int expand_dist = 2*filter_size + 2
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -11872,7 +12365,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":220
+  /* "cython_weave_pyx.pyx":222
  *     cdef np.float64_t temp_val
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -11881,7 +12374,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":221
+  /* "cython_weave_pyx.pyx":223
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -11890,23 +12383,23 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":223
+  /* "cython_weave_pyx.pyx":225
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=2] out = np.zeros([HH, WW])             # <<<<<<<<<<<<<<
  * 
  *     cdef int temp_x
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -11925,14 +12418,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11941,32 +12434,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_2, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 223, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 225, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 223, __pyx_L1_error)
+      __PYX_ERR(0, 225, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -11974,7 +12467,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":228
+  /* "cython_weave_pyx.pyx":230
  *     cdef int temp_y
  * 
  *     for i in range(height):             # <<<<<<<<<<<<<<
@@ -11985,7 +12478,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "cython_weave_pyx.pyx":229
+    /* "cython_weave_pyx.pyx":231
  * 
  *     for i in range(height):
  *         for j in range(width):             # <<<<<<<<<<<<<<
@@ -11996,7 +12489,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_v_j = __pyx_t_10;
 
-      /* "cython_weave_pyx.pyx":230
+      /* "cython_weave_pyx.pyx":232
  *     for i in range(height):
  *         for j in range(width):
  *             temp_val = arr[i,j]             # <<<<<<<<<<<<<<
@@ -12007,7 +12500,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       __pyx_t_12 = __pyx_v_j;
       __pyx_v_temp_val = (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_arr.rcbuffer->pybuffer.buf, __pyx_t_11, __pyx_pybuffernd_arr.diminfo[0].strides, __pyx_t_12, __pyx_pybuffernd_arr.diminfo[1].strides));
 
-      /* "cython_weave_pyx.pyx":231
+      /* "cython_weave_pyx.pyx":233
  *         for j in range(width):
  *             temp_val = arr[i,j]
  *             big_i = filter_size * i             # <<<<<<<<<<<<<<
@@ -12016,7 +12509,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       __pyx_v_big_i = (__pyx_v_filter_size * __pyx_v_i);
 
-      /* "cython_weave_pyx.pyx":232
+      /* "cython_weave_pyx.pyx":234
  *             temp_val = arr[i,j]
  *             big_i = filter_size * i
  *             big_j = filter_size * j             # <<<<<<<<<<<<<<
@@ -12025,7 +12518,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       __pyx_v_big_j = (__pyx_v_filter_size * __pyx_v_j);
 
-      /* "cython_weave_pyx.pyx":235
+      /* "cython_weave_pyx.pyx":237
  *             #######
  *             #First Column
  *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
@@ -12034,7 +12527,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":236
+      /* "cython_weave_pyx.pyx":238
  *             #First Column
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j-expand_dist             # <<<<<<<<<<<<<<
@@ -12043,7 +12536,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_y = (__pyx_v_big_j - __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":237
+      /* "cython_weave_pyx.pyx":239
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j-expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -12075,7 +12568,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       __pyx_L8_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":238
+        /* "cython_weave_pyx.pyx":240
  *             temp_y = big_j-expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -12086,7 +12579,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
         __pyx_t_19 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_18, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_19, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":237
+        /* "cython_weave_pyx.pyx":239
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j-expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -12095,7 +12588,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       }
 
-      /* "cython_weave_pyx.pyx":239
+      /* "cython_weave_pyx.pyx":241
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i             # <<<<<<<<<<<<<<
@@ -12104,7 +12597,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_x = __pyx_v_big_i;
 
-      /* "cython_weave_pyx.pyx":240
+      /* "cython_weave_pyx.pyx":242
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -12136,7 +12629,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       __pyx_L11_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":241
+        /* "cython_weave_pyx.pyx":243
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
@@ -12147,7 +12640,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
         __pyx_t_21 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_20, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_21, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":240
+        /* "cython_weave_pyx.pyx":242
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -12156,7 +12649,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       }
 
-      /* "cython_weave_pyx.pyx":242
+      /* "cython_weave_pyx.pyx":244
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
@@ -12165,12 +12658,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":243
+      /* "cython_weave_pyx.pyx":245
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  */
       __pyx_t_16 = __pyx_v_temp_y;
       __pyx_t_14 = __pyx_v_temp_x;
@@ -12197,37 +12690,37 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       __pyx_L14_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":244
+        /* "cython_weave_pyx.pyx":246
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  *             temp_x = big_i-expand_dist
  */
         __pyx_t_22 = __pyx_v_temp_x;
         __pyx_t_23 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_22, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_23, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":243
+        /* "cython_weave_pyx.pyx":245
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  */
       }
 
-      /* "cython_weave_pyx.pyx":246
+      /* "cython_weave_pyx.pyx":248
  *                 out[temp_x,temp_y] = temp_val
- *             #Second Column (Only 2 Points)
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
       __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":247
- *             #Second Column (Only 2 Points)
+      /* "cython_weave_pyx.pyx":249
+ *             #Second Column (Only 2 Points) Unless include_center == 1!
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j             # <<<<<<<<<<<<<<
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
@@ -12235,12 +12728,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
  */
       __pyx_v_temp_y = __pyx_v_big_j;
 
-      /* "cython_weave_pyx.pyx":248
+      /* "cython_weave_pyx.pyx":250
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
+ *             if include_center == 1:
  */
       __pyx_t_14 = __pyx_v_temp_y;
       __pyx_t_15 = __pyx_v_temp_x;
@@ -12267,111 +12760,121 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       __pyx_L17_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":249
+        /* "cython_weave_pyx.pyx":251
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *             if include_center == 1:
+ *                 temp_x = big_i
  */
         __pyx_t_24 = __pyx_v_temp_x;
         __pyx_t_25 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_25, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":248
+        /* "cython_weave_pyx.pyx":250
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
+ *             if include_center == 1:
  */
       }
 
-      /* "cython_weave_pyx.pyx":250
+      /* "cython_weave_pyx.pyx":252
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
+ *             if include_center == 1:             # <<<<<<<<<<<<<<
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+      __pyx_t_13 = ((__pyx_v_include_center == 1) != 0);
+      if (__pyx_t_13) {
+
+        /* "cython_weave_pyx.pyx":253
+ *                 out[temp_x,temp_y] = temp_val
+ *             if include_center == 1:
+ *                 temp_x = big_i             # <<<<<<<<<<<<<<
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[temp_x,temp_y] = temp_val
+ */
+        __pyx_v_temp_x = __pyx_v_big_i;
+
+        /* "cython_weave_pyx.pyx":254
+ *             if include_center == 1:
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ */
+        __pyx_t_15 = __pyx_v_temp_y;
+        __pyx_t_16 = __pyx_v_temp_x;
+        if (((__pyx_t_15 < __pyx_t_16) != 0)) {
+          __pyx_t_14 = __pyx_t_15;
+        } else {
+          __pyx_t_14 = __pyx_t_16;
+        }
+        __pyx_t_17 = ((__pyx_t_14 >= 0) != 0);
+        if (__pyx_t_17) {
+        } else {
+          __pyx_t_13 = __pyx_t_17;
+          goto __pyx_L21_bool_binop_done;
+        }
+        __pyx_t_14 = __pyx_v_temp_y;
+        __pyx_t_15 = __pyx_v_temp_x;
+        if (((__pyx_t_14 > __pyx_t_15) != 0)) {
+          __pyx_t_16 = __pyx_t_14;
+        } else {
+          __pyx_t_16 = __pyx_t_15;
+        }
+        __pyx_t_17 = ((__pyx_t_16 < __pyx_v_HH) != 0);
+        __pyx_t_13 = __pyx_t_17;
+        __pyx_L21_bool_binop_done:;
+        if (__pyx_t_13) {
+
+          /* "cython_weave_pyx.pyx":255
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+          __pyx_t_26 = __pyx_v_temp_x;
+          __pyx_t_27 = __pyx_v_temp_y;
+          *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
+
+          /* "cython_weave_pyx.pyx":254
+ *             if include_center == 1:
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                     out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ */
+        }
+
+        /* "cython_weave_pyx.pyx":252
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ *             if include_center == 1:             # <<<<<<<<<<<<<<
+ *                 temp_x = big_i
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":256
+ *                 if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                     out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  */
       __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
 
-      /* "cython_weave_pyx.pyx":251
- *                 out[temp_x,temp_y] = temp_val
+      /* "cython_weave_pyx.pyx":257
+ *                     out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
  *             #Third Column
- */
-      __pyx_t_15 = __pyx_v_temp_y;
-      __pyx_t_16 = __pyx_v_temp_x;
-      if (((__pyx_t_15 < __pyx_t_16) != 0)) {
-        __pyx_t_14 = __pyx_t_15;
-      } else {
-        __pyx_t_14 = __pyx_t_16;
-      }
-      __pyx_t_17 = ((__pyx_t_14 >= 0) != 0);
-      if (__pyx_t_17) {
-      } else {
-        __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L20_bool_binop_done;
-      }
-      __pyx_t_14 = __pyx_v_temp_y;
-      __pyx_t_15 = __pyx_v_temp_x;
-      if (((__pyx_t_14 > __pyx_t_15) != 0)) {
-        __pyx_t_16 = __pyx_t_14;
-      } else {
-        __pyx_t_16 = __pyx_t_15;
-      }
-      __pyx_t_17 = ((__pyx_t_16 < __pyx_v_HH) != 0);
-      __pyx_t_13 = __pyx_t_17;
-      __pyx_L20_bool_binop_done:;
-      if (__pyx_t_13) {
-
-        /* "cython_weave_pyx.pyx":252
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             #Third Column
- *             temp_x = big_i-expand_dist
- */
-        __pyx_t_26 = __pyx_v_temp_x;
-        __pyx_t_27 = __pyx_v_temp_y;
-        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
-
-        /* "cython_weave_pyx.pyx":251
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *             #Third Column
- */
-      }
-
-      /* "cython_weave_pyx.pyx":254
- *                 out[temp_x,temp_y] = temp_val
- *             #Third Column
- *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
- *             temp_y = big_j+expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- */
-      __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
-
-      /* "cython_weave_pyx.pyx":255
- *             #Third Column
- *             temp_x = big_i-expand_dist
- *             temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- */
-      __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
-
-      /* "cython_weave_pyx.pyx":256
- *             temp_x = big_i-expand_dist
- *             temp_y = big_j+expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i
  */
       __pyx_t_16 = __pyx_v_temp_y;
       __pyx_t_14 = __pyx_v_temp_x;
@@ -12384,7 +12887,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       if (__pyx_t_17) {
       } else {
         __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L23_bool_binop_done;
+        goto __pyx_L24_bool_binop_done;
       }
       __pyx_t_15 = __pyx_v_temp_y;
       __pyx_t_16 = __pyx_v_temp_x;
@@ -12395,44 +12898,53 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       }
       __pyx_t_17 = ((__pyx_t_14 < __pyx_v_HH) != 0);
       __pyx_t_13 = __pyx_t_17;
-      __pyx_L23_bool_binop_done:;
+      __pyx_L24_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":257
- *             temp_y = big_j+expand_dist
+        /* "cython_weave_pyx.pyx":258
+ *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             temp_x = big_i
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *             #Third Column
+ *             temp_x = big_i-expand_dist
  */
         __pyx_t_28 = __pyx_v_temp_x;
         __pyx_t_29 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_29, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":256
+        /* "cython_weave_pyx.pyx":257
+ *                     out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *             #Third Column
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":260
+ *                 out[temp_x,temp_y] = temp_val
+ *             #Third Column
+ *             temp_x = big_i-expand_dist             # <<<<<<<<<<<<<<
+ *             temp_y = big_j+expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+      __pyx_v_temp_x = (__pyx_v_big_i - __pyx_v_expand_dist);
+
+      /* "cython_weave_pyx.pyx":261
+ *             #Third Column
+ *             temp_x = big_i-expand_dist
+ *             temp_y = big_j+expand_dist             # <<<<<<<<<<<<<<
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ */
+      __pyx_v_temp_y = (__pyx_v_big_j + __pyx_v_expand_dist);
+
+      /* "cython_weave_pyx.pyx":262
  *             temp_x = big_i-expand_dist
  *             temp_y = big_j+expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
- */
-      }
-
-      /* "cython_weave_pyx.pyx":258
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i             # <<<<<<<<<<<<<<
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- */
-      __pyx_v_temp_x = __pyx_v_big_i;
-
-      /* "cython_weave_pyx.pyx":259
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
  */
       __pyx_t_14 = __pyx_v_temp_y;
       __pyx_t_15 = __pyx_v_temp_x;
@@ -12445,7 +12957,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       if (__pyx_t_17) {
       } else {
         __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L26_bool_binop_done;
+        goto __pyx_L27_bool_binop_done;
       }
       __pyx_t_16 = __pyx_v_temp_y;
       __pyx_t_14 = __pyx_v_temp_x;
@@ -12456,44 +12968,44 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       }
       __pyx_t_17 = ((__pyx_t_15 < __pyx_v_HH) != 0);
       __pyx_t_13 = __pyx_t_17;
-      __pyx_L26_bool_binop_done:;
+      __pyx_L27_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":260
- *             temp_x = big_i
+        /* "cython_weave_pyx.pyx":263
+ *             temp_y = big_j+expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
- *             temp_x = big_i + expand_dist
+ *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  */
         __pyx_t_30 = __pyx_v_temp_x;
         __pyx_t_31 = __pyx_v_temp_y;
         *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":259
+        /* "cython_weave_pyx.pyx":262
+ *             temp_x = big_i-expand_dist
+ *             temp_y = big_j+expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":264
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i             # <<<<<<<<<<<<<<
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ */
+      __pyx_v_temp_x = __pyx_v_big_i;
+
+      /* "cython_weave_pyx.pyx":265
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
- */
-      }
-
-      /* "cython_weave_pyx.pyx":261
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
- *                 out[temp_x,temp_y] = temp_val
- */
-      __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
-
-      /* "cython_weave_pyx.pyx":262
- *                 out[temp_x,temp_y] = temp_val
- *             temp_x = big_i + expand_dist
- *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
- *                 out[temp_x,temp_y] = temp_val
- *     return out
  */
       __pyx_t_15 = __pyx_v_temp_y;
       __pyx_t_16 = __pyx_v_temp_x;
@@ -12506,7 +13018,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       if (__pyx_t_17) {
       } else {
         __pyx_t_13 = __pyx_t_17;
-        goto __pyx_L29_bool_binop_done;
+        goto __pyx_L30_bool_binop_done;
       }
       __pyx_t_14 = __pyx_v_temp_y;
       __pyx_t_15 = __pyx_v_temp_x;
@@ -12517,21 +13029,82 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
       }
       __pyx_t_17 = ((__pyx_t_16 < __pyx_v_HH) != 0);
       __pyx_t_13 = __pyx_t_17;
-      __pyx_L29_bool_binop_done:;
+      __pyx_L30_bool_binop_done:;
       if (__pyx_t_13) {
 
-        /* "cython_weave_pyx.pyx":263
+        /* "cython_weave_pyx.pyx":266
+ *             temp_x = big_i
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ */
+        __pyx_t_32 = __pyx_v_temp_x;
+        __pyx_t_33 = __pyx_v_temp_y;
+        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_32, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
+
+        /* "cython_weave_pyx.pyx":265
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ */
+      }
+
+      /* "cython_weave_pyx.pyx":267
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist             # <<<<<<<<<<<<<<
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
+ *                 out[temp_x,temp_y] = temp_val
+ */
+      __pyx_v_temp_x = (__pyx_v_big_i + __pyx_v_expand_dist);
+
+      /* "cython_weave_pyx.pyx":268
+ *                 out[temp_x,temp_y] = temp_val
+ *             temp_x = big_i + expand_dist
+ *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
+ *                 out[temp_x,temp_y] = temp_val
+ *     return out
+ */
+      __pyx_t_16 = __pyx_v_temp_y;
+      __pyx_t_14 = __pyx_v_temp_x;
+      if (((__pyx_t_16 < __pyx_t_14) != 0)) {
+        __pyx_t_15 = __pyx_t_16;
+      } else {
+        __pyx_t_15 = __pyx_t_14;
+      }
+      __pyx_t_17 = ((__pyx_t_15 >= 0) != 0);
+      if (__pyx_t_17) {
+      } else {
+        __pyx_t_13 = __pyx_t_17;
+        goto __pyx_L33_bool_binop_done;
+      }
+      __pyx_t_15 = __pyx_v_temp_y;
+      __pyx_t_16 = __pyx_v_temp_x;
+      if (((__pyx_t_15 > __pyx_t_16) != 0)) {
+        __pyx_t_14 = __pyx_t_15;
+      } else {
+        __pyx_t_14 = __pyx_t_16;
+      }
+      __pyx_t_17 = ((__pyx_t_14 < __pyx_v_HH) != 0);
+      __pyx_t_13 = __pyx_t_17;
+      __pyx_L33_bool_binop_done:;
+      if (__pyx_t_13) {
+
+        /* "cython_weave_pyx.pyx":269
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val             # <<<<<<<<<<<<<<
  *     return out
  * 
  */
-        __pyx_t_32 = __pyx_v_temp_x;
-        __pyx_t_33 = __pyx_v_temp_y;
-        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_32, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_33, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
+        __pyx_t_34 = __pyx_v_temp_x;
+        __pyx_t_35 = __pyx_v_temp_y;
+        *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_out.diminfo[0].strides, __pyx_t_35, __pyx_pybuffernd_out.diminfo[1].strides) = __pyx_v_temp_val;
 
-        /* "cython_weave_pyx.pyx":262
+        /* "cython_weave_pyx.pyx":268
  *                 out[temp_x,temp_y] = temp_val
  *             temp_x = big_i + expand_dist
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):             # <<<<<<<<<<<<<<
@@ -12542,7 +13115,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
     }
   }
 
-  /* "cython_weave_pyx.pyx":264
+  /* "cython_weave_pyx.pyx":270
  *             if (min(temp_x,temp_y) >= 0 and max(temp_x,temp_y) < HH):
  *                 out[temp_x,temp_y] = temp_val
  *     return out             # <<<<<<<<<<<<<<
@@ -12554,12 +13127,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":205
+  /* "cython_weave_pyx.pyx":206
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
 
   /* function exit code */
@@ -12589,7 +13162,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_32cython_2d_array_weave_forward(CYT
   return __pyx_r;
 }
 
-/* "cython_weave_pyx.pyx":270
+/* "cython_weave_pyx.pyx":276
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
@@ -12636,23 +13209,23 @@ static PyObject *__pyx_pw_16cython_weave_pyx_9cython_3d_zero_weave_forward(PyObj
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_args)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 270, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 276, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_kwargs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 270, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 276, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_defaults)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 270, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 276, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 270, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 276, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -12669,7 +13242,7 @@ static PyObject *__pyx_pw_16cython_weave_pyx_9cython_3d_zero_weave_forward(PyObj
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 270, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 276, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -12726,7 +13299,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
   int __pyx_t_19;
   __Pyx_RefNannySetupContext("cython_3d_zero_weave_forward", 0);
   __Pyx_INCREF(__pyx_v_kwargs);
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(Py_None);
@@ -12740,7 +13313,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
     __pyx_t_2 = __pyx_t_4;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
   __pyx_t_3 = ((!__pyx_t_4) != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
@@ -12748,7 +13321,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
     __Pyx_INCREF(Py_None);
     __Pyx_DECREF_SET(__pyx_v_kwargs, Py_None);
   }
-  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ndarray = ((PyTypeObject*)__pyx_t_1);
   __pyx_t_1 = 0;
@@ -12756,14 +13329,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
   __pyx_v_arg_is_pythran_compatible = 0;
   if (unlikely(__pyx_v_args == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 270, __pyx_L1_error)
+    __PYX_ERR(0, 276, __pyx_L1_error)
   }
-  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 276, __pyx_L1_error)
   __pyx_t_2 = ((0 < __pyx_t_5) != 0);
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 270, __pyx_L1_error)
+      __PYX_ERR(0, 276, __pyx_L1_error)
     }
     __pyx_t_1 = PyTuple_GET_ITEM(((PyObject*)__pyx_v_args), 0);
     __Pyx_INCREF(__pyx_t_1);
@@ -12780,18 +13353,18 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
   }
   if (unlikely(__pyx_v_kwargs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 270, __pyx_L1_error)
+    __PYX_ERR(0, 276, __pyx_L1_error)
   }
-  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
   __pyx_t_3 = (__pyx_t_4 != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_kwargs == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 270, __pyx_L1_error)
+      __PYX_ERR(0, 276, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_v_arg = __pyx_t_1;
     __pyx_t_1 = 0;
@@ -12800,12 +13373,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
   /*else*/ {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-      __PYX_ERR(0, 270, __pyx_L1_error)
+      __PYX_ERR(0, 276, __pyx_L1_error)
     }
-    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 270, __pyx_L1_error)
-    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 276, __pyx_L1_error)
+    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_int_3);
     __Pyx_GIVEREF(__pyx_int_3);
@@ -12816,20 +13389,20 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 270, __pyx_L1_error)
+    __PYX_ERR(0, 276, __pyx_L1_error)
   }
   __pyx_L6:;
   while (1) {
@@ -12839,7 +13412,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
       __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg, __pyx_v_ndarray); 
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_dtype = __pyx_t_1;
         __pyx_t_1 = 0;
@@ -12849,14 +13422,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
       __pyx_t_2 = __pyx_memoryview_check(__pyx_v_arg); 
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_arg_base = __pyx_t_1;
         __pyx_t_1 = 0;
         __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg_base, __pyx_v_ndarray); 
         __pyx_t_2 = (__pyx_t_3 != 0);
         if (__pyx_t_2) {
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_dtype = __pyx_t_1;
           __pyx_t_1 = 0;
@@ -12878,21 +13451,21 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
       __pyx_t_2 = (__pyx_v_dtype != Py_None);
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_itemsize = __pyx_t_5;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_kind = __pyx_t_7;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_byteorder = __pyx_t_1;
         __pyx_t_1 = 0;
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -12905,7 +13478,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
         if (__pyx_t_3) {
           __pyx_v_arg_is_pythran_compatible = 0;
         }
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -12921,31 +13494,31 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
         __pyx_v_dtype_signed = (__pyx_v_kind == 'i');
         __pyx_t_3 = (__pyx_v_arg_is_pythran_compatible != 0);
         if (__pyx_t_3) {
-          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_cur_stride = __pyx_t_1;
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_6);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6);
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_1);
@@ -12953,16 +13526,16 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
           PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_6);
           __pyx_t_1 = 0;
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
             __pyx_t_9 = __pyx_t_6; __Pyx_INCREF(__pyx_t_9); __pyx_t_5 = 0;
             __pyx_t_10 = NULL;
           } else {
-            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_9);
-            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 276, __pyx_L1_error)
           }
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           for (;;) {
@@ -12970,17 +13543,17 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
               if (likely(PyList_CheckExact(__pyx_t_9))) {
                 if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               } else {
                 if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               }
@@ -12990,7 +13563,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 270, __pyx_L1_error)
+                  else __PYX_ERR(0, 276, __pyx_L1_error)
                 }
                 break;
               }
@@ -13006,7 +13579,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
               if (unlikely(size != 2)) {
                 if (size > 2) __Pyx_RaiseTooManyValuesError(2);
                 else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-                __PYX_ERR(0, 270, __pyx_L1_error)
+                __PYX_ERR(0, 276, __pyx_L1_error)
               }
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
               if (likely(PyTuple_CheckExact(sequence))) {
@@ -13019,15 +13592,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
               __Pyx_INCREF(__pyx_t_1);
               __Pyx_INCREF(__pyx_t_11);
               #else
-              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 270, __pyx_L1_error)
+              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 276, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_11);
               #endif
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             } else {
               Py_ssize_t index = -1;
-              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 270, __pyx_L1_error)
+              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 276, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
               __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -13035,7 +13608,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
               __Pyx_GOTREF(__pyx_t_1);
               index = 1; __pyx_t_11 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_11)) goto __pyx_L24_unpacking_failed;
               __Pyx_GOTREF(__pyx_t_11);
-              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 270, __pyx_L1_error)
+              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
               __pyx_t_13 = NULL;
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               goto __pyx_L25_unpacking_done;
@@ -13043,43 +13616,43 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               __pyx_t_13 = NULL;
               if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-              __PYX_ERR(0, 270, __pyx_L1_error)
+              __PYX_ERR(0, 276, __pyx_L1_error)
               __pyx_L25_unpacking_done:;
             }
             __Pyx_XDECREF_SET(__pyx_v_dim, __pyx_t_1);
             __pyx_t_1 = 0;
             __Pyx_XDECREF_SET(__pyx_v_stride, __pyx_t_11);
             __pyx_t_11 = 0;
-            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
-            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
+            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             if (__pyx_t_3) {
               __pyx_v_arg_is_pythran_compatible = 0;
               goto __pyx_L23_break;
             }
-            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_DECREF_SET(__pyx_v_cur_stride, __pyx_t_6);
             __pyx_t_6 = 0;
           }
           /*else*/ {
-            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
             if (__pyx_t_2) {
             } else {
               __pyx_t_3 = __pyx_t_2;
               goto __pyx_L28_bool_binop_done;
             }
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
-            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             __pyx_t_3 = __pyx_t_2;
             __pyx_L28_bool_binop_done:;
@@ -13099,15 +13672,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L31_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 3) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L31_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           __pyx_t_2 = (((sizeof(__pyx_t_5numpy_float64_t)) == __pyx_v_itemsize) != 0);
@@ -13116,15 +13689,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L34_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 270, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 276, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 3) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L34_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           break;
@@ -13151,7 +13724,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
@@ -13173,27 +13746,27 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
         PyErr_Clear(); 
       }
     }
-    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
     goto __pyx_L10_break;
   }
   __pyx_L10_break:;
-  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_v_candidates = ((PyObject*)__pyx_t_9);
   __pyx_t_9 = 0;
   __pyx_t_5 = 0;
   if (unlikely(__pyx_v_signatures == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 270, __pyx_L1_error)
+    __PYX_ERR(0, 276, __pyx_L1_error)
   }
-  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_9);
   __pyx_t_9 = __pyx_t_6;
@@ -13201,25 +13774,25 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
   while (1) {
     __pyx_t_16 = __Pyx_dict_iter_next(__pyx_t_9, __pyx_t_15, &__pyx_t_5, &__pyx_t_6, NULL, NULL, __pyx_t_8);
     if (unlikely(__pyx_t_16 == 0)) break;
-    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_sig, __pyx_t_6);
     __pyx_t_6 = 0;
     __pyx_v_match_found = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_XDECREF_SET(__pyx_v_src_sig, __pyx_t_11);
     __pyx_t_11 = 0;
-    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 276, __pyx_L1_error)
     for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
       __pyx_v_i = __pyx_t_18;
       __pyx_t_11 = PyList_GET_ITEM(__pyx_v_dest_sig, __pyx_v_i);
@@ -13229,11 +13802,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
       __pyx_t_3 = (__pyx_v_dst_type != Py_None);
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         if (__pyx_t_2) {
           __pyx_v_match_found = 1;
@@ -13249,35 +13822,35 @@ static PyObject *__pyx_pf_16cython_weave_pyx_8cython_3d_zero_weave_forward(CYTHO
     __pyx_L47_break:;
     __pyx_t_2 = (__pyx_v_match_found != 0);
     if (__pyx_t_2) {
-      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 270, __pyx_L1_error)
+      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 276, __pyx_L1_error)
     }
   }
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_2 = (__pyx_v_candidates != Py_None) && (PyList_GET_SIZE(__pyx_v_candidates) != 0);
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 270, __pyx_L1_error)
+    __PYX_ERR(0, 276, __pyx_L1_error)
   }
-  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 276, __pyx_L1_error)
   __pyx_t_3 = ((__pyx_t_15 > 1) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 270, __pyx_L1_error)
+    __PYX_ERR(0, 276, __pyx_L1_error)
   }
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_signatures == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 270, __pyx_L1_error)
+      __PYX_ERR(0, 276, __pyx_L1_error)
     }
-    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_r = __pyx_t_9;
     __pyx_t_9 = 0;
@@ -13348,17 +13921,17 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_37cython_3d_zero_weave_
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 270, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 276, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 270, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 276, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_zero_weave_forward") < 0)) __PYX_ERR(0, 270, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_zero_weave_forward") < 0)) __PYX_ERR(0, 276, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -13368,18 +13941,18 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_37cython_3d_zero_weave_
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 271, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 271, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 277, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 277, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 270, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 276, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_3d_zero_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 270, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 276, __pyx_L1_error)
   __pyx_r = __pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
 
   /* function exit code */
@@ -13440,11 +14013,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 276, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_arr.diminfo[2].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_arr.diminfo[2].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_weave_pyx.pyx":275
+  /* "cython_weave_pyx.pyx":281
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int height = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -13453,7 +14026,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":276
+  /* "cython_weave_pyx.pyx":282
  *     """
  *     cdef int height = arr.shape[1]
  *     cdef int width = arr.shape[2]             # <<<<<<<<<<<<<<
@@ -13462,7 +14035,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[2]);
 
-  /* "cython_weave_pyx.pyx":277
+  /* "cython_weave_pyx.pyx":283
  *     cdef int height = arr.shape[1]
  *     cdef int width = arr.shape[2]
  *     cdef int num_layers = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -13471,7 +14044,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_num_layers = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":279
+  /* "cython_weave_pyx.pyx":285
  *     cdef int num_layers = arr.shape[0]
  * 
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -13480,7 +14053,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":283
+  /* "cython_weave_pyx.pyx":289
  *     cdef int i, j, big_i, big_j, layer
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -13489,7 +14062,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":284
+  /* "cython_weave_pyx.pyx":290
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -13498,25 +14071,25 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":286
+  /* "cython_weave_pyx.pyx":292
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_layers,HH, WW])             # <<<<<<<<<<<<<<
  * 
  *     for layer in range(num_layers):
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_layers); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_layers); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
@@ -13538,14 +14111,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -13554,32 +14127,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_6);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_6);
       __pyx_t_6 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 286, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 292, __pyx_L1_error)
   __pyx_t_7 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 286, __pyx_L1_error)
+      __PYX_ERR(0, 292, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_out.diminfo[2].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_out.diminfo[2].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[2];
     }
   }
@@ -13587,7 +14160,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":288
+  /* "cython_weave_pyx.pyx":294
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_layers,HH, WW])
  * 
  *     for layer in range(num_layers):             # <<<<<<<<<<<<<<
@@ -13598,7 +14171,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_layer = __pyx_t_9;
 
-    /* "cython_weave_pyx.pyx":289
+    /* "cython_weave_pyx.pyx":295
  * 
  *     for layer in range(num_layers):
  *         for i in range(height):             # <<<<<<<<<<<<<<
@@ -13609,7 +14182,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "cython_weave_pyx.pyx":290
+      /* "cython_weave_pyx.pyx":296
  *     for layer in range(num_layers):
  *         for i in range(height):
  *             for j in range(width):             # <<<<<<<<<<<<<<
@@ -13620,7 +14193,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
       for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
         __pyx_v_j = __pyx_t_13;
 
-        /* "cython_weave_pyx.pyx":291
+        /* "cython_weave_pyx.pyx":297
  *         for i in range(height):
  *             for j in range(width):
  *                 big_i = slice_jump * i             # <<<<<<<<<<<<<<
@@ -13629,7 +14202,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
         __pyx_v_big_i = (__pyx_v_slice_jump * __pyx_v_i);
 
-        /* "cython_weave_pyx.pyx":292
+        /* "cython_weave_pyx.pyx":298
  *             for j in range(width):
  *                 big_i = slice_jump * i
  *                 big_j = slice_jump * j             # <<<<<<<<<<<<<<
@@ -13638,7 +14211,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
  */
         __pyx_v_big_j = (__pyx_v_slice_jump * __pyx_v_j);
 
-        /* "cython_weave_pyx.pyx":293
+        /* "cython_weave_pyx.pyx":299
  *                 big_i = slice_jump * i
  *                 big_j = slice_jump * j
  *                 out[layer,big_i, big_j] = arr[layer,i,j]             # <<<<<<<<<<<<<<
@@ -13656,7 +14229,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
     }
   }
 
-  /* "cython_weave_pyx.pyx":294
+  /* "cython_weave_pyx.pyx":300
  *                 big_j = slice_jump * j
  *                 out[layer,big_i, big_j] = arr[layer,i,j]
  *     return out             # <<<<<<<<<<<<<<
@@ -13668,7 +14241,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_36cython_3d_zero_weave_forward(CYTH
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":270
+  /* "cython_weave_pyx.pyx":276
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
@@ -13739,17 +14312,17 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_39cython_3d_zero_weave_
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 270, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 276, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 270, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 276, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_zero_weave_forward") < 0)) __PYX_ERR(0, 270, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_3d_zero_weave_forward") < 0)) __PYX_ERR(0, 276, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -13759,18 +14332,18 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_39cython_3d_zero_weave_
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 271, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 271, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 277, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 277, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 270, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_3d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 276, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_3d_zero_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 270, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 276, __pyx_L1_error)
   __pyx_r = __pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
 
   /* function exit code */
@@ -13831,11 +14404,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 276, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_arr.diminfo[2].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_arr.diminfo[2].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_weave_pyx.pyx":275
+  /* "cython_weave_pyx.pyx":281
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int height = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -13844,7 +14417,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":276
+  /* "cython_weave_pyx.pyx":282
  *     """
  *     cdef int height = arr.shape[1]
  *     cdef int width = arr.shape[2]             # <<<<<<<<<<<<<<
@@ -13853,7 +14426,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[2]);
 
-  /* "cython_weave_pyx.pyx":277
+  /* "cython_weave_pyx.pyx":283
  *     cdef int height = arr.shape[1]
  *     cdef int width = arr.shape[2]
  *     cdef int num_layers = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -13862,7 +14435,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_num_layers = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":279
+  /* "cython_weave_pyx.pyx":285
  *     cdef int num_layers = arr.shape[0]
  * 
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -13871,7 +14444,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":283
+  /* "cython_weave_pyx.pyx":289
  *     cdef int i, j, big_i, big_j, layer
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -13880,7 +14453,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":284
+  /* "cython_weave_pyx.pyx":290
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -13889,25 +14462,25 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":286
+  /* "cython_weave_pyx.pyx":292
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_layers,HH, WW])             # <<<<<<<<<<<<<<
  * 
  *     for layer in range(num_layers):
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_layers); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_layers); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
@@ -13929,14 +14502,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -13945,32 +14518,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_6);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_6);
       __pyx_t_6 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 286, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 292, __pyx_L1_error)
   __pyx_t_7 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 286, __pyx_L1_error)
+      __PYX_ERR(0, 292, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_out.diminfo[2].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_out.diminfo[2].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[2];
     }
   }
@@ -13978,7 +14551,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":288
+  /* "cython_weave_pyx.pyx":294
  *     cdef np.ndarray[DTYPE_t, ndim=3] out = np.zeros([num_layers,HH, WW])
  * 
  *     for layer in range(num_layers):             # <<<<<<<<<<<<<<
@@ -13989,7 +14562,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_layer = __pyx_t_9;
 
-    /* "cython_weave_pyx.pyx":289
+    /* "cython_weave_pyx.pyx":295
  * 
  *     for layer in range(num_layers):
  *         for i in range(height):             # <<<<<<<<<<<<<<
@@ -14000,7 +14573,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "cython_weave_pyx.pyx":290
+      /* "cython_weave_pyx.pyx":296
  *     for layer in range(num_layers):
  *         for i in range(height):
  *             for j in range(width):             # <<<<<<<<<<<<<<
@@ -14011,7 +14584,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
       for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
         __pyx_v_j = __pyx_t_13;
 
-        /* "cython_weave_pyx.pyx":291
+        /* "cython_weave_pyx.pyx":297
  *         for i in range(height):
  *             for j in range(width):
  *                 big_i = slice_jump * i             # <<<<<<<<<<<<<<
@@ -14020,7 +14593,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
         __pyx_v_big_i = (__pyx_v_slice_jump * __pyx_v_i);
 
-        /* "cython_weave_pyx.pyx":292
+        /* "cython_weave_pyx.pyx":298
  *             for j in range(width):
  *                 big_i = slice_jump * i
  *                 big_j = slice_jump * j             # <<<<<<<<<<<<<<
@@ -14029,7 +14602,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
  */
         __pyx_v_big_j = (__pyx_v_slice_jump * __pyx_v_j);
 
-        /* "cython_weave_pyx.pyx":293
+        /* "cython_weave_pyx.pyx":299
  *                 big_i = slice_jump * i
  *                 big_j = slice_jump * j
  *                 out[layer,big_i, big_j] = arr[layer,i,j]             # <<<<<<<<<<<<<<
@@ -14047,7 +14620,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
     }
   }
 
-  /* "cython_weave_pyx.pyx":294
+  /* "cython_weave_pyx.pyx":300
  *                 big_j = slice_jump * j
  *                 out[layer,big_i, big_j] = arr[layer,i,j]
  *     return out             # <<<<<<<<<<<<<<
@@ -14059,7 +14632,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":270
+  /* "cython_weave_pyx.pyx":276
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
@@ -14095,7 +14668,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_38cython_3d_zero_weave_forward(CYTH
   return __pyx_r;
 }
 
-/* "cython_weave_pyx.pyx":300
+/* "cython_weave_pyx.pyx":306
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
@@ -14142,23 +14715,23 @@ static PyObject *__pyx_pw_16cython_weave_pyx_11cython_2d_zero_weave_forward(PyOb
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_args)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 1); __PYX_ERR(0, 306, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_kwargs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 2); __PYX_ERR(0, 306, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_defaults)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, 3); __PYX_ERR(0, 306, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 300, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_fused_cpdef") < 0)) __PYX_ERR(0, 306, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -14175,7 +14748,7 @@ static PyObject *__pyx_pw_16cython_weave_pyx_11cython_2d_zero_weave_forward(PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 300, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 306, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -14232,7 +14805,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
   int __pyx_t_19;
   __Pyx_RefNannySetupContext("cython_2d_zero_weave_forward", 0);
   __Pyx_INCREF(__pyx_v_kwargs);
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(Py_None);
@@ -14246,7 +14819,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
     __pyx_t_2 = __pyx_t_4;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_kwargs); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
   __pyx_t_3 = ((!__pyx_t_4) != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
@@ -14254,7 +14827,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
     __Pyx_INCREF(Py_None);
     __Pyx_DECREF_SET(__pyx_v_kwargs, Py_None);
   }
-  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__Pyx_ImportNumPyArrayTypeIfAvailable()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ndarray = ((PyTypeObject*)__pyx_t_1);
   __pyx_t_1 = 0;
@@ -14262,14 +14835,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
   __pyx_v_arg_is_pythran_compatible = 0;
   if (unlikely(__pyx_v_args == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 300, __pyx_L1_error)
+    __PYX_ERR(0, 306, __pyx_L1_error)
   }
-  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 306, __pyx_L1_error)
   __pyx_t_2 = ((0 < __pyx_t_5) != 0);
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 300, __pyx_L1_error)
+      __PYX_ERR(0, 306, __pyx_L1_error)
     }
     __pyx_t_1 = PyTuple_GET_ITEM(((PyObject*)__pyx_v_args), 0);
     __Pyx_INCREF(__pyx_t_1);
@@ -14286,18 +14859,18 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
   }
   if (unlikely(__pyx_v_kwargs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 300, __pyx_L1_error)
+    __PYX_ERR(0, 306, __pyx_L1_error)
   }
-  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyDict_ContainsTF(__pyx_n_s_arr, ((PyObject*)__pyx_v_kwargs), Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
   __pyx_t_3 = (__pyx_t_4 != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_2) {
     if (unlikely(__pyx_v_kwargs == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 300, __pyx_L1_error)
+      __PYX_ERR(0, 306, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_kwargs), __pyx_n_s_arr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_v_arg = __pyx_t_1;
     __pyx_t_1 = 0;
@@ -14306,12 +14879,12 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
   /*else*/ {
     if (unlikely(__pyx_v_args == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-      __PYX_ERR(0, 300, __pyx_L1_error)
+      __PYX_ERR(0, 306, __pyx_L1_error)
     }
-    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 300, __pyx_L1_error)
-    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_GET_SIZE(((PyObject*)__pyx_v_args)); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 306, __pyx_L1_error)
+    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_int_3);
     __Pyx_GIVEREF(__pyx_int_3);
@@ -14322,20 +14895,20 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Expected_at_least_d_argument_s_g, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 300, __pyx_L1_error)
+    __PYX_ERR(0, 306, __pyx_L1_error)
   }
   __pyx_L6:;
   while (1) {
@@ -14345,7 +14918,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
       __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg, __pyx_v_ndarray); 
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_dtype = __pyx_t_1;
         __pyx_t_1 = 0;
@@ -14355,14 +14928,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
       __pyx_t_2 = __pyx_memoryview_check(__pyx_v_arg); 
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_base); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_arg_base = __pyx_t_1;
         __pyx_t_1 = 0;
         __pyx_t_3 = __Pyx_TypeCheck(__pyx_v_arg_base, __pyx_v_ndarray); 
         __pyx_t_2 = (__pyx_t_3 != 0);
         if (__pyx_t_2) {
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg_base, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_dtype = __pyx_t_1;
           __pyx_t_1 = 0;
@@ -14384,21 +14957,21 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
       __pyx_t_2 = (__pyx_v_dtype != Py_None);
       __pyx_t_3 = (__pyx_t_2 != 0);
       if (__pyx_t_3) {
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_1); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_itemsize = __pyx_t_5;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_kind); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_Ord(__pyx_t_1); if (unlikely(__pyx_t_7 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_kind = __pyx_t_7;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_dtype, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_v_byteorder = __pyx_t_1;
         __pyx_t_1 = 0;
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s_, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -14411,7 +14984,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
         if (__pyx_t_3) {
           __pyx_v_arg_is_pythran_compatible = 0;
         }
-        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_byteorder, __pyx_kp_s__2, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
         if (__pyx_t_2) {
         } else {
           __pyx_t_3 = __pyx_t_2;
@@ -14427,31 +15000,31 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
         __pyx_v_dtype_signed = (__pyx_v_kind == 'i');
         __pyx_t_3 = (__pyx_v_arg_is_pythran_compatible != 0);
         if (__pyx_t_3) {
-          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_itemsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_v_cur_stride = __pyx_t_1;
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
           __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_strides); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_6);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6);
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reversed, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_1);
           PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_1);
@@ -14459,16 +15032,16 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
           PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_6);
           __pyx_t_1 = 0;
           __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
             __pyx_t_9 = __pyx_t_6; __Pyx_INCREF(__pyx_t_9); __pyx_t_5 = 0;
             __pyx_t_10 = NULL;
           } else {
-            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_5 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_9);
-            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 306, __pyx_L1_error)
           }
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           for (;;) {
@@ -14476,17 +15049,17 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
               if (likely(PyList_CheckExact(__pyx_t_9))) {
                 if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+                __pyx_t_6 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               } else {
                 if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+                __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
                 #else
-                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+                __pyx_t_6 = PySequence_ITEM(__pyx_t_9, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
                 __Pyx_GOTREF(__pyx_t_6);
                 #endif
               }
@@ -14496,7 +15069,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 300, __pyx_L1_error)
+                  else __PYX_ERR(0, 306, __pyx_L1_error)
                 }
                 break;
               }
@@ -14512,7 +15085,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
               if (unlikely(size != 2)) {
                 if (size > 2) __Pyx_RaiseTooManyValuesError(2);
                 else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-                __PYX_ERR(0, 300, __pyx_L1_error)
+                __PYX_ERR(0, 306, __pyx_L1_error)
               }
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
               if (likely(PyTuple_CheckExact(sequence))) {
@@ -14525,15 +15098,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
               __Pyx_INCREF(__pyx_t_1);
               __Pyx_INCREF(__pyx_t_11);
               #else
-              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+              __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+              __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 306, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_11);
               #endif
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             } else {
               Py_ssize_t index = -1;
-              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 300, __pyx_L1_error)
+              __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 306, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_12);
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
               __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -14541,7 +15114,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
               __Pyx_GOTREF(__pyx_t_1);
               index = 1; __pyx_t_11 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_11)) goto __pyx_L24_unpacking_failed;
               __Pyx_GOTREF(__pyx_t_11);
-              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
+              if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
               __pyx_t_13 = NULL;
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               goto __pyx_L25_unpacking_done;
@@ -14549,43 +15122,43 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
               __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
               __pyx_t_13 = NULL;
               if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-              __PYX_ERR(0, 300, __pyx_L1_error)
+              __PYX_ERR(0, 306, __pyx_L1_error)
               __pyx_L25_unpacking_done:;
             }
             __Pyx_XDECREF_SET(__pyx_v_dim, __pyx_t_1);
             __pyx_t_1 = 0;
             __Pyx_XDECREF_SET(__pyx_v_stride, __pyx_t_11);
             __pyx_t_11 = 0;
-            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
-            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_v_stride, __pyx_v_cur_stride, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
+            __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             if (__pyx_t_3) {
               __pyx_v_arg_is_pythran_compatible = 0;
               goto __pyx_L23_break;
             }
-            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_6 = PyNumber_InPlaceMultiply(__pyx_v_cur_stride, __pyx_v_dim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_DECREF_SET(__pyx_v_cur_stride, __pyx_t_6);
             __pyx_t_6 = 0;
           }
           /*else*/ {
-            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_6);
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_f_contiguous); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
             if (__pyx_t_2) {
             } else {
               __pyx_t_3 = __pyx_t_2;
               goto __pyx_L28_bool_binop_done;
             }
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
-            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+            __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
             __pyx_t_3 = __pyx_t_2;
             __pyx_L28_bool_binop_done:;
@@ -14605,15 +15178,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L31_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 2) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L31_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           __pyx_t_2 = (((sizeof(__pyx_t_5numpy_float64_t)) == __pyx_v_itemsize) != 0);
@@ -14622,15 +15195,15 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
             __pyx_t_3 = __pyx_t_2;
             goto __pyx_L34_bool_binop_done;
           }
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_arg, __pyx_n_s_ndim); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 306, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_2 = ((((Py_ssize_t)__pyx_t_5) == 2) != 0);
           __pyx_t_3 = __pyx_t_2;
           __pyx_L34_bool_binop_done:;
           if (__pyx_t_3) {
-            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+            if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
             goto __pyx_L10_break;
           }
           break;
@@ -14657,7 +15230,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float32_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
@@ -14679,27 +15252,27 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_memslice.memview != 0);
       if (__pyx_t_3) {
         __PYX_XDEC_MEMVIEW((&__pyx_v_memslice), 1); 
-        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+        if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, __pyx_n_s_float64_t, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
         goto __pyx_L10_break;
       }
       /*else*/ {
         PyErr_Clear(); 
       }
     }
-    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_v_dest_sig, 0, Py_None, long, 1, __Pyx_PyInt_From_long, 1, 0, 0) < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
     goto __pyx_L10_break;
   }
   __pyx_L10_break:;
-  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_v_candidates = ((PyObject*)__pyx_t_9);
   __pyx_t_9 = 0;
   __pyx_t_5 = 0;
   if (unlikely(__pyx_v_signatures == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(0, 300, __pyx_L1_error)
+    __PYX_ERR(0, 306, __pyx_L1_error)
   }
-  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_dict_iterator(((PyObject*)__pyx_v_signatures), 1, ((PyObject *)NULL), (&__pyx_t_15), (&__pyx_t_8)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_9);
   __pyx_t_9 = __pyx_t_6;
@@ -14707,25 +15280,25 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
   while (1) {
     __pyx_t_16 = __Pyx_dict_iter_next(__pyx_t_9, __pyx_t_15, &__pyx_t_5, &__pyx_t_6, NULL, NULL, __pyx_t_8);
     if (unlikely(__pyx_t_16 == 0)) break;
-    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    if (unlikely(__pyx_t_16 == -1)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_sig, __pyx_t_6);
     __pyx_t_6 = 0;
     __pyx_v_match_found = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sig, __pyx_n_s_strip); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_split); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_XDECREF_SET(__pyx_v_src_sig, __pyx_t_11);
     __pyx_t_11 = 0;
-    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_dest_sig); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 306, __pyx_L1_error)
     for (__pyx_t_18 = 0; __pyx_t_18 < __pyx_t_17; __pyx_t_18+=1) {
       __pyx_v_i = __pyx_t_18;
       __pyx_t_11 = PyList_GET_ITEM(__pyx_v_dest_sig, __pyx_v_i);
@@ -14735,11 +15308,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
       __pyx_t_3 = (__pyx_v_dst_type != Py_None);
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
-        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_GetItemInt(__pyx_v_src_sig, __pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_6 = PyObject_RichCompare(__pyx_t_11, __pyx_v_dst_type, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         if (__pyx_t_2) {
           __pyx_v_match_found = 1;
@@ -14755,35 +15328,35 @@ static PyObject *__pyx_pf_16cython_weave_pyx_10cython_2d_zero_weave_forward(CYTH
     __pyx_L47_break:;
     __pyx_t_2 = (__pyx_v_match_found != 0);
     if (__pyx_t_2) {
-      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 300, __pyx_L1_error)
+      __pyx_t_19 = __Pyx_PyList_Append(__pyx_v_candidates, __pyx_v_sig); if (unlikely(__pyx_t_19 == ((int)-1))) __PYX_ERR(0, 306, __pyx_L1_error)
     }
   }
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_2 = (__pyx_v_candidates != Py_None) && (PyList_GET_SIZE(__pyx_v_candidates) != 0);
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 300, __pyx_L1_error)
+    __PYX_ERR(0, 306, __pyx_L1_error)
   }
-  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_15 = PyList_GET_SIZE(__pyx_v_candidates); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 306, __pyx_L1_error)
   __pyx_t_3 = ((__pyx_t_15 > 1) != 0);
   if (__pyx_t_3) {
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_Raise(__pyx_t_9, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __PYX_ERR(0, 300, __pyx_L1_error)
+    __PYX_ERR(0, 306, __pyx_L1_error)
   }
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_signatures == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 300, __pyx_L1_error)
+      __PYX_ERR(0, 306, __pyx_L1_error)
     }
-    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyDict_GetItem(((PyObject*)__pyx_v_signatures), PyList_GET_ITEM(__pyx_v_candidates, 0)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_r = __pyx_t_9;
     __pyx_t_9 = 0;
@@ -14854,17 +15427,17 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_43cython_2d_zero_weave_
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 306, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 306, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_zero_weave_forward") < 0)) __PYX_ERR(0, 300, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_zero_weave_forward") < 0)) __PYX_ERR(0, 306, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -14874,18 +15447,18 @@ static PyObject *__pyx_fuse_0__pyx_pw_16cython_weave_pyx_43cython_2d_zero_weave_
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 301, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 301, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 307, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 307, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 300, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 306, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_2d_zero_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 306, __pyx_L1_error)
   __pyx_r = __pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
 
   /* function exit code */
@@ -14939,11 +15512,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 306, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1];
 
-  /* "cython_weave_pyx.pyx":305
+  /* "cython_weave_pyx.pyx":311
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int height = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -14952,7 +15525,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":306
+  /* "cython_weave_pyx.pyx":312
  *     """
  *     cdef int height = arr.shape[0]
  *     cdef int width = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -14961,7 +15534,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":308
+  /* "cython_weave_pyx.pyx":314
  *     cdef int width = arr.shape[1]
  * 
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -14970,7 +15543,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":312
+  /* "cython_weave_pyx.pyx":318
  *     cdef int i, j, big_i, big_j
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -14979,7 +15552,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":313
+  /* "cython_weave_pyx.pyx":319
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -14988,23 +15561,23 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":315
+  /* "cython_weave_pyx.pyx":321
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=2] out = np.zeros([HH, WW])             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -15023,14 +15596,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -15039,32 +15612,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_2, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 315, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 321, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float32_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 315, __pyx_L1_error)
+      __PYX_ERR(0, 321, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -15072,7 +15645,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":318
+  /* "cython_weave_pyx.pyx":324
  * 
  * 
  *     for i in range(height):             # <<<<<<<<<<<<<<
@@ -15083,7 +15656,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "cython_weave_pyx.pyx":319
+    /* "cython_weave_pyx.pyx":325
  * 
  *     for i in range(height):
  *         for j in range(width):             # <<<<<<<<<<<<<<
@@ -15094,7 +15667,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_v_j = __pyx_t_10;
 
-      /* "cython_weave_pyx.pyx":320
+      /* "cython_weave_pyx.pyx":326
  *     for i in range(height):
  *         for j in range(width):
  *             big_i = slice_jump * i             # <<<<<<<<<<<<<<
@@ -15103,7 +15676,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
  */
       __pyx_v_big_i = (__pyx_v_slice_jump * __pyx_v_i);
 
-      /* "cython_weave_pyx.pyx":321
+      /* "cython_weave_pyx.pyx":327
  *         for j in range(width):
  *             big_i = slice_jump * i
  *             big_j = slice_jump * j             # <<<<<<<<<<<<<<
@@ -15112,7 +15685,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
  */
       __pyx_v_big_j = (__pyx_v_slice_jump * __pyx_v_j);
 
-      /* "cython_weave_pyx.pyx":322
+      /* "cython_weave_pyx.pyx":328
  *             big_i = slice_jump * i
  *             big_j = slice_jump * j
  *             out[big_i, big_j] = arr[i,j]             # <<<<<<<<<<<<<<
@@ -15126,7 +15699,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
     }
   }
 
-  /* "cython_weave_pyx.pyx":323
+  /* "cython_weave_pyx.pyx":329
  *             big_j = slice_jump * j
  *             out[big_i, big_j] = arr[i,j]
  *     return out             # <<<<<<<<<<<<<<
@@ -15136,7 +15709,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_42cython_2d_zero_weave_forward(CYTH
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":300
+  /* "cython_weave_pyx.pyx":306
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
@@ -15206,17 +15779,17 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_45cython_2d_zero_weave_
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_num_zeros)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 1); __PYX_ERR(0, 306, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_filter_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, 2); __PYX_ERR(0, 306, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_zero_weave_forward") < 0)) __PYX_ERR(0, 300, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cython_2d_zero_weave_forward") < 0)) __PYX_ERR(0, 306, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -15226,18 +15799,18 @@ static PyObject *__pyx_fuse_1__pyx_pw_16cython_weave_pyx_45cython_2d_zero_weave_
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
     __pyx_v_arr = ((PyArrayObject *)values[0]);
-    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 301, __pyx_L3_error)
-    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 301, __pyx_L3_error)
+    __pyx_v_num_zeros = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_num_zeros == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 307, __pyx_L3_error)
+    __pyx_v_filter_size = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_filter_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 307, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 300, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cython_2d_zero_weave_forward", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 306, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_weave_pyx.cython_2d_zero_weave_forward", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), __pyx_ptype_5numpy_ndarray, 1, "arr", 0))) __PYX_ERR(0, 306, __pyx_L1_error)
   __pyx_r = __pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(__pyx_self, __pyx_v_arr, __pyx_v_num_zeros, __pyx_v_filter_size);
 
   /* function exit code */
@@ -15291,11 +15864,11 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
   __pyx_pybuffernd_arr.rcbuffer = &__pyx_pybuffer_arr;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_arr.rcbuffer->pybuffer, (PyObject*)__pyx_v_arr, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 306, __pyx_L1_error)
   }
   __pyx_pybuffernd_arr.diminfo[0].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_arr.diminfo[0].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_arr.diminfo[1].strides = __pyx_pybuffernd_arr.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_arr.diminfo[1].shape = __pyx_pybuffernd_arr.rcbuffer->pybuffer.shape[1];
 
-  /* "cython_weave_pyx.pyx":305
+  /* "cython_weave_pyx.pyx":311
  *     Cython funciton for preforming array_weave forwards that is much faster!
  *     """
  *     cdef int height = arr.shape[0]             # <<<<<<<<<<<<<<
@@ -15304,7 +15877,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_height = (__pyx_v_arr->dimensions[0]);
 
-  /* "cython_weave_pyx.pyx":306
+  /* "cython_weave_pyx.pyx":312
  *     """
  *     cdef int height = arr.shape[0]
  *     cdef int width = arr.shape[1]             # <<<<<<<<<<<<<<
@@ -15313,7 +15886,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_width = (__pyx_v_arr->dimensions[1]);
 
-  /* "cython_weave_pyx.pyx":308
+  /* "cython_weave_pyx.pyx":314
  *     cdef int width = arr.shape[1]
  * 
  *     cdef int slice_jump = num_zeros + 1             # <<<<<<<<<<<<<<
@@ -15322,7 +15895,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_slice_jump = (__pyx_v_num_zeros + 1);
 
-  /* "cython_weave_pyx.pyx":312
+  /* "cython_weave_pyx.pyx":318
  *     cdef int i, j, big_i, big_j
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -15331,7 +15904,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_HH = ((__pyx_v_height * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":313
+  /* "cython_weave_pyx.pyx":319
  * 
  *     cdef int HH = height*(num_zeros + 1) - num_zeros
  *     cdef int WW = width*(num_zeros + 1) - num_zeros             # <<<<<<<<<<<<<<
@@ -15340,23 +15913,23 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
  */
   __pyx_v_WW = ((__pyx_v_width * (__pyx_v_num_zeros + 1)) - __pyx_v_num_zeros);
 
-  /* "cython_weave_pyx.pyx":315
+  /* "cython_weave_pyx.pyx":321
  *     cdef int WW = width*(num_zeros + 1) - num_zeros
  * 
  *     cdef np.ndarray[DTYPE_t, ndim=2] out = np.zeros([HH, WW])             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_HH); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_WW); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -15375,14 +15948,14 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -15391,32 +15964,32 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_2, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 315, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 321, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 315, __pyx_L1_error)
+      __PYX_ERR(0, 321, __pyx_L1_error)
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_out.diminfo[1].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_out.diminfo[1].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -15424,7 +15997,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cython_weave_pyx.pyx":318
+  /* "cython_weave_pyx.pyx":324
  * 
  * 
  *     for i in range(height):             # <<<<<<<<<<<<<<
@@ -15435,7 +16008,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "cython_weave_pyx.pyx":319
+    /* "cython_weave_pyx.pyx":325
  * 
  *     for i in range(height):
  *         for j in range(width):             # <<<<<<<<<<<<<<
@@ -15446,7 +16019,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_v_j = __pyx_t_10;
 
-      /* "cython_weave_pyx.pyx":320
+      /* "cython_weave_pyx.pyx":326
  *     for i in range(height):
  *         for j in range(width):
  *             big_i = slice_jump * i             # <<<<<<<<<<<<<<
@@ -15455,7 +16028,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
  */
       __pyx_v_big_i = (__pyx_v_slice_jump * __pyx_v_i);
 
-      /* "cython_weave_pyx.pyx":321
+      /* "cython_weave_pyx.pyx":327
  *         for j in range(width):
  *             big_i = slice_jump * i
  *             big_j = slice_jump * j             # <<<<<<<<<<<<<<
@@ -15464,7 +16037,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
  */
       __pyx_v_big_j = (__pyx_v_slice_jump * __pyx_v_j);
 
-      /* "cython_weave_pyx.pyx":322
+      /* "cython_weave_pyx.pyx":328
  *             big_i = slice_jump * i
  *             big_j = slice_jump * j
  *             out[big_i, big_j] = arr[i,j]             # <<<<<<<<<<<<<<
@@ -15478,7 +16051,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
     }
   }
 
-  /* "cython_weave_pyx.pyx":323
+  /* "cython_weave_pyx.pyx":329
  *             big_j = slice_jump * j
  *             out[big_i, big_j] = arr[i,j]
  *     return out             # <<<<<<<<<<<<<<
@@ -15488,7 +16061,7 @@ static PyObject *__pyx_pf_16cython_weave_pyx_44cython_2d_zero_weave_forward(CYTH
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cython_weave_pyx.pyx":300
+  /* "cython_weave_pyx.pyx":306
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
@@ -31702,6 +32275,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_id, __pyx_k_id, sizeof(__pyx_k_id), 0, 0, 1, 1},
   {&__pyx_n_s_img, __pyx_k_img, sizeof(__pyx_k_img), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
+  {&__pyx_n_s_include_center, __pyx_k_include_center, sizeof(__pyx_k_include_center), 0, 0, 1, 1},
   {&__pyx_n_s_itemsize, __pyx_k_itemsize, sizeof(__pyx_k_itemsize), 0, 0, 1, 1},
   {&__pyx_kp_s_itemsize_0_for_cython_array, __pyx_k_itemsize_0_for_cython_array, sizeof(__pyx_k_itemsize_0_for_cython_array), 0, 0, 1, 0},
   {&__pyx_n_s_j, __pyx_k_j, sizeof(__pyx_k_j), 0, 0, 1, 1},
@@ -31822,8 +32396,8 @@ static int __Pyx_InitCachedConstants(void) {
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
   __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
@@ -31838,83 +32412,83 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
-  /* "cython_weave_pyx.pyx":137
+  /* "cython_weave_pyx.pyx":133
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
-  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "cython_weave_pyx.pyx":205
+  /* "cython_weave_pyx.pyx":206
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
-  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "cython_weave_pyx.pyx":270
+  /* "cython_weave_pyx.pyx":276
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
  *                                 int num_zeros, int filter_size):
  *     """
  */
-  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
-  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
 
-  /* "cython_weave_pyx.pyx":300
+  /* "cython_weave_pyx.pyx":306
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
  *                                 int num_zeros, int filter_size):
  *     """
  */
-  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_s__3); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s__5); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
-  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_No_matching_signature_found); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_Function_call_with_ambiguous_arg); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
 
@@ -32234,61 +32808,61 @@ static int __Pyx_InitCachedConstants(void) {
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
-  __pyx_tuple__59 = PyTuple_Pack(23, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_num_img, __pyx_n_s_num_filters, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_expand_dist, __pyx_n_s_slice_jump, __pyx_n_s_img, __pyx_n_s_layer, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_i_change, __pyx_n_s_j_change, __pyx_n_s_temp_val, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out, __pyx_n_s_temp_x, __pyx_n_s_temp_y); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_tuple__59 = PyTuple_Pack(24, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_include_center, __pyx_n_s_num_img, __pyx_n_s_num_filters, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_expand_dist, __pyx_n_s_slice_jump, __pyx_n_s_img, __pyx_n_s_layer, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_i_change, __pyx_n_s_j_change, __pyx_n_s_temp_val, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out, __pyx_n_s_temp_x, __pyx_n_s_temp_y); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
   __Pyx_GIVEREF(__pyx_tuple__59);
-  __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(3, 0, 23, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_4d_array_weave_forward, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(4, 0, 24, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_4d_array_weave_forward, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 55, __pyx_L1_error)
 
-  /* "cython_weave_pyx.pyx":137
+  /* "cython_weave_pyx.pyx":133
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
-  __pyx_tuple__61 = PyTuple_Pack(21, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_num_filters, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_expand_dist, __pyx_n_s_slice_jump, __pyx_n_s_layer, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_i_change, __pyx_n_s_j_change, __pyx_n_s_temp_val, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out, __pyx_n_s_temp_x, __pyx_n_s_temp_y); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__61 = PyTuple_Pack(22, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_include_center, __pyx_n_s_num_filters, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_expand_dist, __pyx_n_s_slice_jump, __pyx_n_s_layer, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_i_change, __pyx_n_s_j_change, __pyx_n_s_temp_val, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out, __pyx_n_s_temp_x, __pyx_n_s_temp_y); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
   __Pyx_GIVEREF(__pyx_tuple__61);
-  __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(3, 0, 21, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_3d_array_weave_forward, 137, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(4, 0, 22, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_3d_array_weave_forward, 133, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 133, __pyx_L1_error)
 
-  /* "cython_weave_pyx.pyx":205
+  /* "cython_weave_pyx.pyx":206
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
-  __pyx_tuple__63 = PyTuple_Pack(19, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_expand_dist, __pyx_n_s_slice_jump, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_i_change, __pyx_n_s_j_change, __pyx_n_s_temp_val, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out, __pyx_n_s_temp_x, __pyx_n_s_temp_y); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_tuple__63 = PyTuple_Pack(20, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_include_center, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_expand_dist, __pyx_n_s_slice_jump, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_i_change, __pyx_n_s_j_change, __pyx_n_s_temp_val, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out, __pyx_n_s_temp_x, __pyx_n_s_temp_y); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
   __Pyx_GIVEREF(__pyx_tuple__63);
-  __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(3, 0, 19, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_2d_array_weave_forward, 205, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(4, 0, 20, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_2d_array_weave_forward, 206, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 206, __pyx_L1_error)
 
-  /* "cython_weave_pyx.pyx":270
+  /* "cython_weave_pyx.pyx":276
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
  *                                 int num_zeros, int filter_size):
  *     """
  */
-  __pyx_tuple__65 = PyTuple_Pack(15, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_num_layers, __pyx_n_s_slice_jump, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_layer, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_tuple__65 = PyTuple_Pack(15, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_num_layers, __pyx_n_s_slice_jump, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_layer, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__65);
   __Pyx_GIVEREF(__pyx_tuple__65);
-  __pyx_codeobj__66 = (PyObject*)__Pyx_PyCode_New(3, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__65, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_3d_zero_weave_forward, 270, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__66)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_codeobj__66 = (PyObject*)__Pyx_PyCode_New(3, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__65, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_3d_zero_weave_forward, 276, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__66)) __PYX_ERR(0, 276, __pyx_L1_error)
 
-  /* "cython_weave_pyx.pyx":300
+  /* "cython_weave_pyx.pyx":306
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
  *                                 int num_zeros, int filter_size):
  *     """
  */
-  __pyx_tuple__67 = PyTuple_Pack(13, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_slice_jump, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_tuple__67 = PyTuple_Pack(13, __pyx_n_s_arr, __pyx_n_s_num_zeros, __pyx_n_s_filter_size, __pyx_n_s_height, __pyx_n_s_width, __pyx_n_s_slice_jump, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_big_i, __pyx_n_s_big_j, __pyx_n_s_HH, __pyx_n_s_WW, __pyx_n_s_out); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__67);
   __Pyx_GIVEREF(__pyx_tuple__67);
-  __pyx_codeobj__68 = (PyObject*)__Pyx_PyCode_New(3, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__67, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_2d_zero_weave_forward, 300, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__68)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_codeobj__68 = (PyObject*)__Pyx_PyCode_New(3, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__67, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_weave_pyx_pyx, __pyx_n_s_cython_2d_zero_weave_forward, 306, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__68)) __PYX_ERR(0, 306, __pyx_L1_error)
 
   /* "View.MemoryView":284
  *         return self.name
@@ -32366,6 +32940,7 @@ static int __Pyx_InitGlobals(void) {
   __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_3 = PyInt_FromLong(3); if (unlikely(!__pyx_int_3)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_4 = PyInt_FromLong(4); if (unlikely(!__pyx_int_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_7 = PyInt_FromLong(7); if (unlikely(!__pyx_int_7)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_184977713 = PyInt_FromLong(184977713L); if (unlikely(!__pyx_int_184977713)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_neg_1 = PyInt_FromLong(-1); if (unlikely(!__pyx_int_neg_1)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -32624,8 +33199,8 @@ static int __pyx_pymod_exec_cython_weave_pyx(PyObject *__pyx_pyinit_module)
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_4d_array_weave_forward(np.ndarray[DTYPE_t, ndim=4] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -32647,112 +33222,112 @@ static int __pyx_pymod_exec_cython_weave_pyx(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_4d_array_weave_forward, __pyx_t_4) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "cython_weave_pyx.pyx":137
+  /* "cython_weave_pyx.pyx":133
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_array_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_25cython_3d_array_weave_forward, 0, __pyx_n_s_cython_3d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__62)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_6 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_25cython_3d_array_weave_forward, 0, __pyx_n_s_cython_3d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__62)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_6, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_float32_t, __pyx_t_6) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_float32_t, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_27cython_3d_array_weave_forward, 0, __pyx_n_s_cython_3d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__62)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_6 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_27cython_3d_array_weave_forward, 0, __pyx_n_s_cython_3d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__62)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_6, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_float64_t, __pyx_t_6) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_float64_t, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_5cython_3d_array_weave_forward, 0, __pyx_n_s_cython_3d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__62)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_6 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_5cython_3d_array_weave_forward, 0, __pyx_n_s_cython_3d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__62)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_6, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_6)->__signatures__ = __pyx_t_5;
   __Pyx_GIVEREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_3d_array_weave_forward, __pyx_t_6) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_3d_array_weave_forward, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "cython_weave_pyx.pyx":205
+  /* "cython_weave_pyx.pyx":206
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_array_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
- *                                 int num_zeros, int filter_size):
- *     """
+ *                                 int num_zeros, int filter_size,
+ *                                 int include_center):
  */
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_31cython_2d_array_weave_forward, 0, __pyx_n_s_cython_2d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_8 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_31cython_2d_array_weave_forward, 0, __pyx_n_s_cython_2d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_8, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_float32_t, __pyx_t_8) < 0) __PYX_ERR(0, 205, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_float32_t, __pyx_t_8) < 0) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_33cython_2d_array_weave_forward, 0, __pyx_n_s_cython_2d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_8 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_33cython_2d_array_weave_forward, 0, __pyx_n_s_cython_2d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_8, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_float64_t, __pyx_t_8) < 0) __PYX_ERR(0, 205, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_float64_t, __pyx_t_8) < 0) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_7cython_2d_array_weave_forward, 0, __pyx_n_s_cython_2d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_8 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_7cython_2d_array_weave_forward, 0, __pyx_n_s_cython_2d_array_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_8, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_8)->__signatures__ = __pyx_t_7;
   __Pyx_GIVEREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_2d_array_weave_forward, __pyx_t_8) < 0) __PYX_ERR(0, 205, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_2d_array_weave_forward, __pyx_t_8) < 0) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-  /* "cython_weave_pyx.pyx":270
+  /* "cython_weave_pyx.pyx":276
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_3d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=3] arr,             # <<<<<<<<<<<<<<
  *                                 int num_zeros, int filter_size):
  *     """
  */
-  __pyx_t_9 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_37cython_3d_zero_weave_forward, 0, __pyx_n_s_cython_3d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__66)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_10 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_37cython_3d_zero_weave_forward, 0, __pyx_n_s_cython_3d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__66)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_10, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_float32_t, __pyx_t_10) < 0) __PYX_ERR(0, 270, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_float32_t, __pyx_t_10) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_39cython_3d_zero_weave_forward, 0, __pyx_n_s_cython_3d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__66)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_10 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_39cython_3d_zero_weave_forward, 0, __pyx_n_s_cython_3d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__66)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_10, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_float64_t, __pyx_t_10) < 0) __PYX_ERR(0, 270, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_float64_t, __pyx_t_10) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_9cython_3d_zero_weave_forward, 0, __pyx_n_s_cython_3d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__66)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_10 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_9cython_3d_zero_weave_forward, 0, __pyx_n_s_cython_3d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__66)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_10, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_10)->__signatures__ = __pyx_t_9;
   __Pyx_GIVEREF(__pyx_t_9);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_3d_zero_weave_forward, __pyx_t_10) < 0) __PYX_ERR(0, 270, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_3d_zero_weave_forward, __pyx_t_10) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "cython_weave_pyx.pyx":300
+  /* "cython_weave_pyx.pyx":306
  * @cython.wraparound(False)
  * @cython.cdivision(True)
  * def cython_2d_zero_weave_forward(np.ndarray[DTYPE_t, ndim=2] arr,             # <<<<<<<<<<<<<<
  *                                 int num_zeros, int filter_size):
  *     """
  */
-  __pyx_t_11 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_12 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_43cython_2d_zero_weave_forward, 0, __pyx_n_s_cython_2d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__68)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_12 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_16cython_weave_pyx_43cython_2d_zero_weave_forward, 0, __pyx_n_s_cython_2d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__68)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_12, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_float32_t, __pyx_t_12) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_float32_t, __pyx_t_12) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-  __pyx_t_12 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_45cython_2d_zero_weave_forward, 0, __pyx_n_s_cython_2d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__68)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_12 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_16cython_weave_pyx_45cython_2d_zero_weave_forward, 0, __pyx_n_s_cython_2d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__68)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_12, __pyx_empty_tuple);
-  if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_float64_t, __pyx_t_12) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_float64_t, __pyx_t_12) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-  __pyx_t_12 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_11cython_2d_zero_weave_forward, 0, __pyx_n_s_cython_2d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__68)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_12 = __pyx_FusedFunction_NewEx(&__pyx_mdef_16cython_weave_pyx_11cython_2d_zero_weave_forward, 0, __pyx_n_s_cython_2d_zero_weave_forward, NULL, __pyx_n_s_cython_weave_pyx, __pyx_d, ((PyObject *)__pyx_codeobj__68)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_12, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_12)->__signatures__ = __pyx_t_11;
   __Pyx_GIVEREF(__pyx_t_11);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_2d_zero_weave_forward, __pyx_t_12) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cython_2d_zero_weave_forward, __pyx_t_12) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
 
   /* "cython_weave_pyx.pyx":1

@@ -49,7 +49,7 @@ def create_part_I_zero_weave_matrix(input_shape, weave_param):
    
     return I_part.astype(int)
 
-def create_part_I_array_weave_matrix(input_shape, weave_param):
+def create_part_I_array_weave_matrix(input_shape, weave_param, include_center = 0):
     """
     createses properly sized 4D indexing tensor, I_array_weave that can be applied to
     each 3D tensor of the inputs
@@ -71,7 +71,7 @@ def create_part_I_array_weave_matrix(input_shape, weave_param):
     
     N_arr = np.arange(1,num_filters*num_cols**2 + 1).reshape(
         [num_filters,num_rows,num_cols]).astype(float)
-    N_weave,_ = array_weave_fast_forward(N_arr, weave_param)
+    N_weave,_ = array_weave_fast_forward(N_arr, weave_param, include_center = include_center)
     _,num_rows, num_cols = N_weave.shape
         
     N_weave[np.where(N_weave == 0)] = -1
