@@ -63,9 +63,10 @@ class ArrayWeave(keras.layers.Layer):
     returns a weave of the image to be merged with the local convolution layers
     """
 
-    def __init__(self, max_batch_size = 20, filter_size = 3, num_zeros = 2):
+    def __init__(self, max_batch_size = 20, filter_size = 3, num_zeros = 2, include_center = False):
         super(ArrayWeave, self).__init__()
         #Dimensions of Large output layer
+        self.include_center = include_center
         self.filter_size = filter_size
         self.num_zeros = num_zeros
         self.max_batch_size = max_batch_size
@@ -79,7 +80,8 @@ class ArrayWeave(keras.layers.Layer):
             raise ValueError('Must operate on a square image')
 
         self.tensor_indexor = create_part_I_array_weave_matrix((num_filters,height,width),
-            {'num_zeros':self.num_zeros,'filter_size':self.filter_size})
+            {'num_zeros':self.num_zeros,'filter_size':self.filter_size},
+            include_center = self.include_center)
         self.tensor_indexor = tf.convert_to_tensor(self.tensor_indexor)
 
         def fn(x):
