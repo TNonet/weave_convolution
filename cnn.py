@@ -37,6 +37,9 @@ class ThreeLayerFancyNet(object):
     self.params = {}
     self.reg = reg
     self.dtype = dtype
+    self.history = {}
+    self.history['test0'] = []
+    self.history['test1'] = []
     
     ############################################################################
     # TODO: Initialize weights and biases for the three-layer convolutional    #
@@ -166,6 +169,8 @@ class ThreeLayerFancyNet(object):
 
     #Large convu layer
     dx, dtheta_large, dtheta_large_0 = conv_relu_pool_backward(dx, cache_large_conv)
+    self.history['test0'].append(dtheta_large)
+    self.history['test1'].append(dtheta_large_0)
     grads['theta_large'] = dtheta_large + self.reg*(theta_large)
     grads['theta_large_0'] = dtheta_large_0 
 
