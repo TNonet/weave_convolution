@@ -93,7 +93,6 @@ def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1,
 	else:
 		pass
 
-
 	x_per = Conv2D(num_filters,
 	               kernel_size = filter_size,
 	               strides=(1,1),
