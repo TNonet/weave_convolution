@@ -16,9 +16,8 @@ class ZeroWeave(keras.layers.Layer):
     Stil need to work on multy dimensions
     """
 
-    def __init__(self, max_batch_size = 20, num_zeros = 2, filter_size = 3):
+    def __init__(self, num_zeros = 2, filter_size = 3):
         super(ZeroWeave, self).__init__()
-        self.max_batch_size = max_batch_size
         self.num_zeros = num_zeros
         self.filter_size = filter_size
         
@@ -63,13 +62,11 @@ class ArrayWeave(keras.layers.Layer):
     returns a weave of the image to be merged with the local convolution layers
     """
 
-    def __init__(self, max_batch_size = 20, filter_size = 3, num_zeros = 2, include_center = False):
+    def __init__(self, filter_size = 3, num_zeros = 2):
         super(ArrayWeave, self).__init__()
         #Dimensions of Large output layer
-        self.include_center = include_center
         self.filter_size = filter_size
         self.num_zeros = num_zeros
-        self.max_batch_size = max_batch_size
         
     def build(self, input_shape):
         """
@@ -80,8 +77,7 @@ class ArrayWeave(keras.layers.Layer):
             raise ValueError('Must operate on a square image')
 
         self.tensor_indexor = create_part_I_array_weave_matrix((num_filters,height,width),
-            {'num_zeros':self.num_zeros,'filter_size':self.filter_size},
-            include_center = self.include_center)
+            {'num_zeros':self.num_zeros,'filter_size':self.filter_size})
         self.tensor_indexor = tf.convert_to_tensor(self.tensor_indexor)
 
         def fn(x):
