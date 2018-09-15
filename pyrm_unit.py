@@ -8,7 +8,7 @@ from keras.layers import Conv2D, Add, ZeroPadding2D, MaxPool2D
 
 
 def pyrm_weave(inputs, num_filters, filter_ratio = 1, 
-			include_center = 0, padding = True, filter_size = (3,3),
+			include_center = 0, pad_state = True, filter_size = (3,3),
 			pure_combine = False, max_pool = True):
 	"""
 	The full function that preforms the either the pyrm_weave_unit if 
@@ -43,7 +43,7 @@ def pyrm_weave(inputs, num_filters, filter_ratio = 1,
 			raise ValueError('pure_combine can not function on singel input')
 		return pyrm_weave_unit(inputs, num_filters = num_filters,
 			filter_ratio = filter_ratio, include_center = include_center,
-			padding = padding, filter_size = filter_size, max_pool = max_pool)
+			pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
 	else:
 		#Size Check:
 		if len(inputs) != 2:
@@ -63,11 +63,11 @@ def pyrm_weave(inputs, num_filters, filter_ratio = 1,
 		else:
 			return pyrm_weave_combine([x0,x1], num_filters = num_filters,
 				filter_ratio = filter_ratio, include_center = include_center,
-				padding = padding, filter_size = filter_size, max_pool = max_pool)
+				pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
 
 
 def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1, 
-			   include_center = 0, padding = True, filter_size = (3,3),
+			   include_center = 0, pad_state = True, filter_size = (3,3),
 			   max_pool = True):
 	"""
 	inputs[0] -> conv (local) --> ArrayWeave -_
@@ -79,7 +79,7 @@ def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1,
 
 	s_stride = (1,1)
 	l_stride = filter_size
-	pad_size = (filter_size[0] - 1)/2
+	pad_size = int((filter_size[0] - 1)/2)
 	num_filters_join = int(num_filters*filter_ratio)
 
 	if num_filters_join < 1:
@@ -87,7 +87,7 @@ def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1,
 
 	x0 = inputs[0]
 	x1 = inputs[1]
-	if padding:
+	if pad_state:
 		x0 = ZeroPadding2D(padding=(pad_size,pad_size))(x0)
 		x1 = ZeroPadding2D(padding=(pad_size,pad_size))(x1)
 	else:
@@ -155,7 +155,7 @@ def pyrm_weave_pure_combine(inputs, num_filters,
 	return x
 
 def pyrm_weave_unit(inputs, num_filters, filter_ratio = 1, 
-			        include_center = 0, padding = True,
+			        include_center = 0, pad_state = True,
 			        filter_size = (3,3), max_pool = True):
 	"""
 	A helper function that creates the standard pyrm_weave_unit
@@ -172,13 +172,13 @@ def pyrm_weave_unit(inputs, num_filters, filter_ratio = 1,
 	"""
 	s_stride = (1,1)
 	l_stride = filter_size
-	pad_size = (filter_size[0] - 1)/2
+	pad_size = int((filter_size[0] - 1)/2)
 	num_filters_join = int(num_filters*filter_ratio)
 
 	if num_filters_join < 1:
 		raise ValueError('There must be at least one filter joining the Array and Zero Weave Layers')
 
-	if padding:
+	if pad_state:
 		x = ZeroPadding2D(padding=(pad_size,pad_size))(inputs)
 	else:
 		x = inputs
