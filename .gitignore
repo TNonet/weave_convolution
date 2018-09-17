@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+#Mac Files
+*.DS_Store
+
+#Tensorflow Graphs
+*.local
+
 # Distribution / packaging
 .Python
 build/
