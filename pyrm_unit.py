@@ -7,7 +7,7 @@ import tensorflow.python.keras
 from keras.layers import Conv2D, Add, ZeroPadding2D, MaxPool2D
 
 
-def pyrm_weave(inputs, num_filters, filter_ratio = 1, 
+def pyrm_weave(inpts, num_filters, filter_ratio = 1, 
 			include_center = 0, pad_state = True, filter_size = (3,3),
 			pure_combine = False, max_pool = True):
 	"""
@@ -17,51 +17,47 @@ def pyrm_weave(inputs, num_filters, filter_ratio = 1,
 	input should be treated as a seperate image as is being combined
 	with the weave method.
 
-	if type(inputs) is list:
+	if type(inpts) is list:
 		if not pure_combine: 
-			inputs[0] -> conv (local) --> ArrayWeave -_
+			inpts[0] -> conv (local) --> ArrayWeave -_
 					                                   \
 			                                            >--> Add --> Conv (join) --> ouput
 					                                   /
-			inputs[1] -> conv (perip) --> ZeroWeave ---
+			inpts[1] -> conv (perip) --> ZeroWeave ---
 		if pure_combine:
-			inputs[0] --> ArrayWeave -_
+			inpts[0] --> ArrayWeave -_
 	                                   \
 	                                    >--> Add --> Conv (join) --> ouput
 	                                   /
-			inputs[1] --> ZeroWeave ---
-	if type(inputs) is tensor:
+			inpts[1] --> ZeroWeave ---
+	if type(inpts) is tensor:
 			 _-> conv (local) --> ArrayWeave -_
 			/                                  \
-	input -|                                    >--> Add --> Conv (join) --> ouput
+	inpts -|                                    >--> Add --> Conv (join) --> ouput
 			\                                  /
 			 --> conv (perip) --> ZeroWeave ---					
 	"""
 
-	if type(inputs) is not list:
+	if type(inpts) is not list:
+		print('First round should be a unit')
 		if pure_combine:
 			raise ValueError('pure_combine can not function on singel input')
-		return pyrm_weave_unit(inputs, num_filters = num_filters,
+		return pyrm_weave_unit(inpts, num_filters = num_filters,
 			filter_ratio = filter_ratio, include_center = include_center,
 			pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
 	else:
 		#Size Check:
-		if len(inputs) != 2:
+		if len(inpts) != 2:
 			raise ValueError('Must operate on only two (possible) tensors')
-		x0 = inputs[0]
-		x1 = inputs[1]
-		# if (x0 is not tf.Tensor or
-		# 	x1 is not tf.Tensor):
-		# 	raise ValueError('Must operate on tensors')
-		if x0.shape.as_list() != x1.shape.as_list():
+		if inpts[0].shape.as_list() != inpts[1].shape.as_list():
 			raise ValueError('Must operate on tensors of the same size')
 		#Tensors should be ready to operate on!
 		if pure_combine:
-			return pyrm_weave_pure_combine([x0,x1], num_filters = num_filters,
+			return pyrm_weave_pure_combine(inpts, num_filters = num_filters,
 				include_center  = include_center, filter_size = filter_size,
 				max_pool = max_pool)
 		else:
-			return pyrm_weave_combine([x0,x1], num_filters = num_filters,
+			return pyrm_weave_combine(inpts, num_filters = num_filters,
 				filter_ratio = filter_ratio, include_center = include_center,
 				pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
 
@@ -87,6 +83,7 @@ def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1,
 
 	x0 = inputs[0]
 	x1 = inputs[1]
+
 	if pad_state:
 		x0 = ZeroPadding2D(padding=(pad_size,pad_size))(x0)
 		x1 = ZeroPadding2D(padding=(pad_size,pad_size))(x1)

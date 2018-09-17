@@ -10,6 +10,7 @@ from keras.models import Model
 
 def build_pyrm_net(num_layers, num_filters, mid_layer = 100, pure_combine = False, max_pool_alt = True):
 	inputs = Input(shape=(3,32,32))
+
 	tf.cast(inputs, dtype=tf.float64)
 
 
@@ -19,21 +20,26 @@ def build_pyrm_net(num_layers, num_filters, mid_layer = 100, pure_combine = Fals
 	for _ in range(layer_size):
 		prev_layer_out.append(pyrm_weave(inputs, num_filters, pure_combine = pure_combine))
 
+	print('Layer 1 Size: ' + str(len(prev_layer_out)))
+
 	for layer in range(1,num_layers):
 		layer_size /= 2
 		layer_out = []
-		for ind in range(int(layer_size)):
-			layer_input = [prev_layer_out[int(2*ind)], prev_layer_out[int(2*ind+1)]]
-			if (layer - 1) % 2 == 0 and max_pool_alt:
+		print('Layer ' + str(layer) + ' Size: ' + str(layer_size))
+		print('prev_layer_out size: ' + str(len(prev_layer_out)))
+		for ind in range(layer_size):
+			layer_input = [prev_layer_out[2*ind], prev_layer_out[2*ind+1]]
+			print('Layer : ' + str(layer) + ' inds: ' + str([2*ind, 2*ind+1]))
+			if (((layer - 1) % 2) == 0) and max_pool_alt:
 				x = pyrm_weave(layer_input, num_filters, pure_combine = pure_combine, max_pool = True)
-			if (layer - 1) % 2 == 1 and max_pool_alt:
+			elif (((layer - 1) % 2) == 1) and max_pool_alt:
 				x = pyrm_weave(layer_input, num_filters, pure_combine = pure_combine, max_pool = False)
 			else:
 				x = pyrm_weave(layer_input, num_filters, pure_combine = pure_combine)
 			layer_out.append(x)
+
 		prev_layer_out = layer_out
 
-	print(len(prev_layer_out))
 
 	x = prev_layer_out[0]
 	x = Flatten()(x)
