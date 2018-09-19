@@ -6,7 +6,6 @@ import tensorflow as tf
 import tensorflow.python.keras
 from keras.layers import Conv2D, Add, ZeroPadding2D, MaxPool2D
 
-
 def pyrm_weave(inpts, num_filters, filter_ratio = 1, 
 			include_center = 0, pad_state = True, filter_size = (3,3),
 			pure_combine = False, max_pool = True):
@@ -39,7 +38,7 @@ def pyrm_weave(inpts, num_filters, filter_ratio = 1,
 	"""
 
 	if type(inpts) is not list:
-		print('First round should be a unit')
+		#print('First round should be a unit')
 		if pure_combine:
 			raise ValueError('pure_combine can not function on singel input')
 		return pyrm_weave_unit(inpts, num_filters = num_filters,
