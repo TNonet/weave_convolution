@@ -1,4 +1,5 @@
 from tensorflow_weave import *
+from non_weave_iso_unit import *
 import numpy as np
 
 import keras
@@ -38,21 +39,7 @@ def iso_time_net(num_layers, num_filters, filter_size, max_pool_alt, mid_layer):
 	else:
 		pool = 1
 
-	x = ZeroPadding2D(padding=(pad_size,pad_size))(inputs)
-
-	x = Conv2D(2* num_filters,
-					kernel_size = filter_size,
-	               	strides=(1,1),
-	               	padding='valid',
-	               	activation='relu')(x)
-
-	x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
-
-	x = Conv2D(num_filters,
-					kernel_size = filter_size,
-	               	strides=(1,1),
-	               	padding='valid',
-	               	activation='relu')(x)
+	x = non_weave_unit(inputs, num_filters, filter_size, pad_size)
 
 	layer_count = 1
 	for layer in range(1, num_layers):
@@ -61,20 +48,7 @@ def iso_time_net(num_layers, num_filters, filter_size, max_pool_alt, mid_layer):
 			x = MaxPool2D()(x)
 		else:
 			pass
-		x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
-
-		x = Conv2D(2* num_filters,
-					kernel_size = filter_size,
-	               	strides=(1,1),
-	               	padding='valid',
-	               	activation='relu')(x)
-		x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
-
-		x = Conv2D(num_filters,
-					kernel_size = filter_size,
-	               	strides=(1,1),
-	               	padding='valid',
-	               	activation='relu')(x)
+		x = non_weave_unit(x, num_filters, filter_size, pad_size)
 
 	#x = MaxPool2D()(x)
 	x = Flatten()(x)

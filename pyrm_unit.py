@@ -41,9 +41,10 @@ def pyrm_weave(inpts, num_filters, filter_ratio = 1,
 		#print('First round should be a unit')
 		if pure_combine:
 			raise ValueError('pure_combine can not function on singel input')
-		return pyrm_weave_unit(inpts, num_filters = num_filters,
-			filter_ratio = filter_ratio, include_center = include_center,
-			pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
+		with tf.name_scope('pyrm_disjoint_weave_unit'):
+			return pyrm_weave_unit(inpts, num_filters = num_filters,
+				filter_ratio = filter_ratio, include_center = include_center,
+				pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
 	else:
 		#Size Check:
 		if len(inpts) != 2:
@@ -52,13 +53,15 @@ def pyrm_weave(inpts, num_filters, filter_ratio = 1,
 			raise ValueError('Must operate on tensors of the same size')
 		#Tensors should be ready to operate on!
 		if pure_combine:
-			return pyrm_weave_pure_combine(inpts, num_filters = num_filters,
-				include_center  = include_center, filter_size = filter_size,
-				max_pool = max_pool)
+			with tf.name_scope('pyrm_weave_pure_combine_unit'):
+				return pyrm_weave_pure_combine(inpts, num_filters = num_filters,
+					include_center  = include_center, filter_size = filter_size,
+					max_pool = max_pool)
 		else:
-			return pyrm_weave_combine(inpts, num_filters = num_filters,
-				filter_ratio = filter_ratio, include_center = include_center,
-				pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
+			with tf.name_scope('pyrm_weave_combine_unit'):
+				return pyrm_weave_combine(inpts, num_filters = num_filters,
+					filter_ratio = filter_ratio, include_center = include_center,
+					pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
 
 
 def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1, 
@@ -71,7 +74,6 @@ def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1,
 			                                   /
 	inputs[1] -> conv (perip) --> ZeroWeave ---
 	"""
-
 	s_stride = (1,1)
 	l_stride = filter_size
 	pad_size = int((filter_size[0] - 1)/2)
