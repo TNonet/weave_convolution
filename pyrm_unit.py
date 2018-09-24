@@ -8,7 +8,7 @@ from keras.layers import Conv2D, Add, ZeroPadding2D, MaxPool2D
 
 def pyrm_weave(inpts, num_filters, filter_ratio = 1, 
 			include_center = 0, pad_state = True, filter_size = (3,3),
-			pure_combine = False, max_pool = True):
+			pure_combine = False):
 	"""
 	The full function that preforms the either the pyrm_weave_unit if 
 	the input is a single 5D tensor, or preforms the merging if
@@ -44,7 +44,7 @@ def pyrm_weave(inpts, num_filters, filter_ratio = 1,
 		with tf.name_scope('pyrm_disjoint_weave_unit'):
 			return pyrm_weave_unit(inpts, num_filters = num_filters,
 				filter_ratio = filter_ratio, include_center = include_center,
-				pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
+				pad_state = pad_state, filter_size = filter_size)
 	else:
 		#Size Check:
 		if len(inpts) != 2:
@@ -55,18 +55,16 @@ def pyrm_weave(inpts, num_filters, filter_ratio = 1,
 		if pure_combine:
 			with tf.name_scope('pyrm_weave_pure_combine_unit'):
 				return pyrm_weave_pure_combine(inpts, num_filters = num_filters,
-					include_center  = include_center, filter_size = filter_size,
-					max_pool = max_pool)
+					include_center  = include_center, filter_size = filter_size)
 		else:
 			with tf.name_scope('pyrm_weave_combine_unit'):
 				return pyrm_weave_combine(inpts, num_filters = num_filters,
 					filter_ratio = filter_ratio, include_center = include_center,
-					pad_state = pad_state, filter_size = filter_size, max_pool = max_pool)
+					pad_state = pad_state, filter_size = filter_size)
 
 
 def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1, 
-			   include_center = 0, pad_state = True, filter_size = (3,3),
-			   max_pool = True):
+			   include_center = 0, pad_state = True, filter_size = (3,3)):
 	"""
 	inputs[0] -> conv (local) --> ArrayWeave -_
 			                                   \
@@ -116,14 +114,10 @@ def pyrm_weave_combine(inputs, num_filters, filter_ratio = 1,
 	           padding='valid',
 	           activation = 'relu')(x)
 
-	if max_pool:
-		x = MaxPool2D() (x)
-
 	return x
 
 def pyrm_weave_pure_combine(inputs, num_filters,
-							include_center = 0, filter_size = (3,3),
-							max_pool = True):
+							include_center = 0, filter_size = (3,3)):
 	"""
 	inputs[0] --> ArrayWeave -_
 	                           \
@@ -147,14 +141,11 @@ def pyrm_weave_pure_combine(inputs, num_filters,
 	           padding='valid',
 	           activation = 'relu')(x)
 
-	if max_pool:
-		x = MaxPool2D() (x)
-
 	return x
 
 def pyrm_weave_unit(inputs, num_filters, filter_ratio = 1, 
 			        include_center = 0, pad_state = True,
-			        filter_size = (3,3), max_pool = True):
+			        filter_size = (3,3)):
 	"""
 	A helper function that creates the standard pyrm_weave_unit
 
@@ -206,10 +197,6 @@ def pyrm_weave_unit(inputs, num_filters, filter_ratio = 1,
 	           strides=l_stride,
 	           padding='valid',
 	           activation = 'relu')(x)
-
-	if max_pool:
-		x = MaxPool2D() (x)
-
 
 	return x
 
