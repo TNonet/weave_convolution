@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from cython_weave import *
+from ..cython_weave.cython_weave import *
 
 
 def create_part_I_zero_weave_matrix(input_shape, weave_param):

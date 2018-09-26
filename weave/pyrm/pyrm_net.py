@@ -23,6 +23,7 @@ def build_pyrm_net(num_layers, num_filters, mid_layer = 100, pure_combine = Fals
 		prev_layer_out.append(x)
 
 	for layer in range(1,num_layers):
+		num_filters *= 2
 		layer_size /= 2
 		layer_out = []
 		for ind in range(layer_size):

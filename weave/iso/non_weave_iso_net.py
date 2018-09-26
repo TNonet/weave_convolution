@@ -1,4 +1,4 @@
-from tensorflow_weave import *
+#from tensorflow_weave import *
 from non_weave_iso_unit import *
 import numpy as np
 
@@ -37,6 +37,7 @@ def iso_param_net(num_layers, num_filters, filter_size, max_pool_alt, mid_layer)
 	x = non_weave_unit(inputs,num_filters,filter_size=filter_size, pad_size=pad_size)
 
 	for layer in range(1,num_layers):
+		num_filters *= 2
 		if (layer+1) % 2 and max_pool_alt:
 			conv_layer_size /= 2
 			x = MaxPool2D()(x)

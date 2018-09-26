@@ -3,9 +3,8 @@ import numpy as np
 import keras
 import tensorflow as tf
 import tensorflow.python.keras
-from cython_weave import *
+from ..cython_weave.cython_weave import *
 from tensorflow_weave_help import *
-#from load_I_matrix import *
 
 
 from keras import backend as K
