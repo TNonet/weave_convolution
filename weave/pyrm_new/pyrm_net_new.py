@@ -1,6 +1,8 @@
+from pyrm_layer_new import pyrmlayer
 import numpy as np
+from keras.layers import MaxPool2D, Input
 
-def PyrmNet(input_size,
+def pyrm_net(input_size,
 			n_layers,
 			n_filters_start,
 			n_gpus,
@@ -52,28 +54,43 @@ def PyrmNet(input_size,
 	layer_size = 2 ** (num_layers - 1)	
 
 	inputs = Input(shape=(3,32,32))
-	
-	for layer in range(n_layers):
-		if layer == 0:
-			layer_our = PyrmLayer()
 
+	layer_in = [inputs for _ in range(layer_size)]
+	n_filters = n_filters_start
+	layer_out = pyrmlayer(layer_in,
+							layer_size,
+							n_filters=n_filters,
+							ava_devices = ava_devices,
+							disjoint = False,
+							pure_combine =  pure_combine,
+							center = center,
+							r_combine = r_combine,
+							pre_pad = pre_pad,
+							filter_size = (3,3))
 
-	self.n_filters_start = n_filters_start
-	self.n_gpus = n_gpu
-	self.r_filter = r_filter
-	self.r_combine = r_combine
-	self.max_pool_loc = max_pool_loc
-	self.end_max_pool = end_max_pool
-	self.min_dim = min_dim
-	self.center = center
-	self.gpu_only = gpu_only
+	for layer in range(1,n_layers):
+		if layer % max_pool_loc == 0:
+			layer_in = [MaxPool2D()(tense) for tense in layer_out]
+		else:
+			layer_in = layer_out
 
+		layer_size /= 2
+		n_filters *= r_filter
 
-	
+		layer_out = PyrmLayer(layer_in,
+								layer_size = layer_size,
+								n_filters = n_filters,
+								ava_devices = ava_devices,
+								disjoint = True,
+								pure_combine = pure_combine,
+								center = center,
+								r_combine = r_combine
+								pre_pad = pre_pad
+								filter_size = filter_size)
 
+	if end_max_pool:
+		x = MaxPool2D()(layer_out[0])
+	else:
+		x = layer_out[0]
 
-
-
-
-
-
+	return x

@@ -1,8 +1,7 @@
-
 from ..tensorflow_weave.tensorflow_weave import *
 import numpy as np
 import keras
-import tensorflow as tf
+import tf
 import tensorflow.python.keras
 from keras.layers import Conv2D, Add, ZeroPadding2D
 

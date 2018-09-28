@@ -1,13 +1,7 @@
-
-from ..tensorflow_weave.tensorflow_weave import *
-import numpy as np
-import keras
-import tensorflow as tf
-import tensorflow.python.keras
 from keras.layers import Conv2D, Add, ZeroPadding2D
 
 
-def PyrmLayer(inputs,
+def pyrmlayer(inputs,
 	n_units,
 	n_filters,
 	ava_gpu,
@@ -45,6 +39,6 @@ def PyrmLayer(inputs,
 							pre_pad = pre_pad,
 							filter_size = filter_size)
 		layer_out.append(x_temp)
-		
+
 	return layer_out
 
