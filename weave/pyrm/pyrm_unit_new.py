@@ -8,7 +8,7 @@ from keras.layers import Conv2D, Add, ZeroPadding2D
 
 def pyrm_unit(inputs,
 	n_filters,
-	device,
+	devices,
 	disjoint = True,
 	pure_combine =  False,
 	center = False,
@@ -16,7 +16,7 @@ def pyrm_unit(inputs,
 	pre_pad = True,
 	filter_size = (3,3)):
 	"""
-	inputs -> (List of) 4-D Tensors with shape (None, F, HH, WW)
+	inputs -> (List of) 4-D Tensors with each element of the shape (None, F, HH, WW)
 
 	parameters:
 	n_filters -> (non-negative integer) the number of filters for layer
@@ -58,7 +58,7 @@ def pyrm_unit(inputs,
 		if pure_combine:
 			with tf.name_scope('pyrm_weave_disjoint_pure_combine_unit'):
 				return pyrm_weave_disjoint_pure_combine(inputs = inputs,
-														device = device,
+														devices = devices,
 														n_filters = n_filters,
 														device = device,
 														filter_ratio = filter_ratio, 
@@ -68,7 +68,7 @@ def pyrm_unit(inputs,
 			with tf.name_scope('pyrm_weave_disjoint_not_pure_combine_unit'):
 				return pyrm_weave_disjoint_not_pure_combine(inputs = inputs,
 															n_filters = n_filters,
-															device = device,
+															devices = devices,
 															filter_ratio = filter_ratio, 
 															center = center,
 															r_combine = r_combine,
@@ -80,7 +80,7 @@ def pyrm_unit(inputs,
 		with tf.name_scope('pyrm_weave_joint_unit'):
 			return pyrm_weave_joint(inputs = inputs,
 									n_filters = n_filters,
-									device = device,
+									devices = devices,
 									center = center,
 									r_combine = r_combine,
 									pre_pad = pre_pad,
@@ -89,7 +89,7 @@ def pyrm_unit(inputs,
 
 def pyrm_weave_joint(inputs,
 	n_filters,
-	device, 
+	devices, 
 	center = False,
 	r_combine = 1,
 	pre_pad = True,
@@ -112,37 +112,38 @@ def pyrm_weave_joint(inputs,
 	else:
 		x = inputs
 
+	with tf.device(devices[0]):
+		x_per = Conv2D(n_filters,
+						kernel_size = filter_size,
+						strides=(1,1),
+						padding='valid',
+						activation='relu')(x)
+		x_weave = ArrayWeave(include_center = center)(x_per)
 
-	x_per = Conv2D(n_filters,
-	               kernel_size = filter_size,
-	               strides=(1,1),
-	               padding='valid',
-	               activation='relu')(x)
-
-	x_loc = Conv2D(n_filters,
-	               kernel_size= filter_size,
-	               strides=(1,1),
-	               padding='valid',
-	               activation = 'relu')(x)
-
-	x_zero = ZeroWeave()(x_loc)
-	x_weave = ArrayWeave(include_center = center)(x_per)
+	with tf.device(devices[1]):
+		x_loc = Conv2D(n_filters,
+						kernel_size= filter_size,
+						strides=(1,1),
+						padding='valid',
+						activation = 'relu')(x)
+		x_zero = ZeroWeave()(x_loc)
 
 	x = Add()([x_weave, x_zero])
 
 	x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
 
-	x = Conv2D(num_filters_join,
-	           kernel_size= filter_size,
-	           strides=l_stride,
-	           padding='valid',
-	           activation = 'relu')(x)
+	with tf.device(devices[0]):
+		x = Conv2D(num_filters_join,
+					kernel_size= filter_size,
+					strides=l_stride,
+					padding='valid',
+					activation = 'relu')(x)
 	return x
 
 
 def pyrm_weave_disjoint_not_pure_combine(inputs,
 	n_filters,
-	device,
+	devices,
 	center = False,
 	r_combine = 1,
 	pre_pad = True,
@@ -169,36 +170,39 @@ def pyrm_weave_disjoint_not_pure_combine(inputs,
 	else:
 		pass
 
-	x_per = Conv2D(n_filters,
-	               kernel_size = filter_size,
-	               strides=(1,1),
-	               padding='valid',
-	               activation='relu')(x0)
+	with tf.device(devices[0]):
+		x_per = Conv2D(n_filters,
+						kernel_size = filter_size,
+						strides=(1,1),
+						padding='valid',
+						activation='relu')(x0)
+		x_weave = ArrayWeave(include_center = center)(x_per)
 
-	x_loc = Conv2D(n_filters,
-	               kernel_size= filter_size,
-	               strides=(1,1),
-	               padding='valid',
-	               activation = 'relu')(x1)
 
-	x_zero = ZeroWeave()(x_loc)
-	x_weave = ArrayWeave(include_center = center)(x_per)
+	with tf.device(devices[1]):
+		x_loc = Conv2D(n_filters,
+						kernel_size= filter_size,
+						strides=(1,1),
+						padding='valid',
+						activation = 'relu')(x1)
+		x_zero = ZeroWeave()(x_loc)
 
 	x = Add()([x_weave, x_zero])
 
 	x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
+	with tf.device(devices[0]):
+		x = Conv2D(num_filters_join,
+					kernel_size= filter_size,
+					strides=l_stride,
+					padding='valid',
+					activation = 'relu')(x)
 
-	x = Conv2D(num_filters_join,
-	           kernel_size= filter_size,
-	           strides=l_stride,
-	           padding='valid',
-	           activation = 'relu')(x)
 	return x
 
 
 def pyrm_weave_disjoint_pure_combine(inputs,
 	n_filters,
-	device,
+	devices,
 	filter_ratio = 1, 
 	center = False,
 	r_combine = 1,
@@ -216,18 +220,22 @@ def pyrm_weave_disjoint_pure_combine(inputs,
 	x_loc = inputs[0]
 	x_per = inputs[1]
 
-	x_zero = ZeroWeave()(x_loc)
-	x_weave = ArrayWeave(include_center = center)(x_per)
+	with tf.device(devices[0]):
+		x_zero = ZeroWeave()(x_loc)
+
+	with tf.device(devices[1]):
+		x_weave = ArrayWeave(include_center = center)(x_per)
 
 	x = Add()([x_weave, x_zero])
 
 	x = ZeroPadding2D(padding=(mid_pad_size,mid_pad_size))(x)
 
-	x = Conv2D(num_filters_join,
-	           kernel_size= filter_size,
-	           strides=l_stride,
-	           padding='valid',
-	           activation = 'relu')(x)
+	with tf.device(devices[0]):
+		x = Conv2D(num_filters_join,
+					kernel_size= filter_size,
+					strides=l_stride,
+					padding='valid',
+					activation = 'relu')(x)
 
 	return x
 

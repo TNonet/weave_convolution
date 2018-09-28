@@ -27,7 +27,7 @@ def non_weave_unit(inputs, num_filters, filter_size, pad_size, pad = True):
 		else:
 			x = inputs
 
-		x = Conv2D(2* num_filters,
+		x = Conv2D(2*num_filters,
 						kernel_size = filter_size,
 		               	strides=(1,1),
 		               	padding='valid',

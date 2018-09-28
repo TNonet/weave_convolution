@@ -1,24 +1,11 @@
 import numpy as np
 
-def PyrmNet(input_size,
-			n_layers,
-			n_filters_start,
-			n_gpus,
-			image_size,
-			r_filter = 2,
-			r_combine = 2,
-			max_pool_loc = 2,
-			end_max_pool = True,
-			min_dim = 8,
-			center = False,
-			gpu_only = False):
+class PyrmNet():
 	"""
 	inputs:
 	inputs -> (4-D Tensor) with shape (None, 3, H, W) representing RGB images
 
 	parameters:
-	input_size -> (Tupe of length 3) representing the size of the image array
-				of a single image.
 	n_gpu -> (non-negative integer) number of gpus available on machine
 				can limit number of layers for GPU calcs
 	gpu_only -> (boolean) whether layers should operate on CPU's if there
@@ -37,26 +24,21 @@ def PyrmNet(input_size,
 				the first layer for the next MaxPool operation
 	end_max_pool -> (boolean) whether a max_pool operat
 	"""
-	#Determine the Number of Layers:
-	gpu_layers = max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf'))
-	min_length = min(input_size[1:])
-	size_layers = (int(np.log2(min_length/min_dim)) - end_max_pool)*max_pool_loc
-	n_layers = min(n_layers,gpu_layers,size_layers)
+	def __init__(n_layers,
+		n_filters_start,
+		n_gpus,
+		image_size,
+		r_filter = 2,
+		r_combine = 2,
+		max_pool_loc = 2,
+		end_max_pool = True,
+		min_dim = 8,
+		center = False,
+		gpu_only = False):
 
-	if not gpu_only:
-		ava_devices = ['/gpu:%d' % i for i in range(n_gpus)]
-		#Add CPUS to devices!
-	else:
-		ava_devices = ['/gpu:%d' % i for i in range(n_gpus)]
-
-	layer_size = 2 ** (num_layers - 1)	
-
-	inputs = Input(shape=(3,32,32))
-	
-	for layer in range(n_layers):
-		if layer == 0:
-			layer_our = PyrmLayer()
-
+	self.n_layers = min(n_layers,
+						max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf')),
+						min_dim * 2 ** ((n_layers/max_pool_loc)+end_max_pool))
 
 	self.n_filters_start = n_filters_start
 	self.n_gpus = n_gpu

@@ -41,10 +41,9 @@ PyrmLayer(**kwargs)(inputs)
 	n_filters -> (non-negative integer) the number of filters for layer
 
 
-PyrmUnit(**kwargs)(inputs)
+pyrm_unit(**kwargs)(inputs)
 	"""
 	inputs -> (List of) 4-D Tensors with shape (None, F, HH, WW)
-	"""
 
 	parameters:
 	disjoint -> (boolean) wheter inputs is a list of multiple 
@@ -59,6 +58,13 @@ PyrmUnit(**kwargs)(inputs)
 	pre_pad -> (boolean) whether inputs should be padded before 
 				convolution
 	static filter_size -> (3,3)
+
+	"""
+
+PyrmUnitDisjoint(**kwargs)(inputs)
+PyrmUnitDisjointCombine(**kwargs)(inputs)
+PyrmUnitDisjointCombine(**kwargs)(inputs)
+PyrmUnitJoint(**kwargs)(inputs)
 
 
 
