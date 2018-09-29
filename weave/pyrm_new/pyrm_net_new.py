@@ -1,19 +1,22 @@
 from pyrm_layer_new import pyrmlayer
 import numpy as np
-from keras.layers import MaxPool2D, Input
+from keras.layers import MaxPool2D, Input, Flatten, Dense
+from keras.models import Model
 
 def pyrm_net(input_size,
 			n_layers,
 			n_filters_start,
 			n_gpus,
-			image_size,
 			r_filter = 2,
 			r_combine = 2,
 			max_pool_loc = 2,
+			pure_combine = False,
+			pre_pad = True,
 			end_max_pool = True,
 			min_dim = 8,
 			center = False,
-			gpu_only = False):
+			gpu_only = False,
+			filter_size = (3,3)):
 	"""
 	inputs:
 	inputs -> (4-D Tensor) with shape (None, 3, H, W) representing RGB images
@@ -41,24 +44,27 @@ def pyrm_net(input_size,
 	"""
 	#Determine the Number of Layers:
 	gpu_layers = max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf'))
-	min_length = min(input_size[1:])
-	size_layers = (int(np.log2(min_length/min_dim)) - end_max_pool)*max_pool_loc
+	min_length = min(input_size[:-1])
+	size_layers = (int(np.log2(min_length/float(min_dim))) - end_max_pool)*max_pool_loc
 	n_layers = min(n_layers,gpu_layers,size_layers)
 
-	if not gpu_only:
-		ava_devices = ['/gpu:%d' % i for i in range(n_gpus)]
-		#Add CPUS to devices!
-	else:
-		ava_devices = ['/gpu:%d' % i for i in range(n_gpus)]
+	print('Number of layers %d' % n_layers)
 
-	layer_size = 2 ** (num_layers - 1)	
+	ava_devices = ['/gpu:%d' % i for i in range(n_gpus)]
+	if not gpu_only:
+		for _ in range(2**(n_layers-1) - n_gpus):
+			ava_devices.append('/cpu:0')
+	else:
+		pass
+
+	layer_size = 2 ** (n_layers - 1)	
 
 	inputs = Input(shape=(3,32,32))
 
 	layer_in = [inputs for _ in range(layer_size)]
 	n_filters = n_filters_start
 	layer_out = pyrmlayer(layer_in,
-							layer_size,
+							n_units = layer_size,
 							n_filters=n_filters,
 							ava_devices = ava_devices,
 							disjoint = False,
@@ -66,9 +72,9 @@ def pyrm_net(input_size,
 							center = center,
 							r_combine = r_combine,
 							pre_pad = pre_pad,
-							filter_size = (3,3))
+							filter_size = filter_size)
 
-	for layer in range(1,n_layers):
+	for layer in range(1,n_layers-1):
 		if layer % max_pool_loc == 0:
 			layer_in = [MaxPool2D()(tense) for tense in layer_out]
 		else:
@@ -77,20 +83,28 @@ def pyrm_net(input_size,
 		layer_size /= 2
 		n_filters *= r_filter
 
-		layer_out = PyrmLayer(layer_in,
-								layer_size = layer_size,
+		layer_out = pyrmlayer(layer_in,
+								n_units = layer_size,
 								n_filters = n_filters,
 								ava_devices = ava_devices,
 								disjoint = True,
 								pure_combine = pure_combine,
 								center = center,
-								r_combine = r_combine
-								pre_pad = pre_pad
+								r_combine = r_combine,
+								pre_pad = pre_pad,
 								filter_size = filter_size)
-
+	print('Final Layer Size %d' % len(layer_out))
 	if end_max_pool:
 		x = MaxPool2D()(layer_out[0])
 	else:
 		x = layer_out[0]
 
-	return x
+	x = Flatten()(x)
+	x = Dense(100, activation = 'relu')(x)
+	predictions = Dense(10, activation='softmax')(x)
+
+	# This creates a model that includes
+	# the Input layer and three Dense layers
+	model = Model(inputs=[inputs], outputs=predictions)
+	model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+	return model

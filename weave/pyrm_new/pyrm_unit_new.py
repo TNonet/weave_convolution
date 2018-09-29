@@ -1,7 +1,7 @@
 from ..tensorflow_weave.tensorflow_weave import *
 import numpy as np
 import keras
-import tf
+import tensorflow as tf
 import tensorflow.python.keras
 from keras.layers import Conv2D, Add, ZeroPadding2D
 
@@ -62,7 +62,7 @@ def pyrm_unit(inputs,
 														device = device,
 														filter_ratio = filter_ratio, 
 														center = center,
-														filter_size = filter_size):
+														filter_size = filter_size)
 		else:
 			with tf.name_scope('pyrm_weave_disjoint_not_pure_combine_unit'):
 				return pyrm_weave_disjoint_not_pure_combine(inputs = inputs,
@@ -72,7 +72,7 @@ def pyrm_unit(inputs,
 															center = center,
 															r_combine = r_combine,
 															pre_pad = pre_pad,
-															filter_size = filter_size):
+															filter_size = filter_size)
 	else:
 		if pure_combine:
 			raise ValueError('Purely combing a single image is just a normal convolution layer')
@@ -83,7 +83,7 @@ def pyrm_unit(inputs,
 									center = center,
 									r_combine = r_combine,
 									pre_pad = pre_pad,
-									filter_size = filter_size):
+									filter_size = filter_size)
 
 
 def pyrm_weave_joint(inputs,
@@ -107,16 +107,17 @@ def pyrm_weave_joint(inputs,
 		raise ValueError('There must be at least one filter joining the Array and Zero Weave Layers')
 
 	if pre_pad:
-		x = ZeroPadding2D(padding=(pad_size,pad_size))(inputs)
+		x0 = ZeroPadding2D(padding=(pad_size,pad_size))(inputs[0])
+		x1 = ZeroPadding2D(padding=(pad_size,pad_size))(inputs[1])
 	else:
-		x = inputs
+		x0,x1 = inputs
 
 	with tf.device(devices[0]):
 		x_per = Conv2D(n_filters,
 						kernel_size = filter_size,
 						strides=(1,1),
 						padding='valid',
-						activation='relu')(x)
+						activation='relu')(x0)
 		x_weave = ArrayWeave(include_center = center)(x_per)
 
 	with tf.device(devices[1]):
@@ -124,7 +125,7 @@ def pyrm_weave_joint(inputs,
 						kernel_size= filter_size,
 						strides=(1,1),
 						padding='valid',
-						activation = 'relu')(x)
+						activation = 'relu')(x1)
 		x_zero = ZeroWeave()(x_loc)
 
 	x = Add()([x_weave, x_zero])

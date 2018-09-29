@@ -1,10 +1,10 @@
 from keras.layers import Conv2D, Add, ZeroPadding2D
-
+from pyrm_unit_new import *
 
 def pyrmlayer(inputs,
 	n_units,
 	n_filters,
-	ava_gpu,
+	ava_devices,
 	disjoint = True,
 	pure_combine =  False,
 	center = False,
@@ -18,7 +18,7 @@ def pyrmlayer(inputs,
 	parameters:
 	gpu_only -> (boolean) whether layers should operate on CPU's if there
 				is a need for GPUS
-	ava_gpu -> (List of) string names for GPUs available to Layer
+	ava_devices -> (List of) string names for GPUs available to Layer
 	center -> (boolean) whether the ArrayWeave includes center
 	n_filters -> (non-negative integer) the number of filters for the first
 				set of convolution filters in this layer.
@@ -26,12 +26,14 @@ def pyrmlayer(inputs,
 	layer_out = []
 
 
-	for unit in range(n_units):
+	for unit in range(n_units-1):
+		print('number of units %d' % n_units)
+		print('number of devices %d' % len(ava_devices))
 		unit_input = [inputs[2*unit],inputs[2*unit+1]]
-		unit_devices = [ava_gpu[2*unit], ava_gpu[2*unit+1]]
+		unit_devices = [ava_devices[2*unit], ava_devices[2*unit+1]]
 		x_temp = pyrm_unit(unit_input,
 							n_filters = n_filters, 
-							unit_devices,
+							devices = unit_devices,
 							disjoint = disjoint,
 							pure_combine = pure_combine,
 							center = center,
