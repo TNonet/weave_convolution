@@ -7,6 +7,7 @@ def pyrm_net(input_size,
 			n_layers,
 			n_filters_start,
 			n_gpus,
+			inputs = False,
 			r_filter = 2,
 			r_combine = 2,
 			max_pool_loc = 2,
@@ -42,39 +43,60 @@ def pyrm_net(input_size,
 				the first layer for the next MaxPool operation
 	end_max_pool -> (boolean) whether a max_pool operat
 	"""
+
 	#Determine the Number of Layers:
-	gpu_layers = max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf'))
+	gpu_layers = float(max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf')))
+	print('GPU settings allow for %f layers' % gpu_layers)
 	min_length = min(input_size[:-1])
 	size_layers = (int(np.log2(min_length/float(min_dim))) - end_max_pool)*max_pool_loc
-	n_layers = min(n_layers,gpu_layers,size_layers)
+	print('Minimum output size allow for %d layers' % size_layers)
+	n_layers = int(min(n_layers,gpu_layers,size_layers))
 
 	print('Number of layers %d' % n_layers)
 
+	#Creating Device Library
+	#n_gpus take first n spots of library and back fill with CPU
 	ava_devices = ['/gpu:%d' % i for i in range(n_gpus)]
+
+	layer_size = 2 ** (n_layers - 1)
+
+	print('First Layer Size: %d (Number of Units)' % layer_size)
+
 	if not gpu_only:
-		for _ in range(2**(n_layers-1) - n_gpus):
+		for _ in range(2*layer_size - n_gpus):
 			ava_devices.append('/cpu:0')
 	else:
 		pass
 
-	layer_size = 2 ** (n_layers - 1)	
+	#Creating Layers
+	#First Layer Dependent on input type
 
-	inputs = Input(shape=(3,32,32))
+	if inputs == False:
+		first_disjoint = False
+		inputs = Input(shape=(3,32,32))
+		layer_in = [inputs for _ in range(layer_size)]
+	else:
+		if len(inputs) == layer_size:
+			layer_in = inputs
+			first_disjoint = True
+		else:
+			raise ValueError('With tensor input (size {}) must match layer_size {})'.format(len(inputs), layer_size))
 
-	layer_in = [inputs for _ in range(layer_size)]
 	n_filters = n_filters_start
 	layer_out = pyrmlayer(layer_in,
-							n_units = layer_size,
+							n_units=layer_size,
 							n_filters=n_filters,
 							ava_devices = ava_devices,
-							disjoint = False,
+							disjoint = first_disjoint,
 							pure_combine =  pure_combine,
 							center = center,
 							r_combine = r_combine,
 							pre_pad = pre_pad,
 							filter_size = filter_size)
 
-	for layer in range(1,n_layers-1):
+	print('First Layer Output Size: %d (Number of Tensors)' % len(layer_out))
+
+	for layer in range(1,n_layers):
 		if layer % max_pool_loc == 0:
 			layer_in = [MaxPool2D()(tense) for tense in layer_out]
 		else:
@@ -93,6 +115,8 @@ def pyrm_net(input_size,
 								r_combine = r_combine,
 								pre_pad = pre_pad,
 								filter_size = filter_size)
+
+
 	print('Final Layer Size %d' % len(layer_out))
 	if end_max_pool:
 		x = MaxPool2D()(layer_out[0])

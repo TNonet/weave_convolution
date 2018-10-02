@@ -24,12 +24,16 @@ def pyrmlayer(inputs,
 				set of convolution filters in this layer.
 	"""
 	layer_out = []
+	print('Disjoint:', disjoint)
+	print('number of units %d' % n_units)
+	print('number of devices %d' % len(ava_devices))
+	print('number of inputs %d' % len(inputs))
+	for unit in range(n_units):
+		if disjoint:
+			unit_input = [inputs[2*unit],inputs[2*unit+1]]
+		else:
+			unit_input = [inputs[unit],inputs[unit]]
 
-
-	for unit in range(n_units-1):
-		print('number of units %d' % n_units)
-		print('number of devices %d' % len(ava_devices))
-		unit_input = [inputs[2*unit],inputs[2*unit+1]]
 		unit_devices = [ava_devices[2*unit], ava_devices[2*unit+1]]
 		x_temp = pyrm_unit(unit_input,
 							n_filters = n_filters, 

@@ -60,15 +60,14 @@ def pyrm_unit(inputs,
 														devices = devices,
 														n_filters = n_filters,
 														device = device,
-														filter_ratio = filter_ratio, 
+														r_combine = r_combine, 
 														center = center,
 														filter_size = filter_size)
 		else:
 			with tf.name_scope('pyrm_weave_disjoint_not_pure_combine_unit'):
 				return pyrm_weave_disjoint_not_pure_combine(inputs = inputs,
 															n_filters = n_filters,
-															devices = devices,
-															filter_ratio = filter_ratio, 
+															devices = devices, 
 															center = center,
 															r_combine = r_combine,
 															pre_pad = pre_pad,
@@ -164,7 +163,7 @@ def pyrm_weave_disjoint_not_pure_combine(inputs,
 	x0 = inputs[0]
 	x1 = inputs[1]
 
-	if pad_state:
+	if pre_pad:
 		x0 = ZeroPadding2D(padding=(pad_size,pad_size))(x0)
 		x1 = ZeroPadding2D(padding=(pad_size,pad_size))(x1)
 	else:
