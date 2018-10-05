@@ -53,13 +53,14 @@ def pyrm_unit(inputs,
 		if len(inputs) != 2:
 			raise ValueError('Must operate on only two (possible) tensors')
 		if inputs[0].shape.as_list() != inputs[1].shape.as_list():
+			print(inputs[0].shape.as_list())
+			print(inputs[1].shape.as_list())
 			raise ValueError('Must operate on tensors of the same size')
 		if pure_combine:
 			with tf.name_scope('pyrm_weave_disjoint_pure_combine_unit'):
 				return pyrm_weave_disjoint_pure_combine(inputs = inputs,
 														devices = devices,
 														n_filters = n_filters,
-														device = device,
 														r_combine = r_combine, 
 														center = center,
 														filter_size = filter_size)

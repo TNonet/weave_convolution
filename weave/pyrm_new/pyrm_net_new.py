@@ -48,6 +48,8 @@ def pyrm_net(input_size,
 	gpu_layers = float(max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf')))
 	print('GPU settings allow for %f layers' % gpu_layers)
 	min_length = min(input_size[:-1])
+	#Size Layer is still werid as it determines size_layers based on max_pool_loc even if it doenst use max pool
+	#Need to Fix!
 	size_layers = (int(np.log2(min_length/float(min_dim))) - end_max_pool)*max_pool_loc
 	print('Minimum output size allow for %d layers' % size_layers)
 	n_layers = int(min(n_layers,gpu_layers,size_layers))
@@ -76,11 +78,11 @@ def pyrm_net(input_size,
 		inputs = Input(shape=(3,32,32))
 		layer_in = [inputs for _ in range(layer_size)]
 	else:
-		if len(inputs) == layer_size:
+		if len(inputs) == 2*layer_size:
 			layer_in = inputs
 			first_disjoint = True
 		else:
-			raise ValueError('With tensor input (size {}) must match layer_size {})'.format(len(inputs), layer_size))
+			raise ValueError('With tensor input (size {}) must match layer_size {})'.format(len(inputs), 2*layer_size))
 
 	n_filters = n_filters_start
 	layer_out = pyrmlayer(layer_in,
@@ -123,12 +125,12 @@ def pyrm_net(input_size,
 	else:
 		x = layer_out[0]
 
-	x = Flatten()(x)
-	x = Dense(100, activation = 'relu')(x)
-	predictions = Dense(10, activation='softmax')(x)
+	# x = Flatten()(x)
+	# x = Dense(100, activation = 'relu')(x)
+	# predictions = Dense(10, activation='softmax')(x)
 
-	# This creates a model that includes
-	# the Input layer and three Dense layers
-	model = Model(inputs=[inputs], outputs=predictions)
-	model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-	return model
+	# # This creates a model that includes
+	# # the Input layer and three Dense layers
+	# model = Model(inputs=[inputs], outputs=predictions)
+	# model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+	return x
