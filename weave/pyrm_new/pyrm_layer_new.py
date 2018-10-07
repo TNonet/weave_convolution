@@ -28,6 +28,7 @@ def pyrmlayer(inputs,
 	print('number of units %d' % n_units)
 	print('number of devices %d' % len(ava_devices))
 	print('number of inputs %d' % len(inputs))
+
 	for unit in range(n_units):
 		if disjoint:
 			unit_input = [inputs[2*unit],inputs[2*unit+1]]

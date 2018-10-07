@@ -1,4 +1,10 @@
+import cython_weave_pyx
+
+
+import pyximport; pyximport.install()
+
 from cython_weave_pyx import *
+
 import numpy as np
 
 def array_weave_fast_forward(X, weave_param, include_center):
