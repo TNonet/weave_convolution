@@ -11,6 +11,7 @@ __pycache__/
 
 #Tensorflow Graphs
 *.local
+logs/
 
 # Distribution / packaging
 .Python
