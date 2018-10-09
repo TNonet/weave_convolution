@@ -47,7 +47,7 @@ def pyrm_net(input_size,
 	#Determine the Number of Layers:
 	gpu_layers = float(max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf')))
 	print('GPU settings allow for %f layers' % gpu_layers)
-	min_length = min(input_size[:-1])
+	min_length = min(input_size[1:])
 	#Size Layer is still werid as it determines size_layers based on max_pool_loc even if it doenst use max pool
 	#Need to Fix!
 	size_layers = (int(np.log2(min_length/float(min_dim))) - end_max_pool)*max_pool_loc

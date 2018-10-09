@@ -11,7 +11,7 @@ def pyrm_unit(inputs,
 	devices,
 	disjoint = True,
 	batch_norm = True,
-	drop = 0,
+	drop = 0.2,
 	pure_combine =  False,
 	center = False,
 	r_combine = 1,
@@ -120,8 +120,8 @@ def pyrm_weave_joint(inputs,
 		raise ValueError('There must be at least one filter joining the Array and Zero Weave Layers')
 
 	if batch_norm:
-		x0 = BatchNormalization()(inputs[0])
-		x1 = BatchNormalization()(inputs[1])
+		x0 = BatchNormalization(axis = 1)(inputs[0])
+		x1 = BatchNormalization(axis = 1)(inputs[1])
 	else:
 		x0,x1 = inputs 
 
@@ -189,8 +189,8 @@ def pyrm_weave_disjoint_not_pure_combine(inputs,
 		raise ValueError('There must be at least one filter joining the Array and Zero Weave Layers')
 
 	if batch_norm:
-		x0 = BatchNormalization()(inputs[0])
-		x1 = BatchNormalization()(inputs[1])
+		x0 = BatchNormalization(axis = 1)(inputs[0])
+		x1 = BatchNormalization(axis = 1)(inputs[1])
 	else:
 		x0,x1 = inputs 
 
@@ -256,8 +256,8 @@ def pyrm_weave_disjoint_pure_combine(inputs,
 	num_filters_join = int(n_filters*r_combine)
 	
 	if batch_norm:
-		x0 = BatchNormalization()(inputs[0])
-		x1 = BatchNormalization()(inputs[1])
+		x0 = BatchNormalization(axis = 1)(inputs[0])
+		x1 = BatchNormalization(axis = 1)(inputs[1])
 	else:
 		x0,x1 = inputs 
 
