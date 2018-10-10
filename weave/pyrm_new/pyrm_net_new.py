@@ -3,24 +3,22 @@ import numpy as np
 from keras.layers import MaxPool2D, Input, Flatten, Dense
 from keras.models import Model
 
-def pyrm_net(input_size,
+def pyrm_net(inputs,
 			n_layers,
 			n_filters_start,
 			n_gpus,
-			inputs = False,
 			r_filter = 2,
 			r_combine = 2,
 			max_pool_loc = 2,
 			pure_combine = False,
 			pre_pad = True,
-			end_max_pool = True,
 			min_dim = 8,
 			center = False,
 			gpu_only = False,
 			filter_size = (3,3)):
 	"""
 	inputs:
-	inputs -> (4-D Tensor) with shape (None, 3, H, W) representing RGB images
+	inputs -> List of (4-D Tensor) with shape (None, 3, H, W) representing RGB images.
 
 	parameters:
 	input_size -> (Tupe of length 3) representing the size of the image array
@@ -44,13 +42,21 @@ def pyrm_net(input_size,
 	end_max_pool -> (boolean) whether a max_pool operat
 	"""
 
+	#Disjoint Layers take two input tensors.
+	layer_size = len(inputs)/2
+	input_size = inputs[0].shape.as_list()
+	min_length = input_size[2]
+
 	#Determine the Number of Layers:
-	gpu_layers = float(max(gpu_only * int(np.log2(n_gpus)), (1 - gpu_only) * float('inf')))
+	if gpu_only:
+		gpu_layers = int(np.log2(n_gpus))
+	else:
+		gpu_layers = float('inf')
+
 	print('GPU settings allow for %f layers' % gpu_layers)
-	min_length = min(input_size[1:])
-	#Size Layer is still werid as it determines size_layers based on max_pool_loc even if it doenst use max pool
-	#Need to Fix!
-	size_layers = (int(np.log2(min_length/float(min_dim))) - end_max_pool)*max_pool_loc
+
+	size_layers = int(np.log2(min_length/float(min_dim)))*(max_pool_loc+1)
+
 	print('Minimum output size allow for %d layers' % size_layers)
 	n_layers = int(min(n_layers,gpu_layers,size_layers))
 
@@ -60,7 +66,7 @@ def pyrm_net(input_size,
 	#n_gpus take first n spots of library and back fill with CPU
 	ava_devices = ['/gpu:%d' % i for i in range(n_gpus)]
 
-	layer_size = 2 ** (n_layers - 1)
+	assert(layer_size == 2 ** (n_layers - 1))
 
 	print('First Layer Size: %d (Number of Units)' % layer_size)
 
@@ -72,24 +78,12 @@ def pyrm_net(input_size,
 
 	#Creating Layers
 	#First Layer Dependent on input type
-
-	if inputs == False:
-		first_disjoint = False
-		inputs = Input(shape=(3,32,32))
-		layer_in = [inputs for _ in range(layer_size)]
-	else:
-		if len(inputs) == 2*layer_size:
-			layer_in = inputs
-			first_disjoint = True
-		else:
-			raise ValueError('With tensor input (size {}) must match layer_size {})'.format(len(inputs), 2*layer_size))
-
 	n_filters = n_filters_start
-	layer_out = pyrmlayer(layer_in,
+	layer_out = pyrmlayer(inputs,
 							n_units=layer_size,
 							n_filters=n_filters,
 							ava_devices = ava_devices,
-							disjoint = first_disjoint,
+							disjoint = True,
 							pure_combine =  pure_combine,
 							batch_norm = False,
 							drop = False,
@@ -120,19 +114,8 @@ def pyrm_net(input_size,
 								pre_pad = pre_pad,
 								filter_size = filter_size)
 
-
 	print('Final Layer Size %d' % len(layer_out))
-	if end_max_pool:
-		x = MaxPool2D()(layer_out[0])
-	else:
-		x = layer_out[0]
+	assert(len(layer_out) == 1)
+	x = layer_out[0]
 
-	# x = Flatten()(x)
-	# x = Dense(100, activation = 'relu')(x)
-	# predictions = Dense(10, activation='softmax')(x)
-
-	# # This creates a model that includes
-	# # the Input layer and three Dense layers
-	# model = Model(inputs=[inputs], outputs=predictions)
-	# model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 	return x

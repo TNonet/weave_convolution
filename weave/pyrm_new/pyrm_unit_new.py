@@ -2,16 +2,13 @@ from ..tensorflow_weave.tensorflow_weave import *
 import numpy as np
 import keras
 import tensorflow as tf
-from keras.layers import Dropout, BatchNormalization
 import tensorflow.python.keras
-from keras.layers import Conv2D, Add, ZeroPadding2D
+from keras.layers import Conv2D, Add, ZeroPadding2D, BatchNormalization
 
 def pyrm_unit(inputs,
 	n_filters,
 	devices,
 	disjoint = True,
-	batch_norm = True,
-	drop = 0.2,
 	pure_combine =  False,
 	center = False,
 	r_combine = 1,
@@ -66,8 +63,6 @@ def pyrm_unit(inputs,
 				return pyrm_weave_disjoint_pure_combine(inputs = inputs,
 														n_filters = n_filters,
 														devices = devices,
-														batch_norm = batch_norm,
-														drop = drop,
 														r_combine = r_combine, 
 														center = center,
 														filter_size = filter_size)
@@ -76,8 +71,6 @@ def pyrm_unit(inputs,
 				return pyrm_weave_disjoint_not_pure_combine(inputs = inputs,
 															n_filters = n_filters,
 															devices = devices, 
-															batch_norm = batch_norm,
-															drop = drop,
 															center = center,
 															r_combine = r_combine,
 															pre_pad = pre_pad,
@@ -89,8 +82,6 @@ def pyrm_unit(inputs,
 			return pyrm_weave_joint(inputs = inputs,
 									n_filters = n_filters,
 									devices = devices,
-									batch_norm = batch_norm,
-									drop = drop,
 									center = center,
 									r_combine = r_combine,
 									pre_pad = pre_pad,
@@ -100,8 +91,6 @@ def pyrm_unit(inputs,
 def pyrm_weave_joint(inputs,
 	n_filters,
 	devices, 
-	batch_norm,
-	drop,
 	center = False,
 	r_combine = 1,
 	pre_pad = True,
@@ -119,17 +108,7 @@ def pyrm_weave_joint(inputs,
 	if num_filters_join < 1:
 		raise ValueError('There must be at least one filter joining the Array and Zero Weave Layers')
 
-	if batch_norm:
-		x0 = BatchNormalization(axis = 1)(inputs[0])
-		x1 = BatchNormalization(axis = 1)(inputs[1])
-	else:
-		x0,x1 = inputs 
-
-	if drop:
-		x0 = Dropout(drop)(x0)
-		x1 = Dropout(drop)(x1)
-	else:
-		pass
+	x0,x1 = inputs
 
 	if pre_pad:
 		x0 = ZeroPadding2D(padding=(pad_size,pad_size))(x0)
@@ -158,6 +137,7 @@ def pyrm_weave_joint(inputs,
 	x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
 
 	with tf.device(devices[0]):
+		x = BatchNormalization(axis = 1)(x)
 		x = Conv2D(num_filters_join,
 					kernel_size= filter_size,
 					strides=l_stride,
@@ -169,8 +149,6 @@ def pyrm_weave_joint(inputs,
 def pyrm_weave_disjoint_not_pure_combine(inputs,
 	n_filters,
 	devices,
-	batch_norm,
-	drop,
 	center = False,
 	r_combine = 1,
 	pre_pad = True,
@@ -188,18 +166,9 @@ def pyrm_weave_disjoint_not_pure_combine(inputs,
 	if num_filters_join < 1:
 		raise ValueError('There must be at least one filter joining the Array and Zero Weave Layers')
 
-	if batch_norm:
-		x0 = BatchNormalization(axis = 1)(inputs[0])
-		x1 = BatchNormalization(axis = 1)(inputs[1])
-	else:
-		x0,x1 = inputs 
 
-	if drop:
-		x0 = Dropout(drop)(x0)
-		x1 = Dropout(drop)(x1)
-	else:
-		pass
-
+	x0,x1 = inputs
+		
 	if pre_pad:
 		x0 = ZeroPadding2D(padding=(pad_size,pad_size))(x0)
 		x1 = ZeroPadding2D(padding=(pad_size,pad_size))(x1)
@@ -227,6 +196,7 @@ def pyrm_weave_disjoint_not_pure_combine(inputs,
 
 	x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
 	with tf.device(devices[0]):
+		x = BatchNormalization(axis =1)(x)
 		x = Conv2D(num_filters_join,
 					kernel_size= filter_size,
 					strides=l_stride,
@@ -239,8 +209,6 @@ def pyrm_weave_disjoint_not_pure_combine(inputs,
 def pyrm_weave_disjoint_pure_combine(inputs,
 	n_filters,
 	devices,
-	batch_norm,
-	drop,
 	filter_ratio = 1, 
 	center = False,
 	r_combine = 1,
@@ -255,17 +223,8 @@ def pyrm_weave_disjoint_pure_combine(inputs,
 	l_stride = (3,3)
 	num_filters_join = int(n_filters*r_combine)
 	
-	if batch_norm:
-		x0 = BatchNormalization(axis = 1)(inputs[0])
-		x1 = BatchNormalization(axis = 1)(inputs[1])
-	else:
-		x0,x1 = inputs 
 
-	if drop:
-		x0 = Dropout(drop)(x0)
-		x1 = Dropout(drop)(x1)
-	else:
-		pass
+	x0,x1 = inputs
 
 	with tf.device(devices[0]):
 		x_zero = ZeroWeave()(x0)
