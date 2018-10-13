@@ -1,4 +1,4 @@
-from keras.layers import Conv2D, Add, ZeroPadding2D
+from keras.layers import Conv2D, Add, ZeroPadding2D, MaxPool2D
 from pyrm_unit_new import *
 from keras.layers import Dropout, BatchNormalization
 
@@ -7,6 +7,7 @@ def pyrmlayer(inputs,
 	n_units,
 	n_filters,
 	ava_devices,
+	max_pool = False,
 	disjoint = True,
 	pure_combine =  False,
 	batch_norm = True,
@@ -48,6 +49,11 @@ def pyrmlayer(inputs,
 			else:
 				unit_input_1 = inputs[2*unit]
 				unit_input_2 = inputs[2*unit + 1]
+			if max_pool:
+				unit_input_1 = MaxPool2D()(unit_input_1)
+				unit_input_2 = MaxPool2D()(unit_input_2)
+			else:
+				pass
 			if drop:
 				unit_input_1 = Dropout(drop)(unit_input_1)
 				unit_input_2 = Dropout(drop)(unit_input_2)
@@ -60,6 +66,10 @@ def pyrmlayer(inputs,
 				unit_input_1 = BatchNormalization(axis =1)(inputs[unit])
 			else:
 				unit_input_1 = inputs[unit]
+			if max_pool:
+				unit_input_1 = MaxPool2D()(unit_input_1)
+			else:
+				pass
 			if drop:
 				unit_input_1 = Dropout(drop)(unit_input_1)
 			else:
