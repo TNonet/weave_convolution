@@ -72,7 +72,7 @@ def pyrm_net(inputs,
 
 	if not gpu_only:
 		for _ in range(2*layer_size - n_gpus):
-			ava_devices.append('/cpu:0')
+			ava_devices.append('/gpu:0')
 	else:
 		pass
 
