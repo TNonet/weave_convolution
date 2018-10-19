@@ -1,0 +1,25 @@
+Launch EC2 Instance
+	Either t2.medium (~$0.009 per hour)
+		p2.large ($0.90 per hour)
+
+>>>git clone https://github.com/TNonet/weave_convolution
+>>>cd weave_convolution/weave/cython_weave
+>>>source activate python2
+>>>python setup.py build_ext —inplace 
+
+if cython_weave_pyx.so doesn’t exist rename cython_weave_pyx.cpython_stuff_stuff.so
+	
+>>>tmux
+>>>source activate python3
+>>>jupiter notebook —-no-browser —-port=8888
+>>> “control” + b then d
+
+new terminal
+>>>ssh -i “key_pair.pem” -L 8000:localhost:8888 ubuntu@ec2…….
+
+Should be able to use chrome to access localhost:8000
+
+
+
+
+To allow for notebook to run without open terminal or connection use tmux

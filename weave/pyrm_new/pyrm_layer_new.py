@@ -1,5 +1,5 @@
 from keras.layers import Conv2D, Add, ZeroPadding2D, MaxPool2D
-from pyrm_unit_new import *
+from ..weave_unit.weave_unit import *
 from keras.layers import Dropout, BatchNormalization
 
 
@@ -77,7 +77,7 @@ def pyrmlayer(inputs,
 			unit_input = [unit_input_1,unit_input_1]
 
 		unit_devices = [ava_devices[2*unit], ava_devices[2*unit+1]]
-		x_temp = pyrm_unit(unit_input,
+		x_temp = weave_unit(unit_input,
 							n_filters = n_filters, 
 							devices = unit_devices,
 							disjoint = disjoint,
