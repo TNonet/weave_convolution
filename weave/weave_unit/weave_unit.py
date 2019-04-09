@@ -132,7 +132,12 @@ def pyrm_weave_joint(inputs,
 						activation = 'relu')(x1)
 		x_zero = ZeroWeave()(x_loc)
 
-	x = Add()([x_weave, x_zero])
+
+	# x_bias = tf.keras.backend.ones_like(x_weave, dtype = tf.float32)
+	# theta_bias = tf.keras.backend.variable(1, dtype=tf.float32, name='theta_bias')
+	# x_bias = tf.scalar_mul(theta_bias,x_bias)
+
+	x = Add()([x_weave, x_zero])#, x_bias])
 
 	x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
 
@@ -192,7 +197,11 @@ def pyrm_weave_disjoint_not_pure_combine(inputs,
 						activation = 'relu')(x1)
 		x_zero = ZeroWeave()(x_loc)
 
-	x = Add()([x_weave, x_zero])
+	# x_bias = tf.keras.backend.ones_like(x_weave, dtype = tf.float32)
+	# theta_bias = tf.keras.backend.variable(1, dtype=tf.float32, name='theta_bias')
+	# x_bias = tf.scalar_mul(theta_bias,x_bias)
+	
+	x = Add()([x_weave, x_zero])#, x_bias])
 
 	x = ZeroPadding2D(padding=(pad_size,pad_size))(x)
 	with tf.device(devices[0]):
@@ -232,7 +241,12 @@ def pyrm_weave_disjoint_pure_combine(inputs,
 	with tf.device(devices[1]):
 		x_weave = ArrayWeave(include_center = center)(x1)
 
-	x = Add()([x_weave, x_zero])
+
+	# x_bias = tf.keras.backend.ones_like(x_weave, dtype = tf.float32)
+	# theta_bias = tf.keras.backend.variable(1, dtype=tf.float32, name='theta_bias')
+	# x_bias = tf.scalar_mul(theta_bias,x_bias)
+	
+	x = Add()([x_weave, x_zero])#, x_bias])
 
 	x = ZeroPadding2D(padding=(mid_pad_size,mid_pad_size))(x)
 
