@@ -1,5 +1,5 @@
 #from tensorflow_weave import *
-from non_weave_iso_unit import *
+from .non_weave_iso_unit import *
 import numpy as np
 
 import keras
@@ -10,8 +10,8 @@ from keras.models import Model
 
 
 def in_line_net(num_layers, num_filters, method,
-				filter_size = (3,3), max_pool_alt = False,
-				mid_layer = 100):
+				filter_size=(3, 3), max_pool_alt=False,
+				mid_layer=100):
 	"""
 	Returns a model that has either the same theoretical train time as
 	a pyrm-net fully optimized on sufficent GPUS or the same number of
@@ -26,11 +26,11 @@ def in_line_net(num_layers, num_filters, method,
 	else:
 		raise ValueError("Method must be eithr 'time' or 'param'.")
 
+
 def iso_param_net(num_layers, num_filters, filter_size, max_pool_alt, mid_layer):
 	
 	inputs = Input(shape=(3,32,32))
 	pad_size = (filter_size[0]-1)/2
-
 
 	conv_layer_size = 2 ** (num_layers - 1)	
 
@@ -86,7 +86,7 @@ def iso_time_net(num_layers, num_filters, filter_size, max_pool_alt, mid_layer):
 
 	#x = MaxPool2D()(x)
 	x = Flatten()(x)
-	x = Dense(mid_layer, activation = 'relu')(x)
+	x = Dense(mid_layer, activation='relu')(x)
 	predictions = Dense(10, activation='softmax')(x)
 
 	# This creates a model that includes
@@ -94,4 +94,3 @@ def iso_time_net(num_layers, num_filters, filter_size, max_pool_alt, mid_layer):
 	model = Model(inputs=[inputs], outputs=predictions)
 	model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 	return model
-

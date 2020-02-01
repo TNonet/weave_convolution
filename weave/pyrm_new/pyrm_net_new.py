@@ -1,4 +1,4 @@
-from pyrm_layer_new import pyrmlayer
+from .pyrm_layer_new import pyrmlayer
 import numpy as np
 from keras.layers import MaxPool2D, Input, Flatten, Dense
 from keras.models import Model

@@ -1,5 +1,5 @@
-from cdense_layer import *
-import cdense_connect
+from .cdense_layer import *
+from weave.cdense import cdense_connect
 import numpy as np
 from keras.layers import MaxPool2D, Input, Flatten, Dense
 from keras.models import Model
