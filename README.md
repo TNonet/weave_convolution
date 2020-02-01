@@ -1,13 +1,27 @@
-# weave_convolution: Seperable Convolution Layers
+# weave_convolution: Separable Convolution Layers
 
-This is a independent reserach project by Tim Nonet and supported by Dr. Devika Subramanian (https://www.cs.rice.edu/~devika/) at Rice University.
+This is an independent research project by Tim Nonet and supported by Dr. Devika Subramanian (https://www.cs.rice.edu/~devika/) at Rice University.
 
-This project was motivated by the idea of peripheral vision. Human's notice and react to thing based on "local" (direct focused vision) and peripheral visison. In human's these process are indpendent and run in parellel. Why not have a computer tun these in parellel too?
+The idea of peripheral vision motivated this project. Humans notice and react to conditions based on "local" (direct focused vision) and peripheral vision. In humans, these processes are independent and run in parallel. Why not have a computer tun these in parallel too?
 
-Here is a diagram that explains how this idea works using standard (3 by 3) convolutional filters. (This idea can be generalized further)
+Here is a diagram that explains how this idea works using standard (3 by 3) convolutional filters. (This idea can be generalized further). **ArrayWeave** represents the peripheral vision scanning around the edges of the "area of focus" and **ZeroWeave** represents the local or focused vision on the center of the image. These two operators have separate learned filters; therefore, training and backpropagation require no communication.
+
+![Weave Convolution Outline](docs/Images/WeaveVisualHQ_long.jpg)
+
+From this image, it can be seen that the two sets of passes (ArrayWeave and Zero Weave) operate independently and thus can be run in parallel. Thus, the following diagrams are useful for visualizing how a single weave_convolution layer happens. 
 
 
-![Weave Convolution Outline](docs/WeaveVisualHQ_long.jpg)
+![Basic Pyramid Unit](docs/Images/bpwu_diagram.png)
 
-From this image it can be seen that the two sets of passes (ArrayWeave and Zero Weave) opperate independelty and thus can be run in parellel. Thus I will intrdouce the following diagrams to visualize how a single weave_convolution layer happens. One would notice it actualyl performs convolution twice.
+However, nothing forces the two branches of the Basic Pyramid Unit to take the same input. We can make these disjoint as seen below
 
+![Disjoint Pyramid Unit](docs/Images/dpwu_diagram.png)
+
+This can allow us to quickly (in log layers) grow the number of independent convolution layers very quickly. This can be seen below.
+
+![2 Layer Pyramid Net](docs/Images/pyramid_2_layer_diagram.png)
+![3 Layer Pyramid Net](docs/Images/pyramid_3_layer_diagram.png)
+
+This logic has been implemented in weave_convolution, and a diagram is seen below. 
+
+![Tensorflow Pyramid Net](docs/Images/tensorflow_diagram.png)
