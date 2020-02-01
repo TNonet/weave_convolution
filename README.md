@@ -25,3 +25,21 @@ This can allow us to quickly (in log layers) grow the number of independent conv
 This logic has been implemented in weave_convolution, and a diagram is seen below. 
 
 ![Tensorflow Pyramid Net](docs/Images/tensorflow_diagram.png)
+
+# Getting started:
+
+First, clone weave_convolution using git:
+```bash
+git clone https://github.com/TNonet/weave_convolution
+```
+
+Then, cd to the weave_convolution folder and run the install command:
+
+```bash
+cd weave_convolution
+sudo python weave/weave_unit/cython_weave/setup.py install
+```
+
+
+# Help Wanted (or more realistically Needed)
+This project is nowhere near done or even close to being publishable. I have not had time to flesh out this project fully, but I would love to answer questions or find someone interested in continuing to work on this project with me. Please contact me at tim.nonet@gmail.com.
